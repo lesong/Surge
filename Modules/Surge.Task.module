@@ -4,7 +4,7 @@
 [Script]
 Tasks: NASA每日一图 = type=cron,cronexp="5 0 * * *",script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js
 Tasks: iDaily每日环球视野 = type=cron,cronexp="5 0 * * *",script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/idaily/idaily.js
-Tasks: 天气预报 = type=cron,cronexp="00 6-21/3 * * *",script-path=https://raw.githubusercontent.com/lesong/QuantumultX/main/Surge/Weather.js
+Tasks: 天气预报 = type=cron,cronexp="00 6-21/3 * * *",script-path=https://raw.githubusercontent.com/lesong/Surge/main/Scripts/Weather.js
 Tasks: 去哪儿 = type=cron,cronexp="4 0 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qunar/qunar.js
 Tasks: 网易新闻 = type=cron,cronexp="4 0 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasenews/neteasenews.js
 Tasks: 腾讯视频 = type=cron,cronexp="3 0 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js
