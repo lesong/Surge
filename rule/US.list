@@ -1,11 +1,27 @@
 # > Disney+
-USER-AGENT,Disney+*
-DOMAIN-SUFFIX,bamgrid.com
+USER-AGENT,Disney*
 DOMAIN-SUFFIX,disneyplus.com
 DOMAIN-SUFFIX,disney-plus.net
 DOMAIN-SUFFIX,disneystreaming.com
 DOMAIN-SUFFIX,dssott.com
+// DOMAIN-SUFFIX,bamgrid.com
+DOMAIN,disney.api.edge.bamgrid.com
+DOMAIN,disney.connections.edge.bamgrid.com
+DOMAIN,disney.content.edge.bamgrid.com
+DOMAIN,disney.playback.edge.bamgrid.com
 DOMAIN,cdn.registerdisney.go.com
+DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com
+
+# > Discovery+
+USER-AGENT,discovery+*
+USER-AGENT,DPlus*
+DOMAIN-KEYWORD,discoveryplus
+DOMAIN-SUFFIX,discoveryplus.com
+DOMAIN-SUFFIX,disco-api.com
+DOMAIN-SUFFIX,dnitv.com
+DOMAIN-SUFFIX,uplynk.com
+DOMAIN-SUFFIX,litix.io
+DOMAIN,kvinit-prod.api.kochava.com
 
 # > encoreTVB
 USER-AGENT,encoreTVB*
@@ -22,10 +38,30 @@ USER-AGENT,HBOMAX*
 DOMAIN-SUFFIX,hbomax.com
 DOMAIN-SUFFIX,hbomaxcdn.com
 
+# > HBO GO Asia
+// USER-AGENT,HBO%20GO%20PROD*
+// DOMAIN-KEYWORD,hboasia
+DOMAIN-KEYWORD,hbogoasia
+DOMAIN-SUFFIX,hboasia.com
+DOMAIN-SUFFIX,hbogoasia.com
+DOMAIN,hbolb.onwardsmg.com
+DOMAIN,hbounify-prod.evergent.com
+// DOMAIN,hbogoprod-vod.akamaized.net
+// DOMAIN,hboasialive.akamaized.net
+// DOMAIN,bcbolthboa-a.akamaihd.net
+DOMAIN,dai3fd1oh325y.cloudfront.net
+
 # > Hulu
 DOMAIN-SUFFIX,hulu.com
+DOMAIN-SUFFIX,hulu.tv
 DOMAIN-SUFFIX,huluim.com
 DOMAIN-SUFFIX,hulustream.com
+DOMAIN,cws-hulu.conviva.com
+// DOMAIN,assetshuluimcom-a.akamaihd.net
+
+# > Peacock
+USER-AGENT,peacock*
+DOMAIN-SUFFIX,peacocktv.com
 
 # > Paramount+
 USER-AGENT,PPlus*
@@ -42,3 +78,76 @@ DOMAIN,link.theplatform.com
 # > PBS
 USER-AGENT,PBS*
 DOMAIN-SUFFIX,pbs.org
+
+# > Google
+DOMAIN-SUFFIX,265.com
+DOMAIN-SUFFIX,2mdn.net
+DOMAIN-SUFFIX,adservice.google.com
+DOMAIN-SUFFIX,app-measurement.com
+DOMAIN-SUFFIX,beacons.gcp.gvt2.com
+DOMAIN-SUFFIX,beacons.gvt2.com
+DOMAIN-SUFFIX,beacons2.gvt2.com
+DOMAIN-SUFFIX,beacons3.gvt2.com
+DOMAIN-SUFFIX,c.admob.com
+DOMAIN-SUFFIX,c.android.clients.google.com
+DOMAIN-SUFFIX,cache.pack.google.com
+DOMAIN-SUFFIX,checkin.gstatic.com
+DOMAIN-SUFFIX,clickserve.dartsearch.net
+DOMAIN-SUFFIX,clientservices.googleapis.com
+DOMAIN-SUFFIX,connectivitycheck.gstatic.com
+DOMAIN-SUFFIX,corp.google.com
+DOMAIN-SUFFIX,crl.pki.goog
+DOMAIN-SUFFIX,csi.gstatic.com
+DOMAIN-SUFFIX,dl.google.com
+DOMAIN-SUFFIX,dl.l.google.com
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,firebase-settings.crashlytics.com
+DOMAIN-SUFFIX,fonts.googleapis.com
+DOMAIN-SUFFIX,fonts.gstatic.com
+DOMAIN-SUFFIX,g1.gstatic.com
+DOMAIN-SUFFIX,g2.gstatic.com
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,googleadservices.com
+DOMAIN-SUFFIX,googleanalytics.com
+DOMAIN-SUFFIX,googleoptimize.com
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,googletagservices.com
+DOMAIN-SUFFIX,gstaticadssl.l.google.com
+DOMAIN-SUFFIX,gtm.oasisfeng.com
+DOMAIN-SUFFIX,imasdk.googleapis.com
+DOMAIN-SUFFIX,ocsp.pki.goog
+DOMAIN-SUFFIX,pagead-googlehosted.l.google.com
+DOMAIN-SUFFIX,pki-goog.l.google.com
+DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,redirector.gvt1.com
+DOMAIN-SUFFIX,regioninfo-pa.googleapis.com
+DOMAIN-SUFFIX,safebrowsing-cache.google.com
+DOMAIN-SUFFIX,safebrowsing.googleapis.com
+DOMAIN-SUFFIX,ssl-google-analytics.l.google.com
+DOMAIN-SUFFIX,ssl.gstatic.com
+DOMAIN-SUFFIX,toolbarqueries.google.com
+DOMAIN-SUFFIX,tools.google.com
+DOMAIN-SUFFIX,tools.l.google.com
+DOMAIN-SUFFIX,translate.googleapis.com
+DOMAIN-SUFFIX,translation.googleapis.com
+DOMAIN-SUFFIX,update.googleapis.com
+DOMAIN-SUFFIX,www-google-analytics.l.google.com
+DOMAIN-SUFFIX,www-googletagmanager.l.google.com
+DOMAIN-SUFFIX,www.gstatic.com
+
+# > Paramount+
+USER-AGENT,PPlus*
+DOMAIN-SUFFIX,cbsi.com
+DOMAIN-SUFFIX,cbsaavideo.com
+DOMAIN-SUFFIX,cbsivideo.com
+DOMAIN-SUFFIX,paramountplus.com
+DOMAIN-SUFFIX,pplusstatic.com
+DOMAIN,cbsi.live.ott.irdeto.com
+DOMAIN,link.theplatform.com
+
+// CBS live
+DOMAIN,cbsservice.aws.syncbak.com
+DOMAIN,cbsplaylistserver.aws.syncbak.com
+
+# DOMAIN,pubads.g.doubleclick.net 不可屏蔽

@@ -11,6 +11,13 @@ USER-AGENT,com.kktv.ios.kktv*
 DOMAIN-SUFFIX,kktv.com.tw
 DOMAIN-SUFFIX,kktv.me
 DOMAIN,kktv-theater.kk.stream
+DOMAIN,theater-kktv.cdn.hinet.net
+
+# > KKBOX
+USER-AGENT,*KKBOX
+DOMAIN-SUFFIX,kkbox.com
+DOMAIN-SUFFIX,kkbox.com.tw
+DOMAIN-SUFFIX,kfs.io
 
 # > LINE TV
 USER-AGENT,LINE%20TV*
@@ -21,7 +28,51 @@ DOMAIN,d3c7rimkq79yfu.cloudfront.net
 DOMAIN-SUFFIX,litv.tv
 DOMAIN,litvfreemobile-hichannel.cdn.hinet.net
 
+# > myVideo
+USER-AGENT,myVideo*
+DOMAIN-SUFFIX,myvideo.net.tw
+DOMAIN-SUFFIX,catch.net.tw
+
 # > 台湾好
 USER-AGENT,TaiwanGood*
 DOMAIN-SUFFIX,skyking.com.tw
 DOMAIN,hamifans.emome.net
+
+# > friDay
+USER-AGENT,friDay*
+DOMAIN-SUFFIX,friday.tw
+
+# > CATCHPLAY+
+USER-AGENT,CATCHPLAY*
+DOMAIN-SUFFIX,catchplay.com
+DOMAIN,asiaplay-origin.s3.amazonaws.com
+DOMAIN,tra-ww000-cp.akamaized.net
+DOMAIN,ols-ww000-cp.akamaized.net
+DOMAIN,ols-ww100-cp.akamaized.net
+DOMAIN,dkfhw9rzsr80z.cloudfront.net
+
+# > iQIYI Intl
+USER-AGENT,iQIYI*
+USER-AGENT,QIYIVideo*
+USER-AGENT,QYPlayer*
+USER-AGENT,QTP*
+PROCESS-NAME,com.iqiyi.i18n
+PROCESS-NAME,com.iqiyi.i18n.tv
+DOMAIN-SUFFIX,iq.com
+// 首页
+DOMAIN-SUFFIX,intl.iqiyi.com
+// 历史
+DOMAIN,intl-rcd.iqiyi.com
+// 收藏
+DOMAIN,intl-subscription.iqiyi.com
+// 播放
+IP-CIDR,23.59.252.0/24,no-resolve
+IP-CIDR,23.200.145.146/32,no-resolve
+IP-CIDR,23.211.15.0/24,no-resolve
+IP-CIDR,23.219.172.0/24,no-resolve
+IP-CIDR,104.85.165.17/32,no-resolve
+IP-CIDR,110.238.107.47/32,no-resolve
+IP-CIDR,159.138.102.146/32,no-resolve
+IP-CIDR,184.51.102.0/24,no-resolve
+IP-CIDR,203.74.95.130/28,no-resolve
+IP-CIDR,210.71.227.202/32,no-resolve

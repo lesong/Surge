@@ -11,10 +11,11 @@ DOMAIN-SUFFIX,dmm.co.jp
 DOMAIN-SUFFIX,dmm.com
 DOMAIN-SUFFIX,dmm-extension.com
 
-# > Hulu / フールー
+# > Hulu JP
+DOMAIN-SUFFIX,hulu.jp
 DOMAIN-SUFFIX,happyon.jp
 DOMAIN-SUFFIX,hjholdings.jp
-DOMAIN-SUFFIX,hulu.jp
+DOMAIN-SUFFIX,prod.hjholdings.tv
 
 # > niconico
 USER-AGENT,Niconico*
@@ -32,3 +33,7 @@ USER-AGENT,FOD*
 DOMAIN-SUFFIX,fujitv.co.jp
 DOMAIN-SUFFIX,stream.ne.jp
 DOMAIN,measure.ic.tver.jp
+
+# > Paravi
+USER-AGENT,Paravi*
+DOMAIN-SUFFIX,paravi.jp
