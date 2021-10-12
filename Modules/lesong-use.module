@@ -1,6 +1,10 @@
-#!name=lesong 自用脚本 20211011
-#!desc=20211011
+#!name=lesong 自用脚本 20211012
+#!desc=20211012
 #!system=ios
+
+[Header Rewrite]
+# > 香蕉视频会员
+https:\/\/.*\.*apps.com header-replace Cookie xxx_api_auth=3637333161613233666630323063366161303730623161333863313531333864
 
 [Script]
 京东比价 = type=http-response,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),requires-body=1,max-size=0,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js,script-update-interval=0
@@ -24,6 +28,21 @@ Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc
 #可选, 适用于搜索指定地区的番剧
 Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
 
+# > 轻言相机
+http-response https:\/\/.*\.faceu\.mobi\/commerce\/v1\/subscription\/user_info requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/qyxj.js
+
+# > 香蕉视频去广告
+http-response https?:\/\/.*\.*apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
+
+# > 鲨鱼记账<破解Vip附带”真实剩余天数”>
+http-response https:\/\/api\.shayujizhang\.com\/account\/grant\/detail\/info requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/shyjzh.js
+
+# > 黄瓜破解付费
+http-response https:\/\/api1000\.gdqeb\.club\/mov\/browse2 requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hgUnPay.js
+
+# > keep
+http-response https:\/\/api\.gotokeep\.com\/(.+\/subject|.+\/dynamic) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/keep.js
+
 
 [MITM]
-hostname = %APPEND% mp.weixin.qq.com,ios-*.prod.ftl.netflix.com,ios.prod.ftl.netflix.com,api.m.jd.com, trade-acs.m.taobao.com,*.kuwo.cn,vip1.kuwo.cn,ap?.bilibili.com,api.bilibili.com,app.bilibili.com
+hostname = %APPEND% mp.weixin.qq.com,ios-*.prod.ftl.netflix.com,ios.prod.ftl.netflix.com,api.m.jd.com, trade-acs.m.taobao.com,*.kuwo.cn,vip1.kuwo.cn,ap?.bilibili.com,api.bilibili.com,app.bilibili.com,*.faceu.mobi, *.*apps.com, api.shayujizhang.com, api1000.gdqeb.club, api.gotokeep.com
