@@ -5,9 +5,6 @@
 #Surge Pro标题,可显示启动时间,点击刷新为重载配置
 SurgePro_ReloadProfile = script-name=SurgePro_ReloadProfile,update-interval=1
 
-#流量统计
-TrafficStatistics = script-name=TrafficStatistics,update-interval=1
-
 #网络详情
 网络信息 = script-name=网络信息,update-interval=1
 
@@ -47,9 +44,6 @@ Sub_info = script-name=Sub_info,update-interval=600
 [Script]
 #附带重载配置,Surge Pro标题,可显示启动时间,点击刷新为重载配置
 SurgePro_ReloadProfile = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/surgepro_reloadprofile.js ,argument=icon=crown.fill&color=#0089A7
-
-#流量统计 点击以切换网络界面
-TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js ,argument=icon=arrow.up.arrow.down.circle&color=#0089A7
 
 #網路詳情 标题显示为根节点名
 #应当修改的字段 group 代理策略组名称
