@@ -6,9 +6,6 @@
 SurgePro_ReloadProfile = script-name=SurgePro_ReloadProfile,update-interval=1
 
 #流量统计
-groupPanel = script-name=groupPanel,update-interval=5
-
-#流量统计
 TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 
 #网络详情
@@ -63,8 +60,6 @@ TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubuserc
 Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=https%3A%2F%2Fcylink.moe%2Flink%2FhHAPqElxSjyguFWw%3Flist%3Dsurge&reset_day=1&title=机场信息&icon=airplane.circle&color=#0089A7
 
 配置重载=script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/Profile-Reload.js,type=generic
-
-groupPanel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js,argument=icon=arrow.left.arrow.right.circle&color=#0089A7&group=Master
 
 #策略组面板 可重复配置 注意修改相应字段
 #必须更改的字段：group 填写需要显示的策略组名称
