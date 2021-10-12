@@ -1,6 +1,5 @@
-#!name=Panels1
+#!name=Panels
 #!desc=信息面板
-#!desc=最后更新时间 2021-10-12 08:06:06
 
 [Panel]
 #Surge Pro标题,可显示启动时间,点击刷新为重载配置
@@ -19,7 +18,32 @@ Sub_info = script-name=Sub_info,update-interval=600
 配置重载 = title=配置重载,content=配置重载,style=info,script-name=配置重载,update-interval=-1
 
 #策略组面板 可重复配置 注意修改相应字段
-🍎 Apple= script-name=🍎 Apple,update-interval=5
+🚀 节点选择 = script-name=🚀 节点选择,update-interval=5
+🔰 Outside = script-name=🔰 Outside,update-interval=5
+🎬 Streaming = script-name=🎬 Streaming,update-interval=5
+📺 CNTV = script-name=📺 CNTV,update-interval=5
+🍎 Apple = script-name=🍎 Apple,update-interval=5
+📬 Telegram = script-name=📬 Telegram,update-interval=5
+💳 PayPal = script-name=💳 PayPal,update-interval=5
+🎵 Tiktok = script-name=🎵 Tiktok,update-interval=5
+🍎 Apple = script-name=🍎 Apple,update-interval=5
+🎯 Inbound = script-name=🎯 Inbound,update-interval=5
+🚧 AdBlock = script-name=🚧 AdBlock,update-interval=5
+🐟 Outbound = script-name=🐟 Outbound,update-interval=5
+🇭🇰 Hong Kong = script-name=🇭🇰 Hong Kong,update-interval=5
+🇨🇳 Taiwan = script-name=🇨🇳 Taiwan,update-interval=5
+🇯🇵 Japan = script-name=🇯🇵 Japan,update-interval=5
+🇸🇬 Singapore = script-name=🇸🇬 Singapore,update-interval=5
+🇺🇸 America = script-name=🇺🇸 America,update-interval=5
+🇰🇷 Korea = script-name=🇰🇷 Korea,update-interval=5
+🇬🇧 England = script-name=🇬🇧 England,update-interval=5
+🇧🇷 Brazil = script-name=🇧🇷 Brazil,update-interval=5
+🇩🇪 Germany = script-name=🇩🇪 Germany,update-interval=5
+🇮🇳 India = script-name=🇮🇳 India,update-interval=5
+🇲🇾 Malaysia = script-name=🇲🇾 Malaysia,update-interval=5
+🇷🇺 Russia = script-name=🇷🇺 Russia,update-interval=5
+🇹🇷 Turkey = script-name=🇹🇷 Turkey,update-interval=5
+🇦🇷 Argentina = script-name=🇦🇷 Argentina,update-interval=5
 
 [Script]
 #附带重载配置,Surge Pro标题,可显示启动时间,点击刷新为重载配置
@@ -40,4 +64,29 @@ Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com
 
 #策略组面板 可重复配置 注意修改相应字段
 #必须更改的字段：group 填写需要显示的策略组名称
-🍎 Apple = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=🍎&color=#86abee&group=🍎 Apple
+🚀 节点选择 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🚀 节点选择
+🔰 Outside = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🔰 Outside
+🎬 Streaming = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🎬 Streaming
+📺 CNTV = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=📺 CNTV
+🍎 Apple = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🍎 Apple
+📬 Telegram = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=📬 Telegram
+💳 PayPal = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=💳 PayPal
+🎵 Tiktok = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🎵 Tiktok
+🍎 Apple = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🍎 Apple
+🎯 Inbound = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🎯 Inbound
+🚧 AdBlock = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🚧 AdBlock
+🐟 Outbound = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🐟 Outbound
+🇭🇰 Hong Kong = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇭🇰 Hong Kong
+🇨🇳 Taiwan = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇨🇳 Taiwan
+🇯🇵 Japan = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇯🇵 Japan
+🇸🇬 Singapore = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇸🇬 Singapore
+🇺🇸 America = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇺🇸 America
+🇰🇷 Korea = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇰🇷 Korea
+🇬🇧 England = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇬🇧 England
+🇧🇷 Brazil = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇧🇷 Brazil
+🇩🇪 Germany = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇩🇪 Germany
+🇮🇳 India = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇮🇳 India
+🇲🇾 Malaysia = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇲🇾 Malaysia
+🇷🇺 Russia = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇷🇺 Russia
+🇹🇷 Turkey = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇹🇷 Turkey
+🇦🇷 Argentina = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=🇦🇷 Argentina
