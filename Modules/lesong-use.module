@@ -26,20 +26,11 @@
 # > bigshot会员
 bigshot会员 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ventusoon/ventus/main/Script/Bigshot.js,type=http-response,pattern=^https:\/\/vni\.kwaiying\.com\/api\/v1\/user\/profile,script-update-interval=0
 
-# > 驾校e点通VIP
-驾校e点通VIP= type=http-response,requires-body=1,pattern=^https:\/\/vipapi\.jxedt\.com\/vip\/check,max-size=0,script-path=https://raw.githubusercontent.com/ventusoon/ventus/main/Script/jxydt.js
-
 # > TF下载修正
 TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ventusoon/ventus/main/Script/TF.js
 
 # > 百度防跳转
 百度防跳转 = type=http-response,pattern=^https:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/ventusoon/ventus/main/Script/baidu-no-redirect.js
-
-# > 91
-http-response ^https?:\/\/.+?\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5}|)\/api.php$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ventusoon/ventus/main/Script/91.js
-
-# > VSCO vip
-http-response ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ventusoon/ventus/main/Script/vsco.js
 
 # > 哔哩哔哩, 港澳台番剧自动切换地区 & 显示豆瓣评分
 Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ventusoon/ventus/main/Script/Bili_Auto_Regions.js
@@ -65,4 +56,4 @@ themekuwo.js = requires-body=1,max-size=0,script-path=https://raw.githubusercont
 
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, weather-data.apple.com, weather-map.apple.com, tiles.waqi.info, mp.weixin.qq.com, weixin110.qq.com, *.snssdk.com, vni.kwaiying.com, vipapi.jxedt.com, testflight.apple.com, boxer.baidu.com, *91*:8080, *my10api*:8080, vsco.co, api.revenuecat.com, ap?.bilibili.com, origin-prod-phoenix.jibjab.com, license.pdfexpert.com, *.kuwo.cn, vip1.kuwo.cn
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, weather-data.apple.com, weather-map.apple.com, tiles.waqi.info, mp.weixin.qq.com, weixin110.qq.com, *.snssdk.com, vni.kwaiying.com, testflight.apple.com, boxer.baidu.com, ap?.bilibili.com, origin-prod-phoenix.jibjab.com, license.pdfexpert.com, *.kuwo.cn, vip1.kuwo.cn
