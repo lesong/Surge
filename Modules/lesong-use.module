@@ -65,4 +65,4 @@ themekuwo.js = requires-body=1,max-size=0,script-path=https://raw.githubusercont
 
 
 [MITM]
-hostname = %INSERT% api.m.jd.com, trade-acs.m.taobao.com, weather-data.apple.com, weather-map.apple.com, tiles.waqi.info, mp.weixin.qq.com, weixin110.qq.com, *.snssdk.com, vni.kwaiying.com, vipapi.jxedt.com, testflight.apple.com, boxer.baidu.com, *91*:8080, *my10api*:8080, vsco.co, api.revenuecat.com, ap?.bilibili.com, origin-prod-phoenix.jibjab.com, license.pdfexpert.com, *.kuwo.cn, vip1.kuwo.cn
+hostname = %APPEND% api.m.jd.com, trade-acs.m.taobao.com, weather-data.apple.com, weather-map.apple.com, tiles.waqi.info, mp.weixin.qq.com, weixin110.qq.com, *.snssdk.com, vni.kwaiying.com, vipapi.jxedt.com, testflight.apple.com, boxer.baidu.com, *91*:8080, *my10api*:8080, vsco.co, api.revenuecat.com, ap?.bilibili.com, origin-prod-phoenix.jibjab.com, license.pdfexpert.com, *.kuwo.cn, vip1.kuwo.cn
