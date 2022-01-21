@@ -2415,13 +2415,6 @@ DOMAIN-SUFFIX,amobee.com
 DOMAIN-SUFFIX,intelligence.amobee.com
 DOMAIN-SUFFIX,api.ampiri.com
 DOMAIN-SUFFIX,signals.ampiri.com
-DOMAIN-SUFFIX,analytics.amplitude.com
-DOMAIN-SUFFIX,api.amplitude.com
-DOMAIN-SUFFIX,api2.amplitude.com
-DOMAIN-SUFFIX,cdn.amplitude.com
-DOMAIN-SUFFIX,info.amplitude.com
-DOMAIN-SUFFIX,regionconfig.amplitude.com
-DOMAIN-SUFFIX,static.amplitude.com
 DOMAIN-SUFFIX,c-betrad-com.cdn.ampproject.org
 DOMAIN-SUFFIX,amung.us
 DOMAIN-SUFFIX,whos.amung.us
@@ -5658,7 +5651,6 @@ DOMAIN-SUFFIX,sumome-140a.kxcdn.com
 DOMAIN-SUFFIX,api.lanistaads.com
 DOMAIN-SUFFIX,ads.latinongroup.com
 DOMAIN-SUFFIX,launch1.co
-DOMAIN-SUFFIX,mobile.launchdarkly.com
 DOMAIN-SUFFIX,lavanetwork.net
 DOMAIN-SUFFIX,delivery.lavanetwork.net
 DOMAIN-SUFFIX,delivery1.lavanetwork.net
