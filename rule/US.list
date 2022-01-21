@@ -21,6 +21,7 @@ DOMAIN-SUFFIX,info.amplitude.com
 DOMAIN-SUFFIX,regionconfig.amplitude.com
 DOMAIN-SUFFIX,static.amplitude.com
 DOMAIN-SUFFIX,mobile.launchdarkly.com
+DOMAIN-SUFFIX,*.ultramobile.com
 
 # > Discovery+
 USER-AGENT,discovery+*
