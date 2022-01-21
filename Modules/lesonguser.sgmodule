@@ -9,6 +9,8 @@ nf_rating.js = type=http-response,requires-body=1,pattern=^https?:\/\/ios(-.*)?\
 # 单集评分
 nf_rating_season.js = type=http-response,pattern=^https?:\/\/ios(-.*)?\.prod\.ftl\.netflix\.com\/iosui\/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js
 
+
+[URL Rewrite]
 # > 京东历史价格
 http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 
@@ -20,9 +22,17 @@ http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getde
 ^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey) url script-echo-response https://raw.githubusercontent.com/stcharlesc/Proxy/master/embycrack.js
 
 # > 69萝莉解锁会员
-网页地址：http://h5.502you.me
+#网页地址：http://h5.502you.me
 ^https?:\/\/h5.*you.*\/h5\/login\/loginAccount$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/LLSPCrack.js
 
+# > 鱿鱼视频解锁会员
+#下载地址：https://shrtm.nu/yysp
+^https?:\/\/api\.youyu.*\/api\/account\/loginBy(Phone|Password)$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/YYSPCrack.js
+
+# 硬汉视频解锁会员
+#网站地址：https://shrtm.nu/yhsp
+^https?:\/\/apiw\.sshfax\.com\/sw1\/.+ url script-request-header https://raw.githubusercontent.com/yqc007/QuantumultX/master/YHSPCrack.js
+^https?:\/\/apiw\.sshfax\.com\/sw1\/login$ url response-body token": "(.*?)" response-body token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJfaWQiOiJJTjE3NzMyOTAiLCJkZXZpY2VfaWQiOiIwNDNENkRGMi1CODVGLTQ1OUUtQjZEMC03NTBGMjI2RTMyRkQiLCJlbWFpbCI6IjEwOTQzODA1MzFAcXEuY29tIiwiZXhwIjoxNjQwMzQyMzIwfQ.q_V8EUpxdIjVcoW2wHof9tIPA1Lv0_Y8uMdTO-A3N6E"
 
 [MITM]
-hostname = %APPEND% h5*you*,api.m.jd.com, amdc.m.taobao.com, trade-acs.m.taobao.com, ios-*.prod.ftl.netflix.com,ios.prod.ftl.netflix.com, mb3admin.com
+hostname = %APPEND% apiw.sshfax.com,api.youyu*,h5*you*, api.m.jd.com, amdc.m.taobao.com, trade-acs.m.taobao.com, ios-*.prod.ftl.netflix.com,ios.prod.ftl.netflix.com, mb3admin.com
