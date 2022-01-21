@@ -12,6 +12,16 @@ DOMAIN,disney.playback.edge.bamgrid.com
 DOMAIN,cdn.registerdisney.go.com
 DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com
 
+# > UItra Mobile
+DOMAIN-SUFFIX,analytics.amplitude.com
+DOMAIN-SUFFIX,api.amplitude.com
+DOMAIN-SUFFIX,api2.amplitude.com
+DOMAIN-SUFFIX,cdn.amplitude.com
+DOMAIN-SUFFIX,info.amplitude.com
+DOMAIN-SUFFIX,regionconfig.amplitude.com
+DOMAIN-SUFFIX,static.amplitude.com
+DOMAIN-SUFFIX,mobile.launchdarkly.com
+
 # > Discovery+
 USER-AGENT,discovery+*
 USER-AGENT,DPlus*
