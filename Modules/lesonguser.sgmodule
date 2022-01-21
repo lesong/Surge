@@ -19,5 +19,10 @@ http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getde
 # Emby破解(by KleinerSource)
 ^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey) url script-echo-response https://raw.githubusercontent.com/stcharlesc/Proxy/master/embycrack.js
 
+# > 69萝莉解锁会员
+网页地址：http://h5.502you.me
+^https?:\/\/h5.*you.*\/h5\/login\/loginAccount$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/LLSPCrack.js
+
+
 [MITM]
-hostname = %APPEND% api.m.jd.com, amdc.m.taobao.com, trade-acs.m.taobao.com, ios-*.prod.ftl.netflix.com,ios.prod.ftl.netflix.com, mb3admin.com
+hostname = %APPEND% h5*you*,api.m.jd.com, amdc.m.taobao.com, trade-acs.m.taobao.com, ios-*.prod.ftl.netflix.com,ios.prod.ftl.netflix.com, mb3admin.com
