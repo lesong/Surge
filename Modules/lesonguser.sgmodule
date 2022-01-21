@@ -9,8 +9,6 @@ nf_rating.js = type=http-response,requires-body=1,pattern=^https?:\/\/ios(-.*)?\
 # 单集评分
 nf_rating_season.js = type=http-response,pattern=^https?:\/\/ios(-.*)?\.prod\.ftl\.netflix\.com\/iosui\/warmer/.+type=show-ath,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating_season.js
 
-
-[URL Rewrite]
 # > 京东历史价格
 http-response ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 
@@ -23,7 +21,8 @@ http-response ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getde
 
 # > 69萝莉解锁会员
 #网页地址：http://h5.502you.me
-^https?:\/\/h5.*you.*\/h5\/login\/loginAccount$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/LLSPCrack.js
+69萝莉解锁会员 = type=http-response,pattern=^https?:\/\/h5.*you.*\/h5\/login\/loginAccount$ url,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/cytq.js,script-update-interval=0
+
 
 # > 鱿鱼视频解锁会员
 #下载地址：https://shrtm.nu/yysp
