@@ -1,0 +1,14 @@
+#!name=自用脚本合集
+#!desc=最后更新时间 2022-05-08 16:17
+#!system=ios
+
+# 分割线——————————————————————————
+
+[Script]
+# > 解锁Aphrodite会员(2022.01.30)
+#hostname = api.revenuecat.com
+Aphrodite = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/(\$RCAnonymousID\%)?(\w)+$ url script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Aphrodite.js
+Aphrodite = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/receipts$ url script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Aphrodite.js
+
+[MITM]
+hostname = %INSERT% api.revenuecat.com
