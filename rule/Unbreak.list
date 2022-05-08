@@ -1,0 +1,193 @@
+# Unbreak lesong自用规则修正
+# 顶级域名分流
+# 香港顶级域
+DOMAIN-SUFFIX,hk,🇭🇰Hong Kong
+# 台湾顶级域
+DOMAIN-SUFFIX,tw,🇨🇳Taiwan
+DOMAIN-SUFFIX,hinet.net,🇨🇳Taiwan
+DOMAIN-SUFFIX,emome.net,🇨🇳Taiwan
+DOMAIN-SUFFIX,litv.tv,🇨🇳Taiwan
+IP-CIDR,101.101.101.101/32,🇨🇳Taiwan
+DOMAIN-SUFFIX,linkedin.com,🇨🇳Taiwan
+# 新加坡顶级域
+DOMAIN-SUFFIX,sg,🇸🇬Singapore
+# 日本顶级域
+DOMAIN-SUFFIX,jp,🇯🇵Japan
+# 美国顶级域
+DOMAIN-SUFFIX,us,🇺🇸United States
+DOMAIN,lb-rdv-steep.ubisoft.com,🇺🇸United States
+DOMAIN,useast1-public-ubiservices.ubi.com,🇺🇸United States
+DOMAIN,lens.l.google.com,🇺🇸United States
+# ultramobile
+DOMAIN-SUFFIX,launchdarkly.com,🇺🇸United States
+DOMAIN-SUFFIX,ultramobile.com,🇺🇸United States
+DOMAIN-KEYWORD,ultramobile,🇺🇸United States
+DOMAIN-SUFFIX,amplitude.com,🇺🇸United States
+# 2miners
+DOMAIN-KEYWORD,2miners,🇺🇸United States
+#target
+DOMAIN-KEYWORD,target,🇺🇸United States
+DOMAIN-SUFFIX,target.com,🇺🇸United States
+DOMAIN-SUFFIX,carnivalmobile.com,🇺🇸United States
+#百度地图开屏广告
+DOMAIN,dss0.bdstatic.com,REJECT
+DOMAIN,app.adjust.com,DIRECT
+DOMAIN,bdtj.tagtic.cn,DIRECT
+DOMAIN,log.mmstat.com,DIRECT
+DOMAIN,sycm.mmstat.com,DIRECT
+DOMAIN,analytics.strava.com,DIRECT
+# > Tencent
+DOMAIN,fairplay.l.qq.com,DIRECT
+DOMAIN,livew.l.qq.com,DIRECT
+DOMAIN,vd.l.qq.com,DIRECT
+DOMAIN,msg.umeng.com,DIRECT
+DOMAIN,msg.umengcloud.com,DIRECT
+# Direct
+DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
+DOMAIN,nrch.culture.tw,DIRECT
+# >> Paramount+
+DOMAIN,pubads.g.doubleclick.net,DIRECT
+# Google
+DOMAIN-SUFFIX,app-measurement.com,DIRECT
+DOMAIN-SUFFIX,recaptcha.net,DIRECT
+DOMAIN,gtm.oasisfeng.com,DIRECT
+DOMAIN,checkin.gstatic.com,DIRECT
+DOMAIN,connectivitycheck.gstatic.com,DIRECT
+DOMAIN,csi.gstatic.com,DIRECT
+DOMAIN,fonts.gstatic.com,DIRECT
+DOMAIN,ssl.gstatic.com,DIRECT
+DOMAIN,www.gstatic.com,DIRECT
+DOMAIN,redirector.gvt1.com,DIRECT
+DOMAIN,beacons.gcp.gvt2.com,DIRECT
+DOMAIN,beacons.gvt2.com,DIRECT
+DOMAIN,beacons2.gvt2.com,DIRECT
+DOMAIN,beacons3.gvt2.com,DIRECT
+DOMAIN,crl.pki.goog,DIRECT
+DOMAIN,ocsp.pki.goog,DIRECT
+DOMAIN,translate.google.cn,DIRECT
+DOMAIN,c.android.clients.google.com,DIRECT
+DOMAIN,cache.pack.google.com,DIRECT
+DOMAIN,corp.google.com,DIRECT
+DOMAIN,dl.l.google.com,DIRECT
+DOMAIN,dl.google.com,DIRECT
+DOMAIN,pagead-googlehosted.l.google.com,DIRECT
+DOMAIN,safebrowsing-cache.google.com,DIRECT
+DOMAIN,ssl-google-analytics.l.google.com,DIRECT
+DOMAIN,toolbarqueries.google.com,DIRECT
+DOMAIN,tools.google.com,DIRECT
+DOMAIN,tools.l.google.com,DIRECT
+DOMAIN,www-googletagmanager.l.google.com,DIRECT
+DOMAIN,clientservices.googleapis.com,DIRECT
+DOMAIN,fonts.googleapis.com,DIRECT
+DOMAIN,imasdk.googleapis.com,DIRECT
+DOMAIN,safebrowsing.googleapis.com,DIRECT
+DOMAIN,translate.googleapis.com,DIRECT
+DOMAIN,update.googleapis.com,DIRECT
+DOMAIN-SUFFIX,googleanalytics.com,DIRECT
+DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
+# App Store应用下载
+host-suffix,iosapps.itunes.apple.com,DIRECT
+DOMAIN-SUFFIX,mzstatic.com,DIRECT
+DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+DOMAIN-SUFFIX,phobos.apple.com,DIRECT
+DOMAIN-SUFFIX,aaplimg.com,DIRECT
+DOMAIN,apps.apple.com,DIRECT
+# Ⓜ️ Microsoft
+# https://docs.Ⓜ️ Microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
+DOMAIN,jdsharedresourcescdn.azureedge.net,🗺️ 境外网站
+DOMAIN,outlook.office365.com,🗺️ 境外网站
+DOMAIN,www.bing.com,🗺️ 境外网站
+DOMAIN-SUFFIX,hk.msn.com,🇭🇰Hong Kong
+DOMAIN-SUFFIX,msn.com.tw,🇨🇳Taiwan
+# Proxy
+DOMAIN-KEYWORD,jinkela,🗺️ 境外网站
+DOMAIN,cutt.ly,🗺️ 境外网站
+DOMAIN,i.loli.net,🗺️ 境外网站
+DOMAIN,relay.firefox.com,🗺️ 境外网站
+DOMAIN,search.avira.com,🗺️ 境外网站
+DOMAIN,us.weibo.com,🗺️ 境外网站
+DOMAIN-SUFFIX,iavnight.com,🗺️ 境外网站
+DOMAIN-KEYWORD,91p,🗺️ 境外网站
+DOMAIN,blackmorase.com,🗺️ 境外网站
+DOMAIN,i.p04.space,🗺️ 境外网站
+DOMAIN-SUFFIX,45maoee.com,🗺️ 境外网站
+DOMAIN-SUFFIX,51fengliu.com,🗺️ 境外网站
+DOMAIN-SUFFIX,liveviptv.xyz,🗺️ 境外网站
+DOMAIN-SUFFIX,mdapp1.pw,🗺️ 境外网站
+DOMAIN-SUFFIX,onlyfans.com,🗺️ 境外网站
+DOMAIN-SUFFIX,xsnvshen.com,🗺️ 境外网站
+DOMAIN-SUFFIX,xsnvshen.net,🗺️ 境外网站
+#cydia
+DOMAIN-SUFFIX,cydia.angelxwind.net,🗺️ 境外网站
+DOMAIN-SUFFIX,getdelta.co,🗺️ 境外网站
+DOMAIN-SUFFIX,hackyouriphone.org,🗺️ 境外网站
+DOMAIN-SUFFIX,ryleyangus.com,🗺️ 境外网站
+DOMAIN-SUFFIX,thebigboss.org,🗺️ 境外网站
+# Clubhouse
+DOMAIN,clubhouse.pubnub.com,🗺️ 境外网站
+DOMAIN-SUFFIX,clubhouseapi.com,🗺️ 境外网站
+DOMAIN-SUFFIX,joinclubhouse.com,🗺️ 境外网站
+DOMAIN-SUFFIX,64memo.com,🗺️ 境外网站
+DOMAIN-SUFFIX,androidcentral.com,🗺️ 境外网站
+DOMAIN-SUFFIX,appsliced.co,🗺️ 境外网站
+DOMAIN-SUFFIX,bdwk.588230.com,🗺️ 境外网站
+DOMAIN-SUFFIX,bochk.com,🗺️ 境外网站
+DOMAIN-SUFFIX,cloud.andrewjr.wang,🗺️ 境外网站
+DOMAIN-SUFFIX,cloudcone.com.cn,🗺️ 境外网站
+DOMAIN-SUFFIX,club.topsage.com,🗺️ 境外网站
+DOMAIN-SUFFIX,code.jquery.com,🗺️ 境外网站
+DOMAIN-SUFFIX,cydialmp.vip,🗺️ 境外网站
+DOMAIN-SUFFIX,cyzone.cn,🗺️ 境外网站
+DOMAIN-SUFFIX,dawanews.com,🗺️ 境外网站
+DOMAIN-SUFFIX,digitpatrox.com,🗺️ 境外网站
+DOMAIN-SUFFIX,dlink.za.group,🗺️ 境外网站
+DOMAIN-SUFFIX,easyatm.com.tw,🗺️ 境外网站
+DOMAIN-SUFFIX,eprice.com.hk,🗺️ 境外网站
+DOMAIN-SUFFIX,feed43.com,🗺️ 境外网站
+DOMAIN-SUFFIX,ft.com,🗺️ 境外网站
+DOMAIN-SUFFIX,geacron.com,🗺️ 境外网站
+DOMAIN-SUFFIX,githubmemory.com,🗺️ 境外网站
+DOMAIN-SUFFIX,goop.ai,🗺️ 境外网站
+DOMAIN-SUFFIX,instabio.cc,🗺️ 境外网站
+DOMAIN-SUFFIX,ixue.io,🗺️ 境外网站
+DOMAIN-SUFFIX,kouwobb.com,🗺️ 境外网站
+DOMAIN-SUFFIX,kylc.com,🗺️ 境外网站
+DOMAIN-SUFFIX,libgen.rs,🗺️ 境外网站
+DOMAIN-SUFFIX,limbopro.com,🗺️ 境外网站
+DOMAIN-SUFFIX,limbopro.pro,🗺️ 境外网站
+DOMAIN-SUFFIX,medrxiv.org,🗺️ 境外网站
+DOMAIN-SUFFIX,metapix.net,🗺️ 境外网站
+DOMAIN-SUFFIX,newsify.co,🗺️ 境外网站
+DOMAIN-SUFFIX,ntdimg.com,🗺️ 境外网站
+DOMAIN-SUFFIX,nyxz166.cn,🗺️ 境外网站
+DOMAIN-SUFFIX,picdiet.com,🗺️ 境外网站
+DOMAIN-SUFFIX,ptwxz.com,🗺️ 境外网站
+DOMAIN-SUFFIX,pysmei.com,🗺️ 境外网站
+DOMAIN-SUFFIX,rsc.cdn77.org,🗺️ 境外网站
+DOMAIN-SUFFIX,sinatra.ishowsapp.com,🗺️ 境外网站
+DOMAIN-SUFFIX,theappstore.org,🗺️ 境外网站
+DOMAIN-SUFFIX,thenationalpulse.com,🗺️ 境外网站
+DOMAIN-SUFFIX,tingtalk.me,🗺️ 境外网站
+DOMAIN-SUFFIX,translatetheweb.com,🗺️ 境外网站
+DOMAIN-SUFFIX,tv.ci,🗺️ 境外网站
+DOMAIN-SUFFIX,ultrareach.com,🗺️ 境外网站
+DOMAIN-SUFFIX,ultrasurf.us,🗺️ 境外网站
+DOMAIN-SUFFIX,videoplayerhub.com,🗺️ 境外网站
+DOMAIN-SUFFIX,voovmeeting.com,🗺️ 境外网站
+DOMAIN-SUFFIX,weebly.com,🗺️ 境外网站
+DOMAIN-SUFFIX,wemp.app,🗺️ 境外网站
+DOMAIN-SUFFIX,wucuoxs.com,🗺️ 境外网站
+DOMAIN-SUFFIX,ybex.io,🗺️ 境外网站
+DOMAIN-SUFFIX,yopmail.com,🗺️ 境外网站
+DOMAIN-SUFFIX,zhaojiaren.club,🗺️ 境外网站
+# 补充代理
+DOMAIN-SUFFIX,bing.com,🗺️ 境外网站
+DOMAIN,www.google.com,🗺️ 境外网站
+DOMAIN,translate.google.com,🗺️ 境外网站
+DOMAIN,mail.google.com,🗺️ 境外网站
+# raveos
+host-keyword,raveos,🗺️ 境外网站
+# 酷我音乐
+DOMAIN-SUFFIX,nmobi.kuwo.cn,DIRECT
+# 其他
+DOMAIN-SUFFIX,baomitu.com,DIRECT
