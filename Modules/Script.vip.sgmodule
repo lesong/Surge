@@ -61,13 +61,9 @@ clarity.js = requires-body=1,max-size=0,script-path=https://raw.githubuserconten
 #hostname= *.xunjie*.com
 xunjie.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/xunjie.js,type=http-response,pattern=^https?:\/\/.*\.xunjie.*\.com\/api\/v\d\/*
 
-# 智能证件照相机 (by @superuv)
-#hostname=  app.xunjiepdf.com,
-znzj.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/znzj.js,type=http-response,pattern=^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister
-
 # > 扫描全能王 pro
 #hostname= ap*.intsig.net
 扫描全能 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/camscanner.js,type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,script-update-interval=0
 
 [MITM]
-hostname =  %APPEND% *.kuwo.cn, vip1.kuwo.cn, ap?.bilibili.com, ap?.biliapi.net, app.bilibili.com, mb3admin.com, *.emby.wtf:0, *.plusmedia.site:0, *.jmsooo.com:0, api.revenuecat.com,api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, api.polaxiong.com, vsco.co, account.wps.*, claritywallpaper.com, *.xunjie*.com, app.xunjiepdf.com, ap*.intsig.net
+hostname =  %APPEND% *.kuwo.cn, vip1.kuwo.cn, ap?.bilibili.com, ap?.biliapi.net, app.bilibili.com, mb3admin.com, *.emby.wtf:0, *.plusmedia.site:0, *.jmsooo.com:0, api.revenuecat.com,api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, api.polaxiong.com, vsco.co, account.wps.*, claritywallpaper.com, *.xunjie*.com, ap*.intsig.net
