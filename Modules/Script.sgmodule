@@ -55,9 +55,11 @@ Youtube 无中文字幕机翻 = type=http-request,pattern=https:\/\/www.youtube.
 (^https?:\/\/app\.biliintl\.com\/intl\/.+)(&sim_code=\d+)(.+) $1$3 302
 # Redirect Google Search Service
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
+# Redirect Google Maps Service
+^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302
 
 [MITM]
-hostname = %APPEND% boxer.baidu.com, www.zhihu.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com, afd.baidu.com, boxjs.net, boxjs.com, sub.store, mp.weixin.qq.com, www.youtube.com
+hostname = %APPEND% boxer.baidu.com, www.zhihu.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com, afd.baidu.com, boxjs.net, boxjs.com, sub.store, mp.weixin.qq.com, www.youtube.com, *.google.cn, *.google.com.hk
 
 
 
