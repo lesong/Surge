@@ -1,5 +1,5 @@
 #!name=lesong自用脚本 
-#!desc=最后更新时间 2022-05-09 16:13:06
+#!desc=最后更新时间 2022-05-09 16:17:06
 
 [Panel]
 timecard = script-name=timecard,update-interval=3600
@@ -59,7 +59,7 @@ Youtube 无中文字幕机翻 = type=http-request,pattern=https:\/\/www.youtube.
 ^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302
 
 [MITM]
-hostname = %APPEND% boxer.baidu.com, www.zhihu.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com, afd.baidu.com, boxjs.net, boxjs.com, sub.store, mp.weixin.qq.com, www.youtube.com, *.google.cn, *.google.com.hk
+hostname =  %APPEND% boxer.baidu.com, www.zhihu.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com, afd.baidu.com, boxjs.net, boxjs.com, sub.store, mp.weixin.qq.com, www.youtube.com, *.google.cn, *.google.com.hk
 
 
 
