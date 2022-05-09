@@ -1,14 +1,12 @@
 #!name=自用VIP脚本合集
-#!desc=最后更新时间 2022-05-08 16:17
+#!desc=最后更新时间 2022-05-09 16:17
 #!system=ios
 
 # 分割线——————————————————————————
 
 [Script]
 # > 酷我音乐SVIP (By yxiaocai)
-#hostname = %APPEND% rich.kuwo.cn,*.kwcdn.kuwo.cn,mobilead.kuwo.cn, musicpay.kuwo.cn, vip1.kuwo.cn, audiobookpay.kuwo.cn, tingshu.kuwo.cn,omp-audiobookpay.lrts.me
-
-# > 酷我音乐VIP vip1.kuwo.cn
+#hostname = %APPEND% *.kuwo.cn, vip1.kuwo.cn
 Kuwo.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/KuWoMusicDownload.js,type=http-request,pattern=^https?:\/\/musicpay\.kuwo.cn\/music\.pay\?uid=\d+
 Kuwo.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Kuwo.js,type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice)
 
@@ -35,6 +33,26 @@ grow解锁 = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-
 # > 泼辣修图 解锁
 #hostname = api.polaxiong.com
 泼辣修图 = type=http-response,pattern=^https:\/\/api\.polaxiong\.com\/v1\/payments\/appleiap\/receipts\/confirmation,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Polarr.js
+# > VSCO滤镜VIP
+#hostname = vsco.co
+vsco.js = requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/QuantumultX/File/vsco.js,type=http-response,pattern=^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/
+# > WPS (By eHpo)
+#hostname= account.wps.*
+#Wps.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,type=http-response,pattern=^https://account.wps.*/api/users/
+# > WPS (By eHpo1)
+Wps.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,type=http-response,pattern=^https://account.wps.*/api/users/
+# > 克拉壁纸  解锁付费壁纸 (By @Dachaw)
+#hostname= claritywallpaper.com
+clarity.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/clarity.js,type=http-response,pattern=^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll)
+# 迅捷应用6合1 （by LTribe）
+#hostname= *.xunjie*.com
+xunjie.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/xunjie.js,type=http-response,pattern=^https?:\/\/.*\.xunjie.*\.com\/api\/v\d\/*
+# 智能证件照相机 (by @superuv)
+#hostname=  app.xunjiepdf.com,
+znzj.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/znzj.js,type=http-response,pattern=^https:\/\/app\.xunjiepdf\.com\/api\/v4\/virtualactregister
+# VideoStar Unlock（by LTribe）
+#hostname= *.videostarapp.com
+VideoStar.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/VideoStar.js,type=http-response,pattern=^https?:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php
 
 [MITM]
-hostname =  %APPEND% rich.kuwo.cn, *.kwcdn.kuwo.cn, mobilead.kuwo.cn, musicpay.kuwo.cn, vip1.kuwo.cn, audiobookpay.kuwo.cn, tingshu.kuwo.cn, omp-audiobookpay.lrts.me, ap?.bilibili.com, ap?.biliapi.net, mb3admin.com, *.emby.wtf:0, *.plusmedia.site:0, *.jmsooo.com:0, api.revenuecat.com,api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, api.polaxiong.com
+hostname =  %APPEND% *.kuwo.cn, vip1.kuwo.cn, ap?.bilibili.com, ap?.biliapi.net, mb3admin.com, *.emby.wtf:0, *.plusmedia.site:0, *.jmsooo.com:0, api.revenuecat.com,api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, api.polaxiong.com, vsco.co, account.wps.*, claritywallpaper.com, *.xunjie*.com, app.xunjiepdf.com, *.videostarapp.com
