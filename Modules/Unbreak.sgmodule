@@ -203,3 +203,6 @@ DOMAIN-SUFFIX,news-events.apple.com,🗺️ 境外网站
 DOMAIN-SUFFIX,apple.comscoreresearch.com,🗺️ 境外网站
 # News+ Audio
 DOMAIN-SUFFIX,news-assets.apple.com,🗺️ 境外网站
+# > 机场网站 代理
+DOMAIN,console.catnet.uk,🗺️ 境外网站
+DOMAIN,cylink.app,🗺️ 境外网站

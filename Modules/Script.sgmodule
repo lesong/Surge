@@ -20,6 +20,9 @@ flushDNS = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/
 
 # > 百度搜索防跳转 App Store(boxer.baidu.com)
 baidu-no-redirect.js = type=http-response,pattern=^https?:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js
+# > #贴吧去广告（afd.baidu.com）
+贴吧json = type=http-response,pattern=^(http:\/\/c\.tieba\.baidu\.com\/(tiebaads\/commonbatch|c\/s\/sync)|https:\/\/afd\.baidu\.com\/afd\/entry),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js,script-update-interval=0
+贴吧proto = type=http-response,pattern=^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized),requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js,script-update-interval=0
 
 # > 苹果天气相关(weather-data.apple.com, weather-map.apple.com)
 Apple Weather Availability = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/availability\/.*, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Weather.Availability.js, argument=
@@ -90,7 +93,7 @@ http-request ^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.* header-d
 (^https?:\/\/app\.biliintl\.com\/intl\/.+)(&sim_code=\d+)(.+) $1$3 302
 
 [MITM]
-hostname = %APPEND% boxer.baidu.com, www.zhihu.com, weather-data.apple.com, weather-map.apple.com, gspe1-ssl.ls.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, gspe35-ssl.ls.apple.com, uts-api.itunes.apple.com, news-client.apple.com, news-client-search.apple.com, news-edge.apple.com, news-events.apple.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com
+hostname = %APPEND% boxer.baidu.com, www.zhihu.com, weather-data.apple.com, weather-map.apple.com, gspe1-ssl.ls.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, gspe35-ssl.ls.apple.com, uts-api.itunes.apple.com, news-client.apple.com, news-client-search.apple.com, news-edge.apple.com, news-events.apple.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com, afd.baidu.com
 
 
 

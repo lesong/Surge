@@ -3,10 +3,13 @@
 
 [Rule]
 # > AntiAD
-DOMAIN-SET,https://anti-ad.net/surge2.txt,🈲 广告拦截
+DOMAIN-SET,https://anti-ad.net/surge2.txt,REJECT
 # > 屏蔽知乎网页版强制登陆弹窗(static.zhihu.com, api.zhihu.com, www.zhihu.com,a ppcloud2.zhihu.com)
 URL-REGEX,^https?:\/\/static\.zhihu\.com\/[^\/]+\/(main|column)\.signflow\.[^.]+.js,REJECT
-
+# > 贴吧
+RULE-SET,https://raw.githubusercontent.com/app2smile/rules/master/rule/tieba-ad.list,REJECT-DROP
+# > 威锋 去广告（api.wfdata.club）
+URL-REGEX,^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/(infoCenterAd|yesList),REJECT
 
 [MITM]
-hostname = %APPEND% static.zhihu.com, api.zhihu.com, www.zhihu.com,a ppcloud2.zhihu.com
+hostname = %APPEND% static.zhihu.com, api.zhihu.com, www.zhihu.com,a ppcloud2.zhihu.com, api.wfdata.club
