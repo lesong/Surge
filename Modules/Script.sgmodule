@@ -1,5 +1,5 @@
 #!name=lesong自用脚本 
-#!desc=最后更新时间 2022-05-09 16:12:06
+#!desc=最后更新时间 2022-05-09 16:13:06
 
 [Panel]
 timecard = script-name=timecard,update-interval=3600
@@ -48,10 +48,6 @@ http-request ^https?:\/\/(?!d\.pcs).*(?<!map)\.baidu\.com header-replace-regex U
 # > Youtube 无中文字幕机翻(www.youtube.com)
 Youtube 无中文字幕机翻 = type=http-request,pattern=https:\/\/www.youtube.com\/api\/timedtext\?.+&lang=(?!(zh|zh\-Hans)&)((?!&tlang=zh\-Hans).)*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js,argument=\sHTTP/1\.1(\r\n)=&tlang=zh-Hans HTTP/1.1$1,script-update-interval=0
 
-# > 彩云天气预报（weather-data.apple.com, api.weather.com）
-获取经纬度 = type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
-彩云天气 = type=cron,cronexp=0 6-22/2 * * *,wake-system=1,timeout=30,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
-
 [URL Rewrite]
 # >> IGN China to IGN Global(gn.xn--fiqs8s)
 ^https?://(www.)?ign\.xn--fiqs8s/ https://cn.ign.com/ccpref/us 302
@@ -61,7 +57,7 @@ Youtube 无中文字幕机翻 = type=http-request,pattern=https:\/\/www.youtube.
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
 
 [MITM]
-hostname = %APPEND% boxer.baidu.com, www.zhihu.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com, afd.baidu.com, boxjs.net, boxjs.com, sub.store, mp.weixin.qq.com, www.youtube.com, weather-data.apple.com, api.weather.com
+hostname = %APPEND% boxer.baidu.com, www.zhihu.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com, afd.baidu.com, boxjs.net, boxjs.com, sub.store, mp.weixin.qq.com, www.youtube.com
 
 
 
