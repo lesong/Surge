@@ -1,5 +1,5 @@
 #!name=lesong自用脚本 
-#!desc=最后更新时间 2022-05-09 16:11:06
+#!desc=最后更新时间 2022-05-09 16:12:06
 
 [Panel]
 timecard = script-name=timecard,update-interval=3600
