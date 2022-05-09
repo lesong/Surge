@@ -4,20 +4,20 @@
 [Rule]
 # 顶级域名分流
 # 香港顶级域
-DOMAIN-SUFFIX,hk,🇭🇰Hong Kong
+DOMAIN-KEYWORD,.hk,🇭🇰Hong Kong
 # 台湾顶级域
-DOMAIN-SUFFIX,tw,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
+DOMAIN-KEYWORD,.tw,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
 DOMAIN-SUFFIX,hinet.net,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
 DOMAIN-SUFFIX,emome.net,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
 DOMAIN-SUFFIX,litv.tv,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
 IP-CIDR,101.101.101.101/32,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
 DOMAIN-SUFFIX,linkedin.com,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
 # 新加坡顶级域
-DOMAIN-SUFFIX,sg,🇸🇬Singapore
+DOMAIN-KEYWORD,.sg,🇸🇬Singapore
 # 日本顶级域
-DOMAIN-SUFFIX,jp,🇯🇵Japan
+DOMAIN-KEYWORD,.jp,🇯🇵Japan
 # 美国顶级域
-DOMAIN-SUFFIX,us,🇺🇸United States
+DOMAIN-KEYWORD,.us,🇺🇸United States
 DOMAIN,lb-rdv-steep.ubisoft.com,🇺🇸United States
 DOMAIN,useast1-public-ubiservices.ubi.com,🇺🇸United States
 DOMAIN,lens.l.google.com,🇺🇸United States
