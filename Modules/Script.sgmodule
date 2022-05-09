@@ -73,13 +73,11 @@ http-request ^https?:\/\/(?!d\.pcs).*(?<!map)\.baidu\.com header-replace-regex U
 http-request ^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.* header-del If-None-Match
 
 [URL Rewrite]
-# AbeamTV Unlock(api.abema.io)
-^https?://api\.abema\.io/v\d/ip/check - reject
 # >> IGN China to IGN Global(gn.xn--fiqs8s)
 ^https?://(www.)?ign\.xn--fiqs8s/ https://cn.ign.com/ccpref/us 302
 
 [MITM]
-hostname = %APPEND% *.baidu.com, www.zhihu.com, weather-data.apple.com, weather-map.apple.com, gspe1-ssl.ls.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, gspe35-ssl.ls.apple.com, uts-api.itunes.apple.com, news-client.apple.com, news-client-search.apple.com, news-edge.apple.com, news-events.apple.com, api.abema.io, gn.xn--fiqs8s
+hostname = %APPEND% *.baidu.com, www.zhihu.com, weather-data.apple.com, weather-map.apple.com, gspe1-ssl.ls.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, gspe35-ssl.ls.apple.com, uts-api.itunes.apple.com, news-client.apple.com, news-client-search.apple.com, news-edge.apple.com, news-events.apple.com, gn.xn--fiqs8s
 
 
 
