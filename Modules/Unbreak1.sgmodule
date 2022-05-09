@@ -189,7 +189,7 @@ DOMAIN,www.google.com,🗺️ 境外网站
 DOMAIN,translate.google.com,🗺️ 境外网站
 DOMAIN,mail.google.com,🗺️ 境外网站
 # raveos
-DOMAIN-keyword,raveos,🗺️ 境外网站
+DOMAIN-KEYWORD,raveos,🗺️ 境外网站
 # 酷我音乐
 DOMAIN-SUFFIX,nmobi.kuwo.cn,💒 大陆网站
 # 其他
