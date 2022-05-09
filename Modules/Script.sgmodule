@@ -1,7 +1,5 @@
 #!name=lesong自用脚本 
 #!desc=最后更新时间 2022-05-09 08:06:06
-[General]
-doh-server = %APPEND% https://doh.pub/dns-query
 
 [Panel]
 timecard = script-name=timecard,update-interval=3600
@@ -11,6 +9,12 @@ stream-all = script-name=stream-all, title="流媒体解锁检测", content="请
 flushDNS = script-name=flushDNS,title="Flush DNS",content="请刷新",update-interval=600
 
 [Script]
+# > Boxjs（稳定版+测试版）(boxjs.net, boxjs.com)
+会话数据 = type=http-request,pattern=^https?:\/\/boxjs\.com,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, requires-body=true, timeout=120
+会话数据 = type=http-request,pattern=^https?:\/\/boxjs\.net,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
+# > https://sub-store ( sub.store)
+Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
+
 # > 流媒体解锁检测
 timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
 stream-all = type=generic, timeout=15, script-path= https://raw.githubusercontent.com/leohaol/Surge/main/Script/Stream-all.js
@@ -86,30 +90,37 @@ http-request ^https?:\/\/(?!d\.pcs).*(?<!map)\.baidu\.com header-replace-regex U
 # > 苹果天气相关
 http-request ^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.* header-del If-None-Match
 
+# > 微信(mp.weixin.qq.com)
+微信去广告 = type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad,script-path=https://raw.githubusercontent.com/scomper/Surge/master/Scripts/WeChat.js,script-update-interval=0
+
+# > Youtube 无中文字幕机翻(www.youtube.com)
+Youtube 无中文字幕机翻 = type=http-request,pattern=https:\/\/www.youtube.com\/api\/timedtext\?.+&lang=(?!(zh|zh\-Hans)&)((?!&tlang=zh\-Hans).)*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js,argument=\sHTTP/1\.1(\r\n)=&tlang=zh-Hans HTTP/1.1$1,script-update-interval=0
+
+
 [URL Rewrite]
 # >> IGN China to IGN Global(gn.xn--fiqs8s)
 ^https?://(www.)?ign\.xn--fiqs8s/ https://cn.ign.com/ccpref/us 302
 # > Bilibili SEA 解除 SIM 卡地区限制(app.biliintl.com)
 (^https?:\/\/app\.biliintl\.com\/intl\/.+)(&sim_code=\d+)(.+) $1$3 302
+# Redirect Google Search Service
+^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
 
 [MITM]
-hostname = %APPEND% boxer.baidu.com, www.zhihu.com, weather-data.apple.com, weather-map.apple.com, gspe1-ssl.ls.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, gspe35-ssl.ls.apple.com, uts-api.itunes.apple.com, news-client.apple.com, news-client-search.apple.com, news-edge.apple.com, news-events.apple.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com, afd.baidu.com
+hostname = %APPEND% boxer.baidu.com, www.zhihu.com, weather-data.apple.com, weather-map.apple.com, gspe1-ssl.ls.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, gspe35-ssl.ls.apple.com, uts-api.itunes.apple.com, news-client.apple.com, news-client-search.apple.com, news-edge.apple.com, news-events.apple.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com, afd.baidu.com, boxjs.net, boxjs.com, sub.store, mp.weixin.qq.com, www.youtube.com
 
 
 
 
 # > 模块订阅(单独添加)
-//爬虫复写去广告 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/Surge/Advertising/Advertising.sgmodule
-//什么值得买去广告 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.sgmodule
-//贴吧去除广告https://raw.githubusercontent.com/app2smile/rules/master/module/tieba.sgmodule
-//spotify解锁https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.module
-//哔哩哔哩去广告https://raw.githubusercontent.com/app2smile/rules/master/module/bilibili.sgmodule
-//Siri区域解锁https://raw.githubusercontent.com/VirgilClyne/iRingo/main/sgmodule/Siri_Suggestions.sgmodule
 //京东辅助登陆https://raw.githubusercontent.com/Fokit/Quantumult-X/main/rewrite/jd_login_help2.sgmodule
 //京东助手(注入式需key）https://raw.githubusercontent.com/githubdulong/Script/master/jdHelper.sgmodule
 //京东联盟转链（联盟、助手二选一）https://raw.githubusercontent.com/githubdulong/Script/master/Surge/jdapp_to_union.sgmodule
 //浏览器搜索https://raw.githubusercontent.com/githubdulong/Script/master/Surge/Q-Search_All_in_one.sgmodule
 //知乎去广告https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.sgmodule
 //京东半自动销卡https://raw.githubusercontent.com/githubdulong/Script/master/Jd_unbindCard.sgmodule
-//京东淘宝比价https://raw.githubusercontent.com/githubdulong/Script/master/jd_price2.sgmodule
 //京豆https://cdn.jsdelivr.net/gh/tttwwy/surge/jd_price.sgmodule
+
+//TikTok解锁日区 https://cdn.jsdelivr.net/gh/Semporia/TikTok-Unlock/Surge/TiKok-JP.sgmodule
+//TikTok解锁台去区https://cdn.jsdelivr.net/gh/Semporia/TikTok-Unlock/Surge/TiKok-TW.sgmodule
+//TikTok解锁美区https://cdn.jsdelivr.net/gh/Semporia/TikTok-Unlock/Surge/TiKok-US.sgmodule
+//TikTok解锁韩区https://cdn.jsdelivr.net/gh/Semporia/TikTok-Unlock/Surge/TiKok-kR.sgmodule
