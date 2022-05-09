@@ -1,5 +1,5 @@
 #!name=lesong自用脚本 
-#!desc=最后更新时间 2022-05-09 08:06:06
+#!desc=最后更新时间 2022-05-09 16:08:06
 
 [Panel]
 timecard = script-name=timecard,update-interval=3600
@@ -96,6 +96,9 @@ http-request ^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.* header-d
 # > Youtube 无中文字幕机翻(www.youtube.com)
 Youtube 无中文字幕机翻 = type=http-request,pattern=https:\/\/www.youtube.com\/api\/timedtext\?.+&lang=(?!(zh|zh\-Hans)&)((?!&tlang=zh\-Hans).)*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js,argument=\sHTTP/1\.1(\r\n)=&tlang=zh-Hans HTTP/1.1$1,script-update-interval=0
 
+# > 彩云天气预报（weather-data.apple.com, api.weather.com）
+获取经纬度 = type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
+彩云天气 = type=cron,cronexp=0 6-22/2 * * *,wake-system=1,timeout=30,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
 
 [URL Rewrite]
 # >> IGN China to IGN Global(gn.xn--fiqs8s)
@@ -106,7 +109,7 @@ Youtube 无中文字幕机翻 = type=http-request,pattern=https:\/\/www.youtube.
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
 
 [MITM]
-hostname = %APPEND% boxer.baidu.com, www.zhihu.com, weather-data.apple.com, weather-map.apple.com, gspe1-ssl.ls.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, gspe35-ssl.ls.apple.com, uts-api.itunes.apple.com, news-client.apple.com, news-client-search.apple.com, news-edge.apple.com, news-events.apple.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com, afd.baidu.com, boxjs.net, boxjs.com, sub.store, mp.weixin.qq.com, www.youtube.com
+hostname = %APPEND% boxer.baidu.com, www.zhihu.com, weather-data.apple.com, weather-map.apple.com, gspe1-ssl.ls.apple.com, api*.smoot.apple.com, api*.smoot.apple.cn, gspe35-ssl.ls.apple.com, uts-api.itunes.apple.com, news-client.apple.com, news-client-search.apple.com, news-edge.apple.com, news-events.apple.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com, afd.baidu.com, boxjs.net, boxjs.com, sub.store, mp.weixin.qq.com, www.youtube.com, weather-data.apple.com, api.weather.com
 
 
 
