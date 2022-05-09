@@ -89,7 +89,7 @@ DOMAIN,update.googleapis.com,💒 大陆网站
 DOMAIN-SUFFIX,googleanalytics.com,💒 大陆网站
 DOMAIN-SUFFIX,googletraveladservices.com,💒 大陆网站
 # App Store应用下载
-DOMAIN-suffix,iosapps.itunes.apple.com,💒 大陆网站
+DOMAIN-SUFFIX,iosapps.itunes.apple.com,💒 大陆网站
 DOMAIN-SUFFIX,mzstatic.com,💒 大陆网站
 DOMAIN-SUFFIX,itunes.apple.com,💒 大陆网站
 DOMAIN-SUFFIX,phobos.apple.com,💒 大陆网站
