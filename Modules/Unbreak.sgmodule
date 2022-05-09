@@ -4,7 +4,7 @@
 [Rule]
 # 顶级域名分流
 # 香港顶级域
-DOMAIN-KEYWORD,.hk,🇭🇰Hong Kong
+DOMAIN-KEYWORD,.hk,🇭🇰𝗛𝗼𝗻𝗴 𝗞𝗼𝗻𝗴
 # 台湾顶级域
 DOMAIN-KEYWORD,.tw,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
 DOMAIN-SUFFIX,hinet.net,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
@@ -13,25 +13,25 @@ DOMAIN-SUFFIX,litv.tv,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
 IP-CIDR,101.101.101.101/32,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
 DOMAIN-SUFFIX,linkedin.com,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
 # 新加坡顶级域
-DOMAIN-KEYWORD,.sg,🇸🇬Singapore
+DOMAIN-KEYWORD,.sg,🇸🇬𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲
 # 日本顶级域
-DOMAIN-KEYWORD,.jp,🇯🇵Japan
+DOMAIN-KEYWORD,.jp,🇯🇵𝗝𝗮𝗽𝗮𝗻
 # 美国顶级域
-DOMAIN-KEYWORD,.us,🇺🇸United States
-DOMAIN,lb-rdv-steep.ubisoft.com,🇺🇸United States
-DOMAIN,useast1-public-ubiservices.ubi.com,🇺🇸United States
-DOMAIN,lens.l.google.com,🇺🇸United States
+DOMAIN-KEYWORD,.us,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
+DOMAIN,lb-rdv-steep.ubisoft.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
+DOMAIN,useast1-public-ubiservices.ubi.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
+DOMAIN,lens.l.google.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
 # ultramobile
-DOMAIN-SUFFIX,launchdarkly.com,🇺🇸United States
-DOMAIN-SUFFIX,ultramobile.com,🇺🇸United States
-DOMAIN-KEYWORD,ultramobile,🇺🇸United States
-DOMAIN-SUFFIX,amplitude.com,🇺🇸United States
+DOMAIN-SUFFIX,launchdarkly.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
+DOMAIN-SUFFIX,ultramobile.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
+DOMAIN-KEYWORD,ultramobile,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
+DOMAIN-SUFFIX,amplitude.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
 # 2miners
-DOMAIN-KEYWORD,2miners,🇺🇸United States
+DOMAIN-KEYWORD,2miners,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
 #target
-DOMAIN-KEYWORD,target,🇺🇸United States
-DOMAIN-SUFFIX,target.com,🇺🇸United States
-DOMAIN-SUFFIX,carnivalmobile.com,🇺🇸United States
+DOMAIN-KEYWORD,target,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
+DOMAIN-SUFFIX,target.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
+DOMAIN-SUFFIX,carnivalmobile.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
 #百度地图开屏广告
 DOMAIN,dss0.bdstatic.com,REJECT
 DOMAIN,app.adjust.com,💒 大陆网站
@@ -100,7 +100,7 @@ DOMAIN,apps.apple.com,💒 大陆网站
 DOMAIN,jdsharedresourcescdn.azureedge.net,🗺️ 境外网站
 DOMAIN,outlook.office365.com,🗺️ 境外网站
 DOMAIN,www.bing.com,🗺️ 境外网站
-DOMAIN-SUFFIX,hk.msn.com,🇭🇰Hong Kong
+DOMAIN-SUFFIX,hk.msn.com,🇭🇰𝗛𝗼𝗻𝗴 𝗞𝗼𝗻𝗴
 DOMAIN-SUFFIX,msn.com.tw,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
 # Proxy
 DOMAIN-KEYWORD,jinkela,🗺️ 境外网站
