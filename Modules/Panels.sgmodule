@@ -1,72 +1,61 @@
-#!name=Panels
-#!desc=信息面板
-#!ddata=20211021
+#!name=lesong自用面板信息
+#!desc=最后更新时间 2022-05-10 10.08.12
 
 [Panel]
-#机场信息
-Sub_info = script-name=Sub_info,update-interval=600
-
-#配置重载
-配置重载 = title=配置重载,content=配置重载,style=info,script-name=配置重载,update-interval=-1
-
-#策略组面板 可重复配置 注意修改相应字段
-🚀 节点选择 = script-name=🚀 节点选择,update-interval=5
-🔰 Outside = script-name=🔰 Outside,update-interval=5
-🎬 Streaming = script-name=🎬 Streaming,update-interval=5
-📺 CNTV = script-name=📺 CNTV,update-interval=5
-🍎 Apple = script-name=🍎 Apple,update-interval=5
-📬 Telegram = script-name=📬 Telegram,update-interval=5
-💳 PayPal = script-name=💳 PayPal,update-interval=5
-🎵 Tiktok = script-name=🎵 Tiktok,update-interval=5
-🎯 Inbound = script-name=🎯 Inbound,update-interval=5
-🚧 AdBlock = script-name=🚧 AdBlock,update-interval=5
-🐟 Outbound = script-name=🐟 Outbound,update-interval=5
-🇭🇰 Hong Kong = script-name=🇭🇰 Hong Kong,update-interval=5
-🇨🇳 Taiwan = script-name=🇨🇳 Taiwan,update-interval=5
-🇯🇵 Japan = script-name=🇯🇵 Japan,update-interval=5
-🇸🇬 Singapore = script-name=🇸🇬 Singapore,update-interval=5
-🇺🇸 America = script-name=🇺🇸 America,update-interval=5
-🇰🇷 Korea = script-name=🇰🇷 Korea,update-interval=5
-🇬🇧 England = script-name=🇬🇧 England,update-interval=5
-🇧🇷 Brazil = script-name=🇧🇷 Brazil,update-interval=5
-🇩🇪 Germany = script-name=🇩🇪 Germany,update-interval=5
-🇮🇳 India = script-name=🇮🇳 India,update-interval=5
-🇲🇾 Malaysia = script-name=🇲🇾 Malaysia,update-interval=5
-🇷🇺 Russia = script-name=🇷🇺 Russia,update-interval=5
-🇹🇷 Turkey = script-name=🇹🇷 Turkey,update-interval=5
-🇦🇷 Argentina = script-name=🇦🇷 Argentina,update-interval=5
+假日倒数 = script-name=timecard,update-interval=3600
+流媒体解锁检测 = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval=-1
+刷新DNS缓存 = script-name=flushDNS,title="Flush DNS",content="请刷新",update-interval=600
+📺 哔哩哔哩 = script-name=📺 哔哩哔哩,update-interval=5
+💲 数字货币 = script-name=💲 数字货币,update-interval=5
+🈲 广告拦截 = script-name=🈲 广告拦截,update-interval=5
+🍎 苹果服务 = script-name=🍎 苹果服务,update-interval=5
+🛩️ 网速测试 = script-name=🛩️ 网速测试,update-interval=5
+💒 大陆网站 = script-name=💒 大陆网站,update-interval=5
+🎞️ 国外媒体 = script-name=🎞️ 国外媒体,update-interval=5
+🗺️ 境外网站 = script-name=🗺️ 境外网站,update-interval=5
+🗼 微软服务 = script-name=🗼 微软服务,update-interval=5
+🎮 游戏服务 = script-name=🎮 游戏服务,update-interval=5
+🎏 漏网之鱼 = script-name=🎏 漏网之鱼,update-interval=5
+🚀 𝗣𝗥𝗢𝗫𝗬 = script-name=🚀 𝗣𝗥𝗢𝗫𝗬,update-interval=5
+🎧 Spotify = script-name=🎧 Spotify,update-interval=5
+🎬 Emby = script-name=🎬 Emby,update-interval=5
+🎵 TikTok = script-name=🎵 TikTok,update-interval=5
+💵 PayPal = script-name=💵 PayPal,update-interval=5
+🇭🇰𝗛𝗼𝗻𝗴 𝗞𝗼𝗻𝗴 = script-name=🇭🇰𝗛𝗼𝗻𝗴 𝗞𝗼𝗻𝗴,update-interval=5
+🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻 = script-name=🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻,update-interval=5
+🇯🇵𝗝𝗮𝗽𝗮𝗻 = script-name=🇯🇵𝗝𝗮𝗽𝗮𝗻,update-interval=5
+🇸🇬𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲 = script-name=🇸🇬𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲,update-interval=5
+🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀 = script-name=🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀,update-interval=5
+🇰🇷𝗞𝗼𝗿𝗲𝗮 = script-name=🇰🇷𝗞𝗼𝗿𝗲𝗮,update-interval=5
+🇬🇧𝗨𝗻𝗶𝘁𝗲𝗱 𝗞𝗶𝗻𝗴𝗱𝗼𝗺 = script-name=🇬🇧𝗨𝗻𝗶𝘁𝗲𝗱 𝗞𝗶𝗻𝗴𝗱𝗼𝗺,update-interval=5
+🇩🇪𝗚𝗲𝗿𝗺𝗮𝗻𝘆 = script-name=🇩🇪𝗚𝗲𝗿𝗺𝗮𝗻𝘆,update-interval=5
 
 [Script]
-#机场信息
-#必须修改的字段:你encode后的机场订阅链接
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=https%3A%2F%2Fcylink.moe%2Flink%2FhHAPqElxSjyguFWw%3Flist%3Dsurge&reset_day=1&title=机场信息&icon=airplane.circle&color=#0089A7
-
-配置重载=script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/Profile-Reload.js,type=generic
-
-#策略组面板 可重复配置 注意修改相应字段
-#必须更改的字段：group 填写需要显示的策略组名称
-🚀 节点选择 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=bonjour&color=#0089A7&group=🚀 节点选择
-🔰 Outside = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=globe.asia.australia.fill&color=#0089A7&group=🔰 Outside
-🎬 Streaming = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=play.circle&color=#0089A7&group=🎬 Streaming
-📺 CNTV = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=tv.and.mediabox&color=#0089A7&group=📺 CNTV
-🍎 Apple = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=applelogo&color=#0089A7&group=🍎 Apple
-📬 Telegram = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=paperplane.circle&color=#0089A7&group=📬 Telegram
-💳 PayPal = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=creditcard&color=#0089A7&group=💳 PayPal
-🎵 Tiktok = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=video.circle&color=#0089A7&group=🎵 Tiktok
-🎯 Inbound = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=arrow.uturn.backward.circle.badge.ellipsis&color=#0089A7&group=🎯 Inbound
-🚧 AdBlock = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=bolt.circle&color=#0089A7&group=🚧 AdBlock
-🐟 Outbound = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#0089A7&group=🐟 Outbound
-🇭🇰 Hong Kong = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=1.circle&color=#0089A7&group=🇭🇰 Hong Kong
-🇨🇳 Taiwan = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=2.circle&color=#0089A7&group=🇨🇳 Taiwan
-🇯🇵 Japan = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=3.circle&color=#0089A7&group=🇯🇵 Japan
-🇸🇬 Singapore = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=4.circle&color=#0089A7&group=🇸🇬 Singapore
-🇺🇸 America = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=5.circle&color=#0089A7&group=🇺🇸 America
-🇰🇷 Korea = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=6.circle&color=#0089A7&group=🇰🇷 Korea
-🇬🇧 England = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=7.circle&color=#0089A7&group=🇬🇧 England
-🇧🇷 Brazil = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=8.circle&color=#0089A7&group=🇧🇷 Brazil
-🇩🇪 Germany = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=9.circle&color=#0089A7&group=🇩🇪 Germany
-🇮🇳 India = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=10.circle&color=#0089A7&group=🇮🇳 India
-🇲🇾 Malaysia = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=11.circle&color=#0089A7&group=🇲🇾 Malaysia
-🇷🇺 Russia = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=12.circle&color=#0089A7&group=🇷🇺 Russia
-🇹🇷 Turkey = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=13.circle&color=#0089A7&group=🇹🇷 Turkey
-🇦🇷 Argentina = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=14.circle&color=#0089A7&group=🇦🇷 Argentina
+假日倒数 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
+流媒体解锁检测 = type=generic, timeout=15, script-path= https://raw.githubusercontent.com/leohaol/Surge/main/Script/Stream-all.js
+刷新DNS缓存 = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.clockwise&color=#3d3d5b
+📺 哔哩哔哩 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=📺 哔哩哔哩
+💲 数字货币 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=💲 数字货币
+🈲 广告拦截 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🈲 广告拦截
+🍎 苹果服务 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🍎 苹果服务
+🛩️ 网速测试 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🛩️ 网速测试
+💒 大陆网站 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=💒 大陆网站
+🎞️ 国外媒体 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🎞️ 国外媒体
+🗺️ 境外网站 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🗺️ 境外网站
+🗼 微软服务 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🗼 微软服务
+🎮 游戏服务 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🎮 游戏服务
+🎏 漏网之鱼 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🎏 漏网之鱼
+🚀 𝗣𝗥𝗢𝗫𝗬 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🚀 𝗣𝗥𝗢𝗫𝗬
+🎧 Spotify = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🎧 Spotify
+🎬 Emby = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🎬 Emby
+🎵 TikTok = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🎵 TikTok
+💵 PayPal = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=💵 PayPal
+🇭🇰𝗛𝗼𝗻𝗴 𝗞𝗼𝗻𝗴 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🇭🇰𝗛𝗼𝗻𝗴 𝗞𝗼𝗻𝗴
+🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
+🇯🇵𝗝𝗮𝗽𝗮𝗻 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🇯🇵𝗝𝗮𝗽𝗮𝗻
+🇸🇬𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🇸🇬𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲
+🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
+🇰🇷𝗞𝗼𝗿𝗲𝗮 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🇰🇷𝗞𝗼𝗿𝗲𝗮
+🇬🇧𝗨𝗻𝗶𝘁𝗲𝗱 𝗞𝗶𝗻𝗴𝗱𝗼𝗺 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🇬🇧𝗨𝗻𝗶𝘁𝗲𝗱 𝗞𝗶𝗻𝗴𝗱𝗼𝗺
+🇩🇪𝗚𝗲𝗿𝗺𝗮𝗻𝘆 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=network&color=#86abee&group=🇩🇪𝗚𝗲𝗿𝗺𝗮𝗻𝘆
+ 

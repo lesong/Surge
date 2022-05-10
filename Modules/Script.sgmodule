@@ -1,13 +1,6 @@
 #!name=lesong自用脚本 
 #!desc=最后更新时间 2022-05-10 16:17:06
 
-[Panel]
-timecard = script-name=timecard,update-interval=3600
-# > 流媒体解锁检测
-stream-all = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval=-1
-# > 刷新DNS缓存
-flushDNS = script-name=flushDNS,title="Flush DNS",content="请刷新",update-interval=600
-
 [Script]
 # > Boxjs（稳定版+测试版）(boxjs.net, boxjs.com)
 会话数据 = type=http-request,pattern=^https?:\/\/boxjs\.com,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, requires-body=true, timeout=120
@@ -15,12 +8,6 @@ flushDNS = script-name=flushDNS,title="Flush DNS",content="请刷新",update-int
 # > https://sub-store ( sub.store)
 Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
 
-# > 流媒体解锁检测
-timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
-stream-all = type=generic, timeout=15, script-path= https://raw.githubusercontent.com/leohaol/Surge/main/Script/Stream-all.js
-
-# > 刷新DNS缓存
-flushDNS = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.clockwise&color=#3d3d5b
 
 # > 百度搜索防跳转 App Store(boxer.baidu.com)
 baidu-no-redirect.js = type=http-response,pattern=^https?:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js
