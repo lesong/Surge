@@ -1,5 +1,5 @@
 #!name=lesong自用面板信息
-#!desc=最后更新时间 2022-05-10 11.10.12
+#!desc=最后更新时间 2022-05-10 11.26.12
 
 [Panel]
 timecard = script-name=timecard,update-interval=3600
@@ -28,7 +28,7 @@ flushDNS = script-name=flushDNS,title="Flush DNS",content="请刷新",update-int
 🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀 = script-name=🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀,update-interval=5
 🇬🇧𝗨𝗻𝗶𝘁𝗲𝗱 𝗞𝗶𝗻𝗴𝗱𝗼𝗺 = script-name=🇬🇧𝗨𝗻𝗶𝘁𝗲𝗱 𝗞𝗶𝗻𝗴𝗱𝗼𝗺,update-interval=5
 🇩🇪𝗚𝗲𝗿𝗺𝗮𝗻𝘆 = script-name=🇩🇪𝗚𝗲𝗿𝗺𝗮𝗻𝘆,update-interval=5
-✈️𝗛𝗬𝗕𝗥𝗜𝗗 = script-name=✈️𝗛𝗬𝗕𝗥𝗜𝗗,update-interval=5
+𝗛𝗬𝗕𝗥𝗜𝗗 = script-name=𝗛𝗬𝗕𝗥𝗜𝗗,update-interval=5
 
 [Script]
 timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
@@ -57,4 +57,4 @@ flushDNS = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/
 🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=05.circle&color=#86abee&group=🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
 🇬🇧𝗨𝗻𝗶𝘁𝗲𝗱 𝗞𝗶𝗻𝗴𝗱𝗼𝗺 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=06.circle&color=#86abee&group=🇬🇧𝗨𝗻𝗶𝘁𝗲𝗱 𝗞𝗶𝗻𝗴𝗱𝗼𝗺
 🇩🇪𝗚𝗲𝗿𝗺𝗮𝗻𝘆 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=07.circle&color=#86abee&group=🇩🇪𝗚𝗲𝗿𝗺𝗮𝗻𝘆
-✈️𝗛𝗬𝗕𝗥𝗜𝗗 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=07.circle&color=#86abee&group=✈️𝗛𝗬𝗕𝗥𝗜𝗗
+𝗛𝗬𝗕𝗥𝗜𝗗 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=07.circle&color=#86abee&group=𝗛𝗬𝗕𝗥𝗜𝗗
