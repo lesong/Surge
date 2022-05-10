@@ -45,7 +45,7 @@ flushDNS = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/
 🗼 微软服务 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=logo.xbox&color=#6D0080&group=🗼 微软服务
 🎮 游戏服务 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=gamecontroller.fill&color=#8409600&group=🎮 游戏服务
 🎏 漏网之鱼 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=l.joystick.tilt.down.fill&color=#12FF00&group=🎏 漏网之鱼
-🚀 𝗣𝗥𝗢𝗫𝗬 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=airplane&color=#C08000&group=🚀 𝗣𝗥𝗢𝗫𝗬
+🚀 𝗣𝗥𝗢𝗫𝗬 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=pencil.tip&color=#C08000&group=🚀 𝗣𝗥𝗢𝗫𝗬
 🎧 Spotify = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=beats.headphones&color=#3866752&group=🎧 Spotify
 🎬 Emby = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=server.rack&color=#148000&group=🎬 Emby
 🎵 TikTok = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/ventusyu/ventus/main/Panel/groupPanel.js,argument=icon=music.quarternote.3&color=#00FFFF&group=🎵 TikTok
