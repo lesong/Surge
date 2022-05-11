@@ -46,12 +46,6 @@ DOMAIN,api.waqi.info,🇯🇵日本
 DOMAIN,app-site-association.cdn-apple.com,𝑹𝑬𝑱𝑬𝑪𝑻
 # > boxjs代理
 DOMAIN,boxjs.com,𝐏𝐫𝐨𝐱𝐲
-# > 交管12123 去广告 gab.122.gov.cn,
-URL-REGEX,^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$,𝑹𝑬𝑱𝑬𝑪𝑻
-# > 云闪付 去广告 wallet.95516.com,
-URL-REGEX,^https:\/\/wallet\.95516\.com\/s\/wl\/icon\/long,𝑹𝑬𝑱𝑬𝑪𝑻
-# > 拼多多 去广告 api.pinduoduo.com,
-URL-REGEX,^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash,𝑹𝑬𝑱𝑬𝑪𝑻
 # ultramobile
 DOMAIN-SUFFIX,launchdarkly.com,🇺🇸美国
 DOMAIN-SUFFIX,ultramobile.com,🇺🇸美国

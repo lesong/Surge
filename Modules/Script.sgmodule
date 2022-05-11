@@ -38,7 +38,7 @@ Youtube 无中文字幕机翻 = type=http-request,pattern=https:\/\/www.youtube.
 ^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302
 
 [MITM]
-hostname =  %APPEND% www.zhihu.com, gn.xn--fiqs8s, api.m.jd.com, app.biliintl.com, afd.baidu.com, mp.weixin.qq.com, www.youtube.com, *.google.cn, *.google.com.hk, weather-data.apple.com, api.weather.com
+hostname =  %APPEND% www.zhihu.com, gn.xn--fiqs8s, api.m.jd.com, app.biliintl.com, afd.baidu.com, mp.weixin.qq.com, www.youtube.com, *.google.cn, *.google.com.hk, weather-data.apple.com
 
 
 
