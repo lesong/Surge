@@ -1,208 +1,241 @@
 #!name=后期规则修正
-#!desc=最后更新时间 2022-05-09 15:36:06
+#!desc=最后更新时间 2022-05-11 15:36:06
 
 [Rule]
 # 顶级域名分流
 # 香港顶级域
-DOMAIN-KEYWORD,.hk,🇭🇰𝗛𝗼𝗻𝗴 𝗞𝗼𝗻𝗴
+DOMAIN-KEYWORD,.hk,🇭🇰香港
 # 台湾顶级域
-DOMAIN-KEYWORD,.tw,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
-DOMAIN-SUFFIX,hinet.net,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
-DOMAIN-SUFFIX,emome.net,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
-DOMAIN-SUFFIX,litv.tv,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
-IP-CIDR,101.101.101.101/32,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
-DOMAIN-SUFFIX,linkedin.com,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
+DOMAIN-KEYWORD,.tw,🇹🇼台湾
+DOMAIN-SUFFIX,hinet.net,🇹🇼台湾
+DOMAIN-SUFFIX,emome.net,🇹🇼台湾
+DOMAIN-SUFFIX,litv.tv,🇹🇼台湾
+IP-CIDR,101.101.101.101/32,🇹🇼台湾
+DOMAIN-SUFFIX,linkedin.com,🇹🇼台湾
 # 新加坡顶级域
-DOMAIN-KEYWORD,.sg,🇸🇬𝗦𝗶𝗻𝗴𝗮𝗽𝗼𝗿𝗲
+DOMAIN-KEYWORD,.sg,🇸🇬新加坡
 # 日本顶级域
-DOMAIN-KEYWORD,.jp,🇯🇵𝗝𝗮𝗽𝗮𝗻
+DOMAIN-KEYWORD,.jp,🇯🇵日本
 # 美国顶级域
-DOMAIN-KEYWORD,.us,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
-DOMAIN,lb-rdv-steep.ubisoft.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
-DOMAIN,useast1-public-ubiservices.ubi.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
-DOMAIN,lens.l.google.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
+DOMAIN-KEYWORD,.us,🇺🇸美国
+DOMAIN,lb-rdv-steep.ubisoft.com,🇺🇸美国
+DOMAIN,useast1-public-ubiservices.ubi.com,🇺🇸美国
+DOMAIN,lens.l.google.com,🇺🇸美国
+#常见下载规则
+PROCESS-NAME,clash,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,ss-local,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,privoxy,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,trojan,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,trojan-go,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,naive,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,Thunder,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,DownloadService,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,qBittorrent,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,Transmission,𝑫𝑰𝑹𝑬𝑪𝑻
+# PROCESS-NAME,fdm,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,aria2c,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,Folx,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,NetTransport,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,uTorrent,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,WebTorrent,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,Jump Desktop,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,JumpConnect,𝑫𝑰𝑹𝑬𝑪𝑻
+# > 天气数据 日本 
+DOMAIN,api.waqi.info,🇯🇵日本
+# > Safari 防跳转
+DOMAIN,app-site-association.cdn-apple.com,𝑹𝑬𝑱𝑬𝑪𝑻
+# > boxjs代理
+DOMAIN,boxjs.com,𝐏𝐫𝐨𝐱𝐲
+# > 交管12123 去广告 gab.122.gov.cn,
+URL-REGEX,^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$,𝑹𝑬𝑱𝑬𝑪𝑻
+# > 云闪付 去广告 wallet.95516.com,
+URL-REGEX,^https:\/\/wallet\.95516\.com\/s\/wl\/icon\/long,𝑹𝑬𝑱𝑬𝑪𝑻
+# > 拼多多 去广告 api.pinduoduo.com,
+URL-REGEX,^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash,𝑹𝑬𝑱𝑬𝑪𝑻
 # ultramobile
-DOMAIN-SUFFIX,launchdarkly.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
-DOMAIN-SUFFIX,ultramobile.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
-DOMAIN-KEYWORD,ultramobile,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
-DOMAIN-SUFFIX,amplitude.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
+DOMAIN-SUFFIX,launchdarkly.com,🇺🇸美国
+DOMAIN-SUFFIX,ultramobile.com,🇺🇸美国
+DOMAIN-KEYWORD,ultramobile,🇺🇸美国
+DOMAIN-SUFFIX,amplitude.com,🇺🇸美国
 # 2miners
-DOMAIN-KEYWORD,2miners,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
+DOMAIN-KEYWORD,2miners,🇺🇸美国
 #target
-DOMAIN-KEYWORD,target,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
-DOMAIN-SUFFIX,target.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
-DOMAIN-SUFFIX,carnivalmobile.com,🇺🇸𝗨𝗻𝗶𝘁𝗲𝗱 𝗦𝘁𝗮𝘁𝗲𝘀
+DOMAIN-KEYWORD,target,🇺🇸美国
+DOMAIN-SUFFIX,target.com,🇺🇸美国
+DOMAIN-SUFFIX,carnivalmobile.com,🇺🇸美国
 #百度地图开屏广告
-DOMAIN,dss0.bdstatic.com,REJECT
-DOMAIN,app.adjust.com,💒 大陆网站
-DOMAIN,bdtj.tagtic.cn,💒 大陆网站
-DOMAIN,log.mmstat.com,💒 大陆网站
-DOMAIN,sycm.mmstat.com,💒 大陆网站
-DOMAIN,analytics.strava.com,💒 大陆网站
+DOMAIN,dss0.bdstatic.com,𝑹𝑬𝑱𝑬𝑪𝑻
+DOMAIN,app.adjust.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,bdtj.tagtic.cn,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,log.mmstat.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,sycm.mmstat.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,analytics.strava.com,𝑫𝑰𝑹𝑬𝑪𝑻
 # > Tencent
-DOMAIN,fairplay.l.qq.com,💒 大陆网站
-DOMAIN,livew.l.qq.com,💒 大陆网站
-DOMAIN,vd.l.qq.com,💒 大陆网站
-DOMAIN,msg.umeng.com,💒 大陆网站
-DOMAIN,msg.umengcloud.com,💒 大陆网站
-# Direct
-DOMAIN,images-cn.ssl-images-amazon.com,💒 大陆网站
-DOMAIN,nrch.culture.tw,💒 大陆网站
+DOMAIN,fairplay.l.qq.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,livew.l.qq.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,vd.l.qq.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,msg.umeng.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,msg.umengcloud.com,𝑫𝑰𝑹𝑬𝑪𝑻
+# 𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,images-cn.ssl-images-amazon.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,nrch.culture.tw,𝑫𝑰𝑹𝑬𝑪𝑻
 # >> Paramount+
-DOMAIN,pubads.g.doubleclick.net,💒 大陆网站
+DOMAIN,pubads.g.doubleclick.net,𝑫𝑰𝑹𝑬𝑪𝑻
 # Google
-DOMAIN-SUFFIX,app-measurement.com,💒 大陆网站
-DOMAIN-SUFFIX,recaptcha.net,💒 大陆网站
-DOMAIN,gtm.oasisfeng.com,💒 大陆网站
-DOMAIN,checkin.gstatic.com,💒 大陆网站
-DOMAIN,connectivitycheck.gstatic.com,💒 大陆网站
-DOMAIN,csi.gstatic.com,💒 大陆网站
-DOMAIN,fonts.gstatic.com,💒 大陆网站
-DOMAIN,ssl.gstatic.com,💒 大陆网站
-DOMAIN,www.gstatic.com,💒 大陆网站
-DOMAIN,redirector.gvt1.com,💒 大陆网站
-DOMAIN,beacons.gcp.gvt2.com,💒 大陆网站
-DOMAIN,beacons.gvt2.com,💒 大陆网站
-DOMAIN,beacons2.gvt2.com,💒 大陆网站
-DOMAIN,beacons3.gvt2.com,💒 大陆网站
-DOMAIN,crl.pki.goog,💒 大陆网站
-DOMAIN,ocsp.pki.goog,💒 大陆网站
-DOMAIN,translate.google.cn,💒 大陆网站
-DOMAIN,c.android.clients.google.com,💒 大陆网站
-DOMAIN,cache.pack.google.com,💒 大陆网站
-DOMAIN,corp.google.com,💒 大陆网站
-DOMAIN,dl.l.google.com,💒 大陆网站
-DOMAIN,dl.google.com,💒 大陆网站
-DOMAIN,pagead-googleDOMAINed.l.google.com,💒 大陆网站
-DOMAIN,safebrowsing-cache.google.com,💒 大陆网站
-DOMAIN,ssl-google-analytics.l.google.com,💒 大陆网站
-DOMAIN,toolbarqueries.google.com,💒 大陆网站
-DOMAIN,tools.google.com,💒 大陆网站
-DOMAIN,tools.l.google.com,💒 大陆网站
-DOMAIN,www-googletagmanager.l.google.com,💒 大陆网站
-DOMAIN,clientservices.googleapis.com,💒 大陆网站
-DOMAIN,fonts.googleapis.com,💒 大陆网站
-DOMAIN,imasdk.googleapis.com,💒 大陆网站
-DOMAIN,safebrowsing.googleapis.com,💒 大陆网站
-DOMAIN,translate.googleapis.com,💒 大陆网站
-DOMAIN,update.googleapis.com,💒 大陆网站
-DOMAIN-SUFFIX,googleanalytics.com,💒 大陆网站
-DOMAIN-SUFFIX,googletraveladservices.com,💒 大陆网站
-# App Store应用下载
-DOMAIN-SUFFIX,iosapps.itunes.apple.com,💒 大陆网站
-DOMAIN-SUFFIX,mzstatic.com,💒 大陆网站
-DOMAIN-SUFFIX,itunes.apple.com,💒 大陆网站
-DOMAIN-SUFFIX,phobos.apple.com,💒 大陆网站
-DOMAIN-SUFFIX,aaplimg.com,💒 大陆网站
-DOMAIN,apps.apple.com,💒 大陆网站
+DOMAIN-SUFFIX,app-measurement.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN-SUFFIX,recaptcha.net,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,gtm.oasisfeng.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,checkin.gstatic.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,connectivitycheck.gstatic.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,csi.gstatic.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,fonts.gstatic.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,ssl.gstatic.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,www.gstatic.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,re𝑫𝑰𝑹𝑬𝑪𝑻or.gvt1.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,beacons.gcp.gvt2.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,beacons.gvt2.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,beacons2.gvt2.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,beacons3.gvt2.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,crl.pki.goog,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,ocsp.pki.goog,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,translate.google.cn,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,c.android.clients.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,cache.pack.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,corp.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,dl.l.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,dl.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,pagead-googleDOMAINed.l.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,safebrowsing-cache.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,ssl-google-analytics.l.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,toolbarqueries.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,tools.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,tools.l.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,www-googletagmanager.l.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,clientservices.googleapis.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,fonts.googleapis.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,imasdk.googleapis.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,safebrowsing.googleapis.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,translate.googleapis.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,update.googleapis.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN-SUFFIX,googleanalytics.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN-SUFFIX,googletraveladservices.com,𝑫𝑰𝑹𝑬𝑪𝑻
 # Ⓜ️ Microsoft
 # https://docs.Ⓜ️ Microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
-DOMAIN,jdsharedresourcescdn.azureedge.net,🗺️ 境外网站
-DOMAIN,outlook.office365.com,🗺️ 境外网站
-DOMAIN,www.bing.com,🗺️ 境外网站
+DOMAIN,jdsharedresourcescdn.azureedge.net,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN,outlook.office365.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN,www.bing.com,🚀𝗣𝗥𝗢𝗫𝗬
 DOMAIN-SUFFIX,hk.msn.com,🇭🇰𝗛𝗼𝗻𝗴 𝗞𝗼𝗻𝗴
-DOMAIN-SUFFIX,msn.com.tw,🇨🇳𝗧𝗮𝗶𝘄𝗮𝗻
+DOMAIN-SUFFIX,msn.com.tw,🇹🇼台湾
 # Proxy
-DOMAIN-KEYWORD,jinkela,🗺️ 境外网站
-DOMAIN,cutt.ly,🗺️ 境外网站
-DOMAIN,i.loli.net,🗺️ 境外网站
-DOMAIN,relay.firefox.com,🗺️ 境外网站
-DOMAIN,search.avira.com,🗺️ 境外网站
-DOMAIN,us.weibo.com,🗺️ 境外网站
-DOMAIN-SUFFIX,iavnight.com,🗺️ 境外网站
-DOMAIN-KEYWORD,91p,🗺️ 境外网站
-DOMAIN,blackmorase.com,🗺️ 境外网站
-DOMAIN,i.p04.space,🗺️ 境外网站
-DOMAIN-SUFFIX,45maoee.com,🗺️ 境外网站
-DOMAIN-SUFFIX,51fengliu.com,🗺️ 境外网站
-DOMAIN-SUFFIX,liveviptv.xyz,🗺️ 境外网站
-DOMAIN-SUFFIX,mdapp1.pw,🗺️ 境外网站
-DOMAIN-SUFFIX,onlyfans.com,🗺️ 境外网站
-DOMAIN-SUFFIX,xsnvshen.com,🗺️ 境外网站
-DOMAIN-SUFFIX,xsnvshen.net,🗺️ 境外网站
+DOMAIN-KEYWORD,jinkela,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN,cutt.ly,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN,i.loli.net,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN,relay.firefox.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN,search.avira.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN,us.weibo.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,iavnight.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-KEYWORD,91p,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN,blackmorase.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN,i.p04.space,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,45maoee.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,51fengliu.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,liveviptv.xyz,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,mdapp1.pw,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,onlyfans.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,xsnvshen.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,xsnvshen.net,🚀𝗣𝗥𝗢𝗫𝗬
 #cydia
-DOMAIN-SUFFIX,cydia.angelxwind.net,🗺️ 境外网站
-DOMAIN-SUFFIX,getdelta.co,🗺️ 境外网站
-DOMAIN-SUFFIX,hackyouriphone.org,🗺️ 境外网站
-DOMAIN-SUFFIX,ryleyangus.com,🗺️ 境外网站
-DOMAIN-SUFFIX,thebigboss.org,🗺️ 境外网站
+DOMAIN-SUFFIX,cydia.angelxwind.net,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,getdelta.co,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,hackyouriphone.org,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,ryleyangus.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,thebigboss.org,🚀𝗣𝗥𝗢𝗫𝗬
 # Clubhouse
-DOMAIN,clubhouse.pubnub.com,🗺️ 境外网站
-DOMAIN-SUFFIX,clubhouseapi.com,🗺️ 境外网站
-DOMAIN-SUFFIX,joinclubhouse.com,🗺️ 境外网站
-DOMAIN-SUFFIX,64memo.com,🗺️ 境外网站
-DOMAIN-SUFFIX,androidcentral.com,🗺️ 境外网站
-DOMAIN-SUFFIX,appsliced.co,🗺️ 境外网站
-DOMAIN-SUFFIX,bdwk.588230.com,🗺️ 境外网站
-DOMAIN-SUFFIX,bochk.com,🗺️ 境外网站
-DOMAIN-SUFFIX,cloud.andrewjr.wang,🗺️ 境外网站
-DOMAIN-SUFFIX,cloudcone.com.cn,🗺️ 境外网站
-DOMAIN-SUFFIX,club.topsage.com,🗺️ 境外网站
-DOMAIN-SUFFIX,code.jquery.com,🗺️ 境外网站
-DOMAIN-SUFFIX,cydialmp.vip,🗺️ 境外网站
-DOMAIN-SUFFIX,cyzone.cn,🗺️ 境外网站
-DOMAIN-SUFFIX,dawanews.com,🗺️ 境外网站
-DOMAIN-SUFFIX,digitpatrox.com,🗺️ 境外网站
-DOMAIN-SUFFIX,dlink.za.group,🗺️ 境外网站
-DOMAIN-SUFFIX,easyatm.com.tw,🗺️ 境外网站
-DOMAIN-SUFFIX,eprice.com.hk,🗺️ 境外网站
-DOMAIN-SUFFIX,feed43.com,🗺️ 境外网站
-DOMAIN-SUFFIX,ft.com,🗺️ 境外网站
-DOMAIN-SUFFIX,geacron.com,🗺️ 境外网站
-DOMAIN-SUFFIX,githubmemory.com,🗺️ 境外网站
-DOMAIN-SUFFIX,goop.ai,🗺️ 境外网站
-DOMAIN-SUFFIX,instabio.cc,🗺️ 境外网站
-DOMAIN-SUFFIX,ixue.io,🗺️ 境外网站
-DOMAIN-SUFFIX,kouwobb.com,🗺️ 境外网站
-DOMAIN-SUFFIX,kylc.com,🗺️ 境外网站
-DOMAIN-SUFFIX,libgen.rs,🗺️ 境外网站
-DOMAIN-SUFFIX,limbopro.com,🗺️ 境外网站
-DOMAIN-SUFFIX,limbopro.pro,🗺️ 境外网站
-DOMAIN-SUFFIX,medrxiv.org,🗺️ 境外网站
-DOMAIN-SUFFIX,metapix.net,🗺️ 境外网站
-DOMAIN-SUFFIX,newsify.co,🗺️ 境外网站
-DOMAIN-SUFFIX,ntdimg.com,🗺️ 境外网站
-DOMAIN-SUFFIX,nyxz166.cn,🗺️ 境外网站
-DOMAIN-SUFFIX,picdiet.com,🗺️ 境外网站
-DOMAIN-SUFFIX,ptwxz.com,🗺️ 境外网站
-DOMAIN-SUFFIX,pysmei.com,🗺️ 境外网站
-DOMAIN-SUFFIX,rsc.cdn77.org,🗺️ 境外网站
-DOMAIN-SUFFIX,sinatra.ishowsapp.com,🗺️ 境外网站
-DOMAIN-SUFFIX,theappstore.org,🗺️ 境外网站
-DOMAIN-SUFFIX,thenationalpulse.com,🗺️ 境外网站
-DOMAIN-SUFFIX,tingtalk.me,🗺️ 境外网站
-DOMAIN-SUFFIX,translatetheweb.com,🗺️ 境外网站
-DOMAIN-SUFFIX,tv.ci,🗺️ 境外网站
-DOMAIN-SUFFIX,ultrareach.com,🗺️ 境外网站
-DOMAIN-SUFFIX,ultrasurf.us,🗺️ 境外网站
-DOMAIN-SUFFIX,videoplayerhub.com,🗺️ 境外网站
-DOMAIN-SUFFIX,voovmeeting.com,🗺️ 境外网站
-DOMAIN-SUFFIX,weebly.com,🗺️ 境外网站
-DOMAIN-SUFFIX,wemp.app,🗺️ 境外网站
-DOMAIN-SUFFIX,wucuoxs.com,🗺️ 境外网站
-DOMAIN-SUFFIX,ybex.io,🗺️ 境外网站
-DOMAIN-SUFFIX,yopmail.com,🗺️ 境外网站
-DOMAIN-SUFFIX,zhaojiaren.club,🗺️ 境外网站
+DOMAIN,clubhouse.pubnub.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,clubhouseapi.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,joinclubhouse.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,64memo.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,androidcentral.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,appsliced.co,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,bdwk.588230.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,bochk.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,cloud.andrewjr.wang,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,cloudcone.com.cn,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,club.topsage.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,code.jquery.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,cydialmp.vip,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,cyzone.cn,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,dawanews.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,digitpatrox.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,dlink.za.group,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,easyatm.com.tw,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,eprice.com.hk,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,feed43.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,ft.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,geacron.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,githubmemory.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,goop.ai,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,instabio.cc,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,ixue.io,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,kouwobb.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,kylc.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,libgen.rs,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,limbopro.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,limbopro.pro,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,medrxiv.org,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,metapix.net,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,newsify.co,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,ntdimg.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,nyxz166.cn,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,picdiet.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,ptwxz.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,pysmei.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,rsc.cdn77.org,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,sinatra.ishowsapp.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,theappstore.org,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,thenationalpulse.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,tingtalk.me,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,translatetheweb.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,tv.ci,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,ultrareach.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,ultrasurf.us,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,videoplayerhub.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,voovmeeting.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,weebly.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,wemp.app,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,wucuoxs.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,ybex.io,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,yopmail.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,zhaojiaren.club,🚀𝗣𝗥𝗢𝗫𝗬
 # 补充代理
-DOMAIN-SUFFIX,bing.com,🗺️ 境外网站
-DOMAIN,www.google.com,🗺️ 境外网站
-DOMAIN,translate.google.com,🗺️ 境外网站
-DOMAIN,mail.google.com,🗺️ 境外网站
+DOMAIN-SUFFIX,bing.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN,www.google.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN,translate.google.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN,mail.google.com,🚀𝗣𝗥𝗢𝗫𝗬
 # raveos
-DOMAIN-KEYWORD,raveos,🗺️ 境外网站
+DOMAIN-KEYWORD,raveos,🚀𝗣𝗥𝗢𝗫𝗬
 # 酷我音乐
-DOMAIN-SUFFIX,nmobi.kuwo.cn,💒 大陆网站
+DOMAIN-SUFFIX,nmobi.kuwo.cn,𝑫𝑰𝑹𝑬𝑪𝑻
 # 其他
-DOMAIN-SUFFIX,baomitu.com,💒 大陆网站
+DOMAIN-SUFFIX,baomitu.com,𝑫𝑰𝑹𝑬𝑪𝑻
 # > iCloud
-DOMAIN-SUFFIX,gateway.icloud.com,🗺️ 境外网站
+DOMAIN-SUFFIX,gateway.icloud.com,🚀𝗣𝗥𝗢𝗫𝗬
 
 # > Apple News
-DOMAIN-SUFFIX,news-edge.apple.com,🗺️ 境外网站
-DOMAIN-SUFFIX,news-events.apple.com,🗺️ 境外网站
-DOMAIN-SUFFIX,apple.comscoreresearch.com,🗺️ 境外网站
+DOMAIN-SUFFIX,news-edge.apple.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,news-events.apple.com,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN-SUFFIX,apple.comscoreresearch.com,🚀𝗣𝗥𝗢𝗫𝗬
 # News+ Audio
-DOMAIN-SUFFIX,news-assets.apple.com,🗺️ 境外网站
+DOMAIN-SUFFIX,news-assets.apple.com,🚀𝗣𝗥𝗢𝗫𝗬
 # > 机场网站 代理
-DOMAIN,console.catnet.uk,🗺️ 境外网站
-DOMAIN,cylink.app,🗺️ 境外网站
+DOMAIN,console.catnet.uk,🚀𝗣𝗥𝗢𝗫𝗬
+DOMAIN,cylink.app,🚀𝗣𝗥𝗢𝗫𝗬
+
+
+# 阻止所有UDP流量到端口443，使HTTP3请求退回到TCP流量
+AND,((PROTOCOL,UDP), (DEST-PORT,443)),REJECT-NO-DROP
+# Surge 更新自身或者外部资源更新用指定的 Proxy
+PROCESS-NAME,Surge,🚀𝗣𝗥𝗢𝗫𝗬
+# Gmail
+DOMAIN-SUFFIX,imap.gmail.com,🇺🇸美国
+DOMAIN-SUFFIX,smtp.gmail.com,🇺🇸美国
