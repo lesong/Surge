@@ -1,5 +1,5 @@
 #!name=广告屏蔽
-#!desc=最后更新时间 2022-05-12 08:06:06
+#!desc=最后更新时间 2022-05-11 10:06:06
 
 [Rule]
 # > 屏蔽知乎网页版强制登陆弹窗(api.zhihu.com,www.zhihu.com,appcloud2.zhihu.com)
