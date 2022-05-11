@@ -1,8 +1,8 @@
 #!name=广告屏蔽
-#!desc=最后更新时间 2021-10-12 08:06:06
+#!desc=最后更新时间 2022-05-12 08:06:06
 
 [Rule]
-# > 屏蔽知乎网页版强制登陆弹窗(static.zhihu.com, api.zhihu.com, www.zhihu.com,a ppcloud2.zhihu.com)
+# > 屏蔽知乎网页版强制登陆弹窗(api.zhihu.com,www.zhihu.com,appcloud2.zhihu.com)
 URL-REGEX,^https?:\/\/static\.zhihu\.com\/[^\/]+\/(main|column)\.signflow\.[^.]+.js,REJECT
 # > 贴吧
 RULE-SET,https://raw.githubusercontent.com/app2smile/rules/master/rule/tieba-ad.list,REJECT-DROP
@@ -18,6 +18,8 @@ DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
 URL-REGEX,^https:\/\/wallet\.95516\.com\/s\/wl\/icon\/long,𝑹𝑬𝑱𝑬𝑪𝑻
 # > 拼多多 去广告 api.pinduoduo.com,
 URL-REGEX,^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash,𝑹𝑬𝑱𝑬𝑪𝑻
+# > 携程
+URL-REGEX,^https?:\/\/socketio\.ctrip\.com\/api,REJECT
 
 [MITM]
-hostname = %APPEND% static.zhihu.com, api.zhihu.com, www.zhihu.com,a ppcloud2.zhihu.com, api.m.jd.com, gab.112.gov.cn, api.pinduoduo.com, wallet.95516.com
+hostname = %APPEND% api.zhihu.com,www.zhihu.com,appcloud2.zhihu.com, api.m.jd.com, gab.112.gov.cn, api.pinduoduo.com, wallet.95516.com, socketio.ctrip.com
