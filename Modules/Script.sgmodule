@@ -1,16 +1,10 @@
 #!name=lesong自用脚本 
-#!desc=最后更新时间 2022-05-10 16:17:06
+#!desc=最后更新时间 2022-05-11 16:17:06
 
 [Script]
-# > Boxjs（稳定版+测试版）(boxjs.net, boxjs.com)
-会话数据 = type=http-request,pattern=^https?:\/\/boxjs\.com,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, requires-body=true, timeout=120
-会话数据 = type=http-request,pattern=^https?:\/\/boxjs\.net,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
-# > https://sub-store ( sub.store)
-Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
+type = pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js,require-body=false
+彩云天气 = type=cron,cronexp=0 6-22/2 * * *,wake-system=1,timeout=30,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
 
-
-# > 百度搜索防跳转 App Store(boxer.baidu.com)
-baidu-no-redirect.js = type=http-response,pattern=^https?:\/\/boxer\.baidu\.com\/scheme\?scheme,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js
 # > #贴吧去广告（afd.baidu.com）
 贴吧json = type=http-response,pattern=^(http:\/\/c\.tieba\.baidu\.com\/(tiebaads\/commonbatch|c\/s\/sync)|https:\/\/afd\.baidu\.com\/afd\/entry),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js,script-update-interval=0
 贴吧proto = type=http-response,pattern=^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized),requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js,script-update-interval=0
@@ -47,7 +41,7 @@ Youtube 无中文字幕机翻 = type=http-request,pattern=https:\/\/www.youtube.
 ^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302
 
 [MITM]
-hostname =  %APPEND% boxer.baidu.com, www.zhihu.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com, afd.baidu.com, boxjs.net, boxjs.com, sub.store, mp.weixin.qq.com, www.youtube.com, *.google.cn, *.google.com.hk
+hostname =  %APPEND% www.zhihu.com, gn.xn--fiqs8s, api.m.jd.com, trade-acs.m.taobao.com, app.biliintl.com, afd.baidu.com, mp.weixin.qq.com, www.youtube.com, *.google.cn, *.google.com.hk,weather-data.apple.com, api.weather.com
 
 
 
