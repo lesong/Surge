@@ -52,10 +52,10 @@ DOMAIN-SUFFIX,ultramobile.com,🇺🇸美国
 DOMAIN-KEYWORD,ultramobile,🇺🇸美国
 DOMAIN-SUFFIX,amplitude.com,🇺🇸美国
 # 2miners
-DOMAIN,2miners.com,🇺🇸美国
+DOMAIN-SUFFIX,2miners.com,🇺🇸美国
 #target
-DOMAIN,target.com,🇺🇸美国
-DOMAIN,carnivalmobile.com,🇺🇸美国
+DOMAIN-SUFFIX,target.com,🇺🇸美国
+DOMAIN-SUFFIX,carnivalmobile.com,🇺🇸美国
 #百度地图开屏广告
 DOMAIN,dss0.bdstatic.com,𝑹𝑬𝑱𝑬𝑪𝑻
 DOMAIN,app.adjust.com,𝑫𝑰𝑹𝑬𝑪𝑻
