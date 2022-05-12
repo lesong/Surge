@@ -47,15 +47,15 @@ DOMAIN,app-site-association.cdn-apple.com,𝑹𝑬𝑱𝑬𝑪𝑻
 # > boxjs代理
 DOMAIN,boxjs.com,𝐏𝐫𝐨𝐱𝐲
 # ultramobile
-DOMAIN-SUFFIX,launchdarkly.com,🇺🇸美国
-DOMAIN-SUFFIX,ultramobile.com,🇺🇸美国
+DOMAIN-SET,launchdarkly.com,🇺🇸美国
+DOMAIN-SET,ultramobile.com,🇺🇸美国
+DOMAIN-SET,amplitude.com,🇺🇸美国
 DOMAIN-KEYWORD,ultramobile,🇺🇸美国
-DOMAIN-SUFFIX,amplitude.com,🇺🇸美国
 # 2miners
 DOMAIN-SUFFIX,2miners.com,🇺🇸美国
 #target
-DOMAIN-SUFFIX,target.com,🇺🇸美国
-DOMAIN-SUFFIX,carnivalmobile.com,🇺🇸美国
+DOMAIN-SET,target.com,🇺🇸美国
+DOMAIN-SET,carnivalmobile.com,🇺🇸美国
 #百度地图开屏广告
 DOMAIN,dss0.bdstatic.com,𝑹𝑬𝑱𝑬𝑪𝑻
 DOMAIN,app.adjust.com,𝑫𝑰𝑹𝑬𝑪𝑻
