@@ -49,7 +49,7 @@ DOMAIN,boxjs.com,𝐏𝐫𝐨𝐱𝐲
 DOMAIN-SET,launchdarkly.com,🇺🇸美国
 DOMAIN-SET,ultramobile.com,🇺🇸美国
 DOMAIN-SET,amplitude.com,🇺🇸美国
-DOMAIN-KEYWORD,ultramobile,🇺🇸美国
+DOMAIN-SET,ultramobile,🇺🇸美国
 # 2miners
 DOMAIN,*2miners.com,🇺🇸美国
 #target
