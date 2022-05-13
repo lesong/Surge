@@ -49,11 +49,11 @@ DOMAIN,boxjs.com,𝐏𝐫𝐨𝐱𝐲
 DOMAIN,*launchdarkly.com,🇺🇸美国
 DOMAIN,*ultramobile.com,🇺🇸美国
 DOMAIN,*amplitude.com,🇺🇸美国
-DOMAIN,*ultramobile,🇺🇸美国
+DOMAIN-KEYWORD,ultramobile,🇺🇸美国
 # 2miners
 DOMAIN,*2miners.com,🇺🇸美国
 #target
-DOMAIN,*target.com,🇺🇸美国
+DOMAIN-KEYWORD,target,🇺🇸美国
 DOMAIN,*carnivalmobile.com,🇺🇸美国
 #百度地图开屏广告
 DOMAIN,dss0.bdstatic.com,𝑹𝑬𝑱𝑬𝑪𝑻
