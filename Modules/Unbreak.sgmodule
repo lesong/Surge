@@ -66,6 +66,9 @@ DOMAIN-SUFFIX,carnivalmobile.com,🇺🇲美国
 DOMAIN-KEYWORD,target.com,🇺🇲美国
 #AbemaTV
 DOMAIN,linear-abematv.akamaized.net,🇯🇵日本
+DOMAIN,ds-linear-abematv.akamaized.net,🇯🇵日本
+DOMAIN,ds-vod-abematv.akamaized.net,🇯🇵日本
+DOMAIN,linear-abematv.akamaized.net,🇯🇵日本
 DOMAIN-SUFFIX,akamaized.net,🇯🇵日本
 DOMAIN-SUFFIX,abema.io,🇯🇵日本
 DOMAIN-SUFFIX,abema.tv,🇯🇵日本
