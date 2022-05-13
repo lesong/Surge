@@ -45,15 +45,6 @@ DOMAIN,api.waqi.info,🇯🇵日本
 DOMAIN,app-site-association.cdn-apple.com,𝑹𝑬𝑱𝑬𝑪𝑻
 # > boxjs代理
 DOMAIN,boxjs.com,𝐏𝐫𝐨𝐱𝐲
-DOMAIN-SUFFIX,analytics.amplitude.com,🇺🇸美国
-DOMAIN-SUFFIX,api.amplitude.com,🇺🇸美国
-DOMAIN-SUFFIX,api2.amplitude.com,🇺🇸美国
-DOMAIN-SUFFIX,cdn.amplitude.com,🇺🇸美国
-DOMAIN-SUFFIX,info.amplitude.com,🇺🇸美国
-DOMAIN-SUFFIX,regionconfig.amplitude.com,🇺🇸美国
-DOMAIN-SUFFIX,static.amplitude.com,🇺🇸美国
-DOMAIN-SUFFIX,launchdarkly.com,🇺🇸美国
-DOMAIN-SUFFIX,ultramobile.com,🇺🇸美国
 #百度地图开屏广告
 DOMAIN,dss0.bdstatic.com,𝑹𝑬𝑱𝑬𝑪𝑻
 DOMAIN,app.adjust.com,𝑫𝑰𝑹𝑬𝑪𝑻

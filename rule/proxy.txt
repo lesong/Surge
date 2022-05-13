@@ -1,6 +1,0 @@
-.target
-.target.com
-carnivalmobile.com
-2miners.com
-ultramobile.com
-launchdarkly.com
