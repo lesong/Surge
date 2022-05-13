@@ -46,10 +46,10 @@ DOMAIN,app-site-association.cdn-apple.com,𝑹𝑬𝑱𝑬𝑪𝑻
 # > boxjs代理
 DOMAIN,boxjs.com,𝐏𝐫𝐨𝐱𝐲
 # ultramobile
-DOMAIN-SET,launchdarkly.com,🇺🇸美国
-DOMAIN-SET,ultramobile.com,🇺🇸美国
-DOMAIN-SET,amplitude.com,🇺🇸美国
-DOMAIN-SET,ultramobile,🇺🇸美国
+DOMAIN,*launchdarkly.com,🇺🇸美国
+DOMAIN,*ultramobile.com,🇺🇸美国
+DOMAIN,*amplitude.com,🇺🇸美国
+DOMAIN,*ultramobile,🇺🇸美国
 # 2miners
 DOMAIN,*2miners.com,🇺🇸美国
 #target
