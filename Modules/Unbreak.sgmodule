@@ -16,10 +16,10 @@ DOMAIN-KEYWORD,.sg,🇸🇬新加坡
 # 日本顶级域
 DOMAIN-KEYWORD,.jp,🇯🇵日本
 # 美国顶级域
-DOMAIN-KEYWORD,.us,🇺🇸美国
-DOMAIN,lb-rdv-steep.ubisoft.com,🇺🇸美国
-DOMAIN,useast1-public-ubiservices.ubi.com,🇺🇸美国
-DOMAIN,lens.l.google.com,🇺🇸美国
+DOMAIN-KEYWORD,.us,🇺🇲美国
+DOMAIN,lb-rdv-steep.ubisoft.com,🇺🇲美国
+DOMAIN,useast1-public-ubiservices.ubi.com,🇺🇲美国
+DOMAIN,lens.l.google.com,🇺🇲美国
 #常见下载规则
 PROCESS-NAME,clash,𝑫𝑰𝑹𝑬𝑪𝑻
 PROCESS-NAME,ss-local,𝑫𝑰𝑹𝑬𝑪𝑻
@@ -45,6 +45,21 @@ DOMAIN,api.waqi.info,🇯🇵日本
 DOMAIN,app-site-association.cdn-apple.com,𝑹𝑬𝑱𝑬𝑪𝑻
 # > boxjs代理
 DOMAIN,boxjs.com,𝐏𝐫𝐨𝐱𝐲
+# > UItra Mobile
+DOMAIN-SUFFIX,analytics.amplitude.com,🇺🇲美国
+DOMAIN-SUFFIX,api.amplitude.com,🇺🇲美国
+DOMAIN-SUFFIX,api2.amplitude.com,🇺🇲美国
+DOMAIN-SUFFIX,cdn.amplitude.com,🇺🇲美国
+DOMAIN-SUFFIX,info.amplitude.com,🇺🇲美国
+DOMAIN-SUFFIX,regionconfig.amplitude.com,🇺🇲美国
+DOMAIN-SUFFIX,static.amplitude.com,🇺🇲美国
+DOMAIN-SUFFIX,launchdarkly.com,🇺🇲美国
+DOMAIN-SUFFIX,ultramobile.com,🇺🇲美国
+# 2miners
+DOMAIN-SUFFIX,2miners.com,🇺🇲美国
+#target
+DOMAIN-SUFFIX,target.com,🇺🇲美国
+DOMAIN-SUFFIX,carnivalmobile.com,🇺🇲美国
 #百度地图开屏广告
 DOMAIN,dss0.bdstatic.com,𝑹𝑬𝑱𝑬𝑪𝑻
 DOMAIN,app.adjust.com,𝑫𝑰𝑹𝑬𝑪𝑻
@@ -219,5 +234,5 @@ AND,((PROTOCOL,UDP), (DEST-PORT,443)),REJECT-NO-DROP
 # Surge 更新自身或者外部资源更新用指定的 Proxy
 PROCESS-NAME,Surge,🚀𝗣𝗥𝗢𝗫𝗬
 # Gmail
-DOMAIN-SUFFIX,imap.gmail.com,🇺🇸美国
-DOMAIN-SUFFIX,smtp.gmail.com,🇺🇸美国
+DOMAIN-SUFFIX,imap.gmail.com,🇺🇲美国
+DOMAIN-SUFFIX,smtp.gmail.com,🇺🇲美国
