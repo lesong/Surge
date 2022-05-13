@@ -64,6 +64,14 @@ DOMAIN-SUFFIX,paypal,🇺🇲美国
 DOMAIN-SUFFIX,target.com,🇺🇲美国
 DOMAIN-SUFFIX,carnivalmobile.com,🇺🇲美国
 DOMAIN-KEYWORD,target.com,🇺🇲美国
+#AbemaTV
+USER-AGENT,AbemaTV*,🇯🇵日本
+DOMAIN,linear-abematv.akamaized.net,🇯🇵日本
+DOMAIN-SUFFIX,abema.io,🇯🇵日本
+DOMAIN-SUFFIX,abema.tv,🇯🇵日本
+DOMAIN-SUFFIX,akamaized.net,🇯🇵日本
+DOMAIN-SUFFIX,ameba.j,🇯🇵日本
+DOMAIN-SUFFIX,hayabusa.io,🇯🇵日本
 #百度地图开屏广告
 DOMAIN,dss0.bdstatic.com,𝑹𝑬𝑱𝑬𝑪𝑻
 DOMAIN,app.adjust.com,𝑫𝑰𝑹𝑬𝑪𝑻
