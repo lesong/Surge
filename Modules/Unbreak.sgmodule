@@ -55,11 +55,15 @@ DOMAIN-SUFFIX,regionconfig.amplitude.com,🇺🇲美国
 DOMAIN-SUFFIX,static.amplitude.com,🇺🇲美国
 DOMAIN-SUFFIX,launchdarkly.com,🇺🇲美国
 DOMAIN-SUFFIX,ultramobile.com,🇺🇲美国
+DOMAIN-KEYWORD,ultramobile.com,🇺🇲美国
 # 2miners
 DOMAIN-SUFFIX,2miners.com,🇺🇲美国
+#paypal
+DOMAIN-SUFFIX,paypal,🇺🇲美国
 #target
 DOMAIN-SUFFIX,target.com,🇺🇲美国
 DOMAIN-SUFFIX,carnivalmobile.com,🇺🇲美国
+DOMAIN-KEYWORD,target.com,🇺🇲美国
 #百度地图开屏广告
 DOMAIN,dss0.bdstatic.com,𝑹𝑬𝑱𝑬𝑪𝑻
 DOMAIN,app.adjust.com,𝑫𝑰𝑹𝑬𝑪𝑻
