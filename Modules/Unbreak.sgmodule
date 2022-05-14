@@ -63,7 +63,7 @@ DOMAIN-SUFFIX,paypal,🇺🇲美国
 #target
 DOMAIN-SUFFIX,target.com,🇺🇲美国
 DOMAIN-SUFFIX,carnivalmobile.com,🇺🇲美国
-DOMAIN-KEYWORD,target.com,🇺🇲美国
+DOMAIN-KEYWORD,target,🇺🇲美国
 #AbemaTV
 DOMAIN,linear-abematv.akamaized.net,🇯🇵日本
 DOMAIN,ds-linear-abematv.akamaized.net,🇯🇵日本
@@ -89,7 +89,7 @@ DOMAIN-SUFFIX,winticket.jp,🇯🇵日本
 DOMAIN-KEYWORD,abematv.akamaized.net,🇯🇵日本
 USER-AGENT,AbemaTV*,🇯🇵日本
 # > bestbuy
-DOMAIN-SUFFIX,bestbuy,🇺🇲美国
+DOMAIN-KEYWORD,bestbuy,🇺🇲美国
 DOMAIN,pisces.bbystatic.com,🇺🇲美国
 #百度地图开屏广告
 DOMAIN,dss0.bdstatic.com,𝑹𝑬𝑱𝑬𝑪𝑻
