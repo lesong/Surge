@@ -21,25 +21,25 @@ DOMAIN,lb-rdv-steep.ubisoft.com,🇺🇲美国
 DOMAIN,useast1-public-ubiservices.ubi.com,🇺🇲美国
 DOMAIN,lens.l.google.com,🇺🇲美国
 #douyin
-DOMAIN-KEYWORD,douyin,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-KEYWORD,amemv,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-KEYWORD,zijie,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-KEYWORD,zjcdn,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-SUFFIX,snssdk.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-SUFFIX,ytescm.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-SUFFIX,bytescm.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-SUFFIX,bytegoofy.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-KEYWORD,byte,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-SUFFIX,oceanengine.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-SUFFIX,ecombdimg.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN-KEYWORD,douyin,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD,amemv,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD,zijie,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD,zjcdn,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-SUFFIX,snssdk.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-SUFFIX,ytescm.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-SUFFIX,bytescm.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-SUFFIX,bytegoofy.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD,byte,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-SUFFIX,oceanengine.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-SUFFIX,ecombdimg.com,𝗗𝗜𝗥𝗘𝗖𝗧
 #toutiao
-DOMAIN-KEYWORD,bytecdn,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-KEYWORD,toutiao,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN-KEYWORD,bytecdn,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD,toutiao,𝗗𝗜𝗥𝗘𝗖𝗧
 #weibo
-DOMAIN-KEYWORD,weibo,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-KEYWORD,wbapp,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN-KEYWORD,weibo,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-KEYWORD,wbapp,𝗗𝗜𝗥𝗘𝗖𝗧
 #weixin
-DOMAIN-SUFFIX,wx.qlogo.cn,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN-SUFFIX,wx.qlogo.cn,𝗗𝗜𝗥𝗘𝗖𝗧
 # > 天气数据 日本 
 DOMAIN,api.waqi.info,🇯🇵日本
 # > Safari 防跳转
@@ -93,43 +93,43 @@ USER-AGENT,AbemaTV*,🇯🇵日本
 DOMAIN-KEYWORD,bestbuy,🇺🇲美国
 DOMAIN,pisces.bbystatic.com,🇺🇲美国
 # Download
-PROCESS-NAME,v2ray,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,xray,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,clash,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,naive,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,trojan,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,trojan-go,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,ss-local,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,privoxy,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,leaf,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,Thunder,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,DownloadService,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,qBittorrent,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,Transmission,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,fdm,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,aria2c,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,Folx,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,NetTransport,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,uTorrent,𝑫𝑰𝑹𝑬𝑪𝑻
-PROCESS-NAME,WebTorrent,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,v2ray,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,xray,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,clash,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,naive,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,trojan,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,trojan-go,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,ss-local,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,privoxy,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,leaf,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,Thunder,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,DownloadService,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,qBittorrent,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,Transmission,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,fdm,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,aria2c,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,Folx,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,NetTransport,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,uTorrent,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,WebTorrent,𝗗𝗜𝗥𝗘𝗖𝗧
 #百度地图开屏广告
 DOMAIN,dss0.bdstatic.com,𝑹𝑬𝑱𝑬𝑪𝑻
-DOMAIN,app.adjust.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,bdtj.tagtic.cn,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,log.mmstat.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,sycm.mmstat.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,analytics.strava.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,app.adjust.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,bdtj.tagtic.cn,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,log.mmstat.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,sycm.mmstat.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,analytics.strava.com,𝗗𝗜𝗥𝗘𝗖𝗧
 # > Tencent
-DOMAIN,fairplay.l.qq.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,livew.l.qq.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,vd.l.qq.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,msg.umeng.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,msg.umengcloud.com,𝑫𝑰𝑹𝑬𝑪𝑻
-# 𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,images-cn.ssl-images-amazon.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,nrch.culture.tw,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,fairplay.l.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,livew.l.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,vd.l.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,msg.umeng.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,msg.umengcloud.com,𝗗𝗜𝗥𝗘𝗖𝗧
+# 𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,images-cn.ssl-images-amazon.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,nrch.culture.tw,𝗗𝗜𝗥𝗘𝗖𝗧
 # >> Paramount+
-DOMAIN,pubads.g.doubleclick.net,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN,pubads.g.doubleclick.net,𝗗𝗜𝗥𝗘𝗖𝗧
 # Ⓜ️ Microsoft
 # https://docs.Ⓜ️ Microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
 DOMAIN,jdsharedresourcescdn.azureedge.net,🚀𝗣𝗥𝗢𝗫𝗬
@@ -152,9 +152,9 @@ DOMAIN,mail.google.com,🚀𝗣𝗥𝗢𝗫𝗬
 # raveos
 DOMAIN-KEYWORD,raveos,🚀𝗣𝗥𝗢𝗫𝗬
 # 酷我音乐
-DOMAIN-SUFFIX,nmobi.kuwo.cn,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN-SUFFIX,nmobi.kuwo.cn,𝗗𝗜𝗥𝗘𝗖𝗧
 # 其他
-DOMAIN-SUFFIX,baomitu.com,𝑫𝑰𝑹𝑬𝑪𝑻
+DOMAIN-SUFFIX,baomitu.com,𝗗𝗜𝗥𝗘𝗖𝗧
 # > iCloud
 DOMAIN-SUFFIX,gateway.icloud.com,🚀𝗣𝗥𝗢𝗫𝗬
 
