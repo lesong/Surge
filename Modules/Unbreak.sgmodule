@@ -1,5 +1,5 @@
 #!name=后期规则修正
-#!desc=最后更新时间 2022-05-13 16:36:06
+#!desc=最后更新时间 2022-05-14 16:36:06
 
 [Rule]
 # 顶级域名分流
@@ -63,7 +63,7 @@ DOMAIN-SUFFIX,paypal,🇺🇲美国
 #target
 DOMAIN-SUFFIX,target.com,🇺🇲美国
 DOMAIN-SUFFIX,carnivalmobile.com,🇺🇲美国
-DOMAIN-KEYWORD,target.com,🇺🇲美国
+DOMAIN-KEYWORD,target,🇺🇲美国
 #AbemaTV
 DOMAIN,linear-abematv.akamaized.net,🇯🇵日本
 DOMAIN,ds-linear-abematv.akamaized.net,🇯🇵日本
@@ -88,7 +88,9 @@ DOMAIN-SUFFIX,hayabusa.media,🇯🇵日本
 DOMAIN-SUFFIX,winticket.jp,🇯🇵日本
 DOMAIN-KEYWORD,abematv.akamaized.net,🇯🇵日本
 USER-AGENT,AbemaTV*,🇯🇵日本
-
+# > bestbuy
+DOMAIN-KEYWORD,bestbuy,🇺🇲美国
+DOMAIN,pisces.bbystatic.com,🇺🇲美国
 #百度地图开屏广告
 DOMAIN,dss0.bdstatic.com,𝑹𝑬𝑱𝑬𝑪𝑻
 DOMAIN,app.adjust.com,𝑫𝑰𝑹𝑬𝑪𝑻
@@ -163,45 +165,6 @@ DOMAIN-SUFFIX,update.googleapis.com,🇺🇲美国
 DOMAIN-SUFFIX,www-google-analytics.l.google.com,🇺🇲美国
 DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🇺🇲美国
 DOMAIN-SUFFIX,www.gstatic.com,🇺🇲美国
-
-# Google
-DOMAIN-SUFFIX,app-measurement.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-SUFFIX,recaptcha.net,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,gtm.oasisfeng.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,checkin.gstatic.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,connectivitycheck.gstatic.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,csi.gstatic.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,fonts.gstatic.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,ssl.gstatic.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,www.gstatic.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,re𝑫𝑰𝑹𝑬𝑪𝑻or.gvt1.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,beacons.gcp.gvt2.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,beacons.gvt2.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,beacons2.gvt2.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,beacons3.gvt2.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,crl.pki.goog,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,ocsp.pki.goog,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,translate.google.cn,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,c.android.clients.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,cache.pack.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,corp.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,dl.l.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,dl.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,pagead-googleDOMAINed.l.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,safebrowsing-cache.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,ssl-google-analytics.l.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,toolbarqueries.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,tools.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,tools.l.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,www-googletagmanager.l.google.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,clientservices.googleapis.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,fonts.googleapis.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,imasdk.googleapis.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,safebrowsing.googleapis.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,translate.googleapis.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN,update.googleapis.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-SUFFIX,googleanalytics.com,𝑫𝑰𝑹𝑬𝑪𝑻
-DOMAIN-SUFFIX,googletraveladservices.com,𝑫𝑰𝑹𝑬𝑪𝑻
 # Ⓜ️ Microsoft
 # https://docs.Ⓜ️ Microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
 DOMAIN,jdsharedresourcescdn.azureedge.net,🚀𝗣𝗥𝗢𝗫𝗬
