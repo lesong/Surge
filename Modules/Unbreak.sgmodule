@@ -43,7 +43,7 @@ DOMAIN-SUFFIX,wx.qlogo.cn,𝗗𝗜𝗥𝗘𝗖𝗧
 # > 天气数据 日本 
 DOMAIN,api.waqi.info,🇯🇵日本
 # > Safari 防跳转
-DOMAIN,app-site-association.cdn-apple.com,𝑹𝑬𝑱𝑬𝑪𝑻
+DOMAIN,app-site-association.cdn-apple.com,REJECT
 # > boxjs代理
 DOMAIN,boxjs.com,𝐏𝐫𝐨𝐱𝐲
 # > UItra Mobile
@@ -113,7 +113,7 @@ PROCESS-NAME,NetTransport,𝗗𝗜𝗥𝗘𝗖𝗧
 PROCESS-NAME,uTorrent,𝗗𝗜𝗥𝗘𝗖𝗧
 PROCESS-NAME,WebTorrent,𝗗𝗜𝗥𝗘𝗖𝗧
 #百度地图开屏广告
-DOMAIN,dss0.bdstatic.com,𝑹𝑬𝑱𝑬𝑪𝑻
+DOMAIN,dss0.bdstatic.com,REJECT
 DOMAIN,app.adjust.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN,bdtj.tagtic.cn,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN,log.mmstat.com,𝗗𝗜𝗥𝗘𝗖𝗧
