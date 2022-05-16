@@ -92,6 +92,26 @@ USER-AGENT,AbemaTV*,🇯🇵日本
 # > bestbuy
 DOMAIN-KEYWORD,bestbuy,🇺🇲美国
 DOMAIN,pisces.bbystatic.com,🇺🇲美国
+# Download
+PROCESS-NAME,v2ray,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,xray,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,clash,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,naive,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,trojan,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,trojan-go,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,ss-local,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,privoxy,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,leaf,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,Thunder,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,DownloadService,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,qBittorrent,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,Transmission,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,fdm,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,aria2c,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,Folx,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,NetTransport,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,uTorrent,𝑫𝑰𝑹𝑬𝑪𝑻
+PROCESS-NAME,WebTorrent,𝑫𝑰𝑹𝑬𝑪𝑻
 #百度地图开屏广告
 DOMAIN,dss0.bdstatic.com,𝑹𝑬𝑱𝑬𝑪𝑻
 DOMAIN,app.adjust.com,𝑫𝑰𝑹𝑬𝑪𝑻
