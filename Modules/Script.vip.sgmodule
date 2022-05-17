@@ -105,5 +105,11 @@ spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com
 #hostname=abematv.akamaized.net
 unlock_abema = requires-body=1,max-size=0,script-path=https://ruleset.skk.moe/Script/abema_unlock.js,script-update-interval=86400,type=http-response,pattern=^https://abematv.akamaized.net/region.*
 
+# ～ ScannerPro解鎖會員權限（2022-05-03）@ddgksf2013
+#hostname=api.revenuecat.com
+ScannerPro = requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/scannerpro.js,type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/(\$RCAnonymousID\%)?(\w)+$
+ScannerPro2 = requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/scannerpro.js,type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/receipts$
+
+
 [MITM]
-hostname =  %APPEND%  splice.oracle.*.com, api.picsart.c*, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, *.kuwo.cn, vip1.kuwo.cn, ap?.bilibili.com, ap?.biliapi.net, app.bilibili.com, api.bilibili.com,api.live.bilibili.com, api.vc.bilibili.com, mb3admin.com, *.emby.wtf:0, *.plusmedia.site:0, *.jmsooo.com:0, api.revenuecat.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, api.polaxiong.com, account.wps.*, claritywallpaper.com, *.xunjie*.com, ap*.intsig.net, spclient.wg.spotify.com, pan.baidu.com, abematv.akamaized.net
+hostname =  %APPEND%  api.revenuecat.com, splice.oracle.*.com, api.picsart.c*, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, *.kuwo.cn, vip1.kuwo.cn, ap?.bilibili.com, ap?.biliapi.net, app.bilibili.com, api.bilibili.com,api.live.bilibili.com, api.vc.bilibili.com, mb3admin.com, *.emby.wtf:0, *.plusmedia.site:0, *.jmsooo.com:0, api.revenuecat.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, api.polaxiong.com, account.wps.*, claritywallpaper.com, *.xunjie*.com, ap*.intsig.net, spclient.wg.spotify.com, pan.baidu.com, abematv.akamaized.net
