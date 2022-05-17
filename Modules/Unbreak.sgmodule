@@ -43,6 +43,14 @@ DOMAIN-SUFFIX,es,🇬🇧英国
 # 北欧-丹麦 DNK 顶级域
 DOMAIN-SUFFIX,dk,🇬🇧英国
 
+# >> 大陆常见
+DOMAIN-SUFFIX,douban.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-SUFFIX,aliyundrive.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-SUFFIX,gwifi.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-SUFFIX,seagm.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-SUFFIX,amazon.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN-SUFFIX,jd.com,𝗗𝗜𝗥𝗘𝗖𝗧
+
 # >> douyin
 DOMAIN-KEYWORD,douyin,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,amemv,𝗗𝗜𝗥𝗘𝗖𝗧
