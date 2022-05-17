@@ -44,44 +44,35 @@ DOMAIN-SUFFIX,es,🇬🇧英国
 DOMAIN-SUFFIX,dk,🇬🇧英国
 
 # >> 大陆常见
-DOMAIN-SUFFIX,douban.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,aliyundrive.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,gwifi.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,seagm.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,amazon.com,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN-SUFFIX,jd.com,𝗗𝗜𝗥𝗘𝗖𝗧
-
 # >> douyin
 DOMAIN-KEYWORD,douyin,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,amemv,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,zijie,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,zjcdn,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN-SUFFIX,snssdk.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,ytescm.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,bytescm.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,bytegoofy.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,byte,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,oceanengine.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,ecombdimg.com,𝗗𝗜𝗥𝗘𝗖𝗧
-
 # >> toutiao
 DOMAIN-KEYWORD,bytecdn,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,toutiao,𝗗𝗜𝗥𝗘𝗖𝗧
-
 # >> weibo
 DOMAIN-KEYWORD,weibo,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,wbapp,𝗗𝗜𝗥𝗘𝗖𝗧
-
 # >> weixin
 DOMAIN-SUFFIX,wx.qlogo.cn,𝗗𝗜𝗥𝗘𝗖𝗧
-
 # >> Tencent
 DOMAIN,fairplay.l.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN,livew.l.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN,vd.l.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN,msg.umeng.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN,msg.umengcloud.com,𝗗𝗜𝗥𝗘𝗖𝗧
-
 # >> Download
 PROCESS-NAME,v2ray,𝗗𝗜𝗥𝗘𝗖𝗧
 PROCESS-NAME,xray,𝗗𝗜𝗥𝗘𝗖𝗧
@@ -102,19 +93,9 @@ PROCESS-NAME,Folx,𝗗𝗜𝗥𝗘𝗖𝗧
 PROCESS-NAME,NetTransport,𝗗𝗜𝗥𝗘𝗖𝗧
 PROCESS-NAME,uTorrent,𝗗𝗜𝗥𝗘𝗖𝗧
 PROCESS-NAME,WebTorrent,𝗗𝗜𝗥𝗘𝗖𝗧
-
-# >> 百度地图开屏广告
-DOMAIN,dss0.bdstatic.com,REJECT
-DOMAIN,app.adjust.com,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,bdtj.tagtic.cn,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,log.mmstat.com,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,sycm.mmstat.com,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,analytics.strava.com,𝗗𝗜𝗥𝗘𝗖𝗧
-
 # DNS 服务
 DOMAIN-SUFFIX,dot.pub,𝗗𝗜𝗥𝗘𝗖𝗧
-IP-CIDR,1.12.34.56/32,no-resolve,𝗗𝗜𝗥𝗘𝗖𝗧
-
+IP-CIDR,1.12.34.56/32,no-resolve
 # 邮箱服务端口
 IN-PORT,993,𝗗𝗜𝗥𝗘𝗖𝗧
 DEST-PORT,25,𝗗𝗜𝗥𝗘𝗖𝗧
@@ -124,7 +105,6 @@ IN-PORT,143,𝗗𝗜𝗥𝗘𝗖𝗧
 IN-PORT,109,𝗗𝗜𝗥𝗘𝗖𝗧
 DEST-PORT,465,𝗗𝗜𝗥𝗘𝗖𝗧
 DEST-PORT,587,𝗗𝗜𝗥𝗘𝗖𝗧
-
 # >> Paramount+
 DOMAIN,pubads.g.doubleclick.net,𝗗𝗜𝗥𝗘𝗖𝗧
 
