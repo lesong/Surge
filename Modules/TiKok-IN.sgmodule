@@ -3,6 +3,7 @@
 #!system=ios
 
 [URL Rewrite]
+
 (?<=_region=)CN(?=&) url 307 IN
 (?<=&mcc_mnc=)4 url 307 2
 ^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) url 302  $1$3
