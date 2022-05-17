@@ -107,8 +107,8 @@ unlock_abema = requires-body=1,max-size=0,script-path=https://ruleset.skk.moe/Sc
 
 # ～ ScannerPro解鎖會員權限（2022-05-03）@ddgksf2013
 #hostname=api.revenuecat.com
-ScannerPro = requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/scannerpro.js,type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/(\$RCAnonymousID\%)?(\w)+$
-ScannerPro2 = requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/scannerpro.js,type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/receipts$
+ScannerPro = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/subscribers\/(\$RCAnonymousID\%)?(\w)+$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/scannerpro.js,script-update-interval=0
+ScannerPro2 = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v\d\/receipts$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/scannerpro.js,script-update-interval=0
 
 
 [MITM]
