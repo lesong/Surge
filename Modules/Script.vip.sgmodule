@@ -56,8 +56,9 @@ unlock_emby_premium = requires-body=1,max-size=0,script-path=https://ruleset.skk
 资源路径伪静态 = type=http-request,pattern=(\/Videos\/\d+\/stream\/.+\?.+&filename)|(\/Videos\/\d+\/\w{32}\/Subtitles\/\d+\/.+\?.+&filename),script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/test/surge/emby-plugin.js,debug=false
 下载文件重命名 = type=http-response,pattern=(\/Videos\/\d+\/stream\?.+&filename)|(\/Videos\/\d+\/\w{32}\/Subtitles\/.+&filename),requires-body=false,max-size=0,script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/test/surge/download_file_rename.js,debug=false
 
-# > Grow解锁
-grow解锁 = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Grow.js,script-update-interval=-1
+# > Grow 解锁 api.revenuecat.com
+grow解锁 = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/revenuecat.js,script-update-interval=-1
+
 
 # PicsArt美易 pro api.picsart.c*
 PicsArt.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js,type=http-response,pattern=^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json
@@ -69,9 +70,8 @@ Splice.js = requires-body=1,script-path=https://raw.githubusercontent.com/nzw931
 # > 美图秀秀 api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
 美图秀秀 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/Mtxx.js,type=http-response,pattern=^https?://(api|h5).xiuxiu.meitu.com/(v1/user/show.json|v1/vip/vip_show.json|v1/vip/prompt/query.json|v1/h5/vip/sub_detail.json|v1/h5/user/self_show.json|v1/h5/vip/user_detail.json|v1/vip/prompt/query.json|v1/vip/prompt/query.json)
 
-# > 泼辣修图 解锁 api.polaxiong.com
+# > 泼辣修图 解锁  api.polaxiong.com
 泼辣修图 = type=http-response,pattern=^https:\/\/api\.polaxiong\.com\/v1\/payments\/appleiap\/receipts\/confirmation,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Polarr.js
-
 
 # > 百度云盘 解锁 pan.baidu.com,
 百度云盘 = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bdcloud.js,script-update-interval=0
