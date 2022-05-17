@@ -1,26 +1,49 @@
 #!name=后期规则修正
-#!desc=最后更新时间 2022-05-14 16:36:06
+#!desc=最后更新时间 2022-05-17 16:36:06
 
 [Rule]
-# 顶级域名分流
+# >> 顶级域名分流
+# 大陆顶级域
+DOMAIN-SUFFIX,cn,𝗗𝗜𝗥𝗘𝗖𝗧
 # 香港顶级域
-DOMAIN-KEYWORD,.hk,🇭🇰香港
+DOMAIN-SUFFIX,hk,🇭🇰香港
 # 台湾顶级域
-DOMAIN-KEYWORD,.tw,🇹🇼台湾
+DOMAIN-SUFFIX,tw,🇹🇼台湾
 DOMAIN-SUFFIX,hinet.net,🇹🇼台湾
 DOMAIN-SUFFIX,emome.net,🇹🇼台湾
 DOMAIN-SUFFIX,litv.tv,🇹🇼台湾
 DOMAIN-SUFFIX,linkedin.com,🇹🇼台湾
 # 新加坡顶级域
-DOMAIN-KEYWORD,.sg,🇸🇬新加坡
+DOMAIN-SUFFIX,sg,🇸🇬新加坡
+# 韩国顶级域
+DOMAIN-SUFFIX,kr,🇰🇷韩国
 # 日本顶级域
-DOMAIN-KEYWORD,.jp,🇯🇵日本
+DOMAIN-SUFFIX,jp,🇯🇵日本
 # 美国顶级域
-DOMAIN-KEYWORD,.us,🇺🇲美国
+DOMAIN-SUFFIX,us,🇺🇲美国
 DOMAIN,lb-rdv-steep.ubisoft.com,🇺🇲美国
 DOMAIN,useast1-public-ubiservices.ubi.com,🇺🇲美国
 DOMAIN,lens.l.google.com,🇺🇲美国
-#douyin
+# 欧洲联盟顶级域
+DOMAIN-SUFFIX,eu,🇬🇧英国
+# 西欧-英国 GBR 顶级域
+DOMAIN-SUFFIX,uk,🇬🇧英国
+# 西欧-法国 FRA 顶级域
+DOMAIN-SUFFIX,fr,🇬🇧英国
+# 中欧-德国 DEU 顶级域
+DOMAIN-SUFFIX,de,🇩🇪德国
+# 欧洲-亚洲-俄罗斯 RUS 顶级域
+DOMAIN-SUFFIX,ru,🇬🇧英国
+# 中欧-波兰 POL 顶级域
+DOMAIN-SUFFIX,pl,🇬🇧英国
+# 西北-荷兰 NLD 顶级域
+DOMAIN-SUFFIX,nl,🇬🇧英国
+# 西南-西班牙 ESP 顶级域
+DOMAIN-SUFFIX,es,🇬🇧英国
+# 北欧-丹麦 DNK 顶级域
+DOMAIN-SUFFIX,dk,🇬🇧英国
+
+# >> douyin
 DOMAIN-KEYWORD,douyin,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,amemv,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,zijie,𝗗𝗜𝗥𝗘𝗖𝗧
@@ -32,21 +55,77 @@ DOMAIN-SUFFIX,bytegoofy.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,byte,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,oceanengine.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,ecombdimg.com,𝗗𝗜𝗥𝗘𝗖𝗧
-#toutiao
+
+# >> toutiao
 DOMAIN-KEYWORD,bytecdn,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,toutiao,𝗗𝗜𝗥𝗘𝗖𝗧
-#weibo
+
+# >> weibo
 DOMAIN-KEYWORD,weibo,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,wbapp,𝗗𝗜𝗥𝗘𝗖𝗧
-#weixin
+
+# >> weixin
 DOMAIN-SUFFIX,wx.qlogo.cn,𝗗𝗜𝗥𝗘𝗖𝗧
-# > 天气数据 日本 
-DOMAIN,api.waqi.info,🇯🇵日本
-# > Safari 防跳转
+
+# >> Tencent
+DOMAIN,fairplay.l.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,livew.l.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,vd.l.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,msg.umeng.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,msg.umengcloud.com,𝗗𝗜𝗥𝗘𝗖𝗧
+
+# >> Download
+PROCESS-NAME,v2ray,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,xray,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,clash,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,naive,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,trojan,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,trojan-go,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,ss-local,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,privoxy,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,leaf,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,Thunder,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,DownloadService,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,qBittorrent,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,Transmission,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,fdm,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,aria2c,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,Folx,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,NetTransport,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,uTorrent,𝗗𝗜𝗥𝗘𝗖𝗧
+PROCESS-NAME,WebTorrent,𝗗𝗜𝗥𝗘𝗖𝗧
+
+# >> 百度地图开屏广告
+DOMAIN,dss0.bdstatic.com,REJECT
+DOMAIN,app.adjust.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,bdtj.tagtic.cn,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,log.mmstat.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,sycm.mmstat.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,analytics.strava.com,𝗗𝗜𝗥𝗘𝗖𝗧
+
+# DNS 服务
+DOMAIN-SUFFIX,dot.pub,𝗗𝗜𝗥𝗘𝗖𝗧
+IP-CIDR,1.12.34.56/32,no-resolve,𝗗𝗜𝗥𝗘𝗖𝗧
+
+# 邮箱服务端口
+DST-PORT,993,𝗗𝗜𝗥𝗘𝗖𝗧
+DST-PORT,25,𝗗𝗜𝗥𝗘𝗖𝗧
+DST-PORT,995,𝗗𝗜𝗥𝗘𝗖𝗧
+DST-PORT,110,𝗗𝗜𝗥𝗘𝗖𝗧
+DST-PORT,143,𝗗𝗜𝗥𝗘𝗖𝗧
+DST-PORT,109,𝗗𝗜𝗥𝗘𝗖𝗧
+DST-PORT,465,𝗗𝗜𝗥𝗘𝗖𝗧
+DST-PORT,587,𝗗𝗜𝗥𝗘𝗖𝗧
+
+# >> Paramount+
+DOMAIN,pubads.g.doubleclick.net,𝗗𝗜𝗥𝗘𝗖𝗧
+
+# >> Safari 防跳转
 DOMAIN,app-site-association.cdn-apple.com,REJECT
-# > boxjs代理
+# >>  boxjs代理
 DOMAIN,boxjs.com,𝐏𝐫𝐨𝐱𝐲
-# > UItra Mobile
+
+# >> UItra Mobile
 DOMAIN-SUFFIX,analytics.amplitude.com,🇺🇲美国
 DOMAIN-SUFFIX,api.amplitude.com,🇺🇲美国
 DOMAIN-SUFFIX,api2.amplitude.com,🇺🇲美国
@@ -57,15 +136,19 @@ DOMAIN-SUFFIX,static.amplitude.com,🇺🇲美国
 DOMAIN-SUFFIX,launchdarkly.com,🇺🇲美国
 DOMAIN-SUFFIX,ultramobile.com,🇺🇲美国
 DOMAIN-KEYWORD,ultramobile.com,🇺🇲美国
-# 2miners
+
+# >> 2miners
 DOMAIN-SUFFIX,2miners.com,🇺🇲美国
-#paypal
+
+# >> paypal
 DOMAIN-SUFFIX,paypal,🇺🇲美国
-#target
+
+# >> target
 DOMAIN-SUFFIX,target.com,🇺🇲美国
 DOMAIN-SUFFIX,carnivalmobile.com,🇺🇲美国
 DOMAIN-KEYWORD,target,🇺🇲美国
-#AbemaTV
+
+# >> AbemaTV
 DOMAIN,linear-abematv.akamaized.net,🇯🇵日本
 DOMAIN,ds-linear-abematv.akamaized.net,🇯🇵日本
 DOMAIN,ds-vod-abematv.akamaized.net,🇯🇵日本
@@ -89,90 +172,46 @@ DOMAIN-SUFFIX,hayabusa.media,🇯🇵日本
 DOMAIN-SUFFIX,winticket.jp,🇯🇵日本
 DOMAIN-KEYWORD,abematv.akamaized.net,🇯🇵日本
 USER-AGENT,AbemaTV*,🇯🇵日本
-# > bestbuy
+
+# >> bestbuy
 DOMAIN-KEYWORD,bestbuy,🇺🇲美国
 DOMAIN,pisces.bbystatic.com,🇺🇲美国
-# Download
-PROCESS-NAME,v2ray,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,xray,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,clash,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,naive,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,trojan,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,trojan-go,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,ss-local,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,privoxy,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,leaf,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,Thunder,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,DownloadService,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,qBittorrent,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,Transmission,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,fdm,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,aria2c,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,Folx,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,NetTransport,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,uTorrent,𝗗𝗜𝗥𝗘𝗖𝗧
-PROCESS-NAME,WebTorrent,𝗗𝗜𝗥𝗘𝗖𝗧
-#百度地图开屏广告
-DOMAIN,dss0.bdstatic.com,REJECT
-DOMAIN,app.adjust.com,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,bdtj.tagtic.cn,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,log.mmstat.com,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,sycm.mmstat.com,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,analytics.strava.com,𝗗𝗜𝗥𝗘𝗖𝗧
-# > Tencent
-DOMAIN,fairplay.l.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,livew.l.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,vd.l.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,msg.umeng.com,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,msg.umengcloud.com,𝗗𝗜𝗥𝗘𝗖𝗧
-# 𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,images-cn.ssl-images-amazon.com,𝗗𝗜𝗥𝗘𝗖𝗧
-DOMAIN,nrch.culture.tw,𝗗𝗜𝗥𝗘𝗖𝗧
-# >> Paramount+
-DOMAIN,pubads.g.doubleclick.net,𝗗𝗜𝗥𝗘𝗖𝗧
-# Ⓜ️ Microsoft
-# https://docs.Ⓜ️ Microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
+
 DOMAIN,jdsharedresourcescdn.azureedge.net,🚀𝗣𝗥𝗢𝗫𝗬
 DOMAIN,outlook.office365.com,🚀𝗣𝗥𝗢𝗫𝗬
 DOMAIN,www.bing.com,🚀𝗣𝗥𝗢𝗫𝗬
 DOMAIN-SUFFIX,hk.msn.com,🇭🇰𝗛𝗼𝗻𝗴 𝗞𝗼𝗻𝗴
 DOMAIN-SUFFIX,msn.com.tw,🇹🇼台湾
-#cydia
+
+# >> cydia
 DOMAIN-SUFFIX,cydia.angelxwind.net,🚀𝗣𝗥𝗢𝗫𝗬
 DOMAIN-SUFFIX,getdelta.co,🚀𝗣𝗥𝗢𝗫𝗬
 DOMAIN-SUFFIX,hackyouriphone.org,🚀𝗣𝗥𝗢𝗫𝗬
 DOMAIN-SUFFIX,ryleyangus.com,🚀𝗣𝗥𝗢𝗫𝗬
 DOMAIN-SUFFIX,thebigboss.org,🚀𝗣𝗥𝗢𝗫𝗬
 
-# 补充代理
+# >> 补充代理
 DOMAIN-SUFFIX,bing.com,🚀𝗣𝗥𝗢𝗫𝗬
 DOMAIN,www.google.com,🚀𝗣𝗥𝗢𝗫𝗬
 DOMAIN,translate.google.com,🚀𝗣𝗥𝗢𝗫𝗬
 DOMAIN,mail.google.com,🚀𝗣𝗥𝗢𝗫𝗬
-# raveos
-DOMAIN-KEYWORD,raveos,🚀𝗣𝗥𝗢𝗫𝗬
-# 酷我音乐
-DOMAIN-SUFFIX,nmobi.kuwo.cn,𝗗𝗜𝗥𝗘𝗖𝗧
-# 其他
-DOMAIN-SUFFIX,baomitu.com,𝗗𝗜𝗥𝗘𝗖𝗧
-# > iCloud
-DOMAIN-SUFFIX,gateway.icloud.com,🚀𝗣𝗥𝗢𝗫𝗬
 
-# > Apple News
-DOMAIN-SUFFIX,news-edge.apple.com,🚀𝗣𝗥𝗢𝗫𝗬
-DOMAIN-SUFFIX,news-events.apple.com,🚀𝗣𝗥𝗢𝗫𝗬
-DOMAIN-SUFFIX,apple.comscoreresearch.com,🚀𝗣𝗥𝗢𝗫𝗬
-# News+ Audio
-DOMAIN-SUFFIX,news-assets.apple.com,🚀𝗣𝗥𝗢𝗫𝗬
-# > 机场网站 代理
+# >> raveos
+DOMAIN-KEYWORD,raveos,🚀𝗣𝗥𝗢𝗫𝗬
+
+# >> 酷我音乐
+DOMAIN-SUFFIX,nmobi.kuwo.cn,𝗗𝗜𝗥𝗘𝗖𝗧
+# >> 其他
+DOMAIN-SUFFIX,baomitu.com,𝗗𝗜𝗥𝗘𝗖𝗧
+
+# >> 机场网站 代理
 DOMAIN,console.catnet.uk,🚀𝗣𝗥𝗢𝗫𝗬
 DOMAIN,cylink.app,🚀𝗣𝗥𝗢𝗫𝗬
 
 
-# 阻止所有UDP流量到端口443，使HTTP3请求退回到TCP流量
-AND,((PROTOCOL,UDP), (DEST-PORT,443)),REJECT-NO-DROP
 # Surge 更新自身或者外部资源更新用指定的 Proxy
 PROCESS-NAME,Surge,🚀𝗣𝗥𝗢𝗫𝗬
+
 # Gmail
 DOMAIN-SUFFIX,imap.gmail.com,🇺🇲美国
 DOMAIN-SUFFIX,smtp.gmail.com,🇺🇲美国
