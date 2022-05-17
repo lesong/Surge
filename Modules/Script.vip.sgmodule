@@ -64,7 +64,7 @@ grow解锁 = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-
 PicsArt.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js,type=http-response,pattern=^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json
 
 # Splice 视频编辑器 pro  splice.oracle.*.com
-Splice.js = requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/Surge/JS/Splice.js,type=http-response,pattern=^https:\/\/splice\.oracle\.\w+\.com\/devices\/me
+http-response https:\/\/splice\.oracle\.\w+\.com\/devices\/me requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Splice.js
 
 
 # > 美图秀秀 api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com
@@ -105,5 +105,8 @@ spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com
 #hostname=abematv.akamaized.net
 unlock_abema = requires-body=1,max-size=0,script-path=https://ruleset.skk.moe/Script/abema_unlock.js,script-update-interval=86400,type=http-response,pattern=^https://abematv.akamaized.net/region.*
 
+# > 醒图&Ulike&轻颜相机&vaporcam commerce-i18n-api.faceu.mobi,commerce-api.faceu.mobi, pay.wecut.com
+轻颜相机 = requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/commerce.js,type=http-response,pattern=https://(commerce-.*api|pay).(faceu|wecut).(com|mobi)/(commerce|apple)/(iosAppVerifyReceipt.php|v1/subscription/user_info)
+
 [MITM]
-hostname =  %APPEND%  splice.oracle.*.com, api.picsart.c*, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, *.kuwo.cn, vip1.kuwo.cn, ap?.bilibili.com, ap?.biliapi.net, app.bilibili.com, api.bilibili.com,api.live.bilibili.com, api.vc.bilibili.com, mb3admin.com, *.emby.wtf:0, *.plusmedia.site:0, *.jmsooo.com:0, api.revenuecat.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, api.polaxiong.com, account.wps.*, claritywallpaper.com, *.xunjie*.com, ap*.intsig.net, spclient.wg.spotify.com, pan.baidu.com, abematv.akamaized.net
+hostname =  %APPEND%  commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, splice.oracle.*.com, api.picsart.c*, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, *.kuwo.cn, vip1.kuwo.cn, ap?.bilibili.com, ap?.biliapi.net, app.bilibili.com, api.bilibili.com,api.live.bilibili.com, api.vc.bilibili.com, mb3admin.com, *.emby.wtf:0, *.plusmedia.site:0, *.jmsooo.com:0, api.revenuecat.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, api.polaxiong.com, account.wps.*, claritywallpaper.com, *.xunjie*.com, ap*.intsig.net, spclient.wg.spotify.com, pan.baidu.com, abematv.akamaized.net
