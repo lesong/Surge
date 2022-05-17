@@ -57,8 +57,7 @@ unlock_emby_premium = requires-body=1,max-size=0,script-path=https://ruleset.skk
 下载文件重命名 = type=http-response,pattern=(\/Videos\/\d+\/stream\?.+&filename)|(\/Videos\/\d+\/\w{32}\/Subtitles\/.+&filename),requires-body=false,max-size=0,script-path=https://raw.githubusercontent.com/rartv/EmbyPublic/test/surge/download_file_rename.js,debug=false
 
 # > Grow 解锁 api.revenuecat.com
-grow解锁 = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/revenuecat.js,script-update-interval=-1
-
+运动解锁 = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/revenuecat.js,script-update-interval=-1
 
 # PicsArt美易 pro api.picsart.c*
 PicsArt.js = requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js,type=http-response,pattern=^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json
@@ -105,8 +104,5 @@ spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com
 #hostname=abematv.akamaized.net
 unlock_abema = requires-body=1,max-size=0,script-path=https://ruleset.skk.moe/Script/abema_unlock.js,script-update-interval=86400,type=http-response,pattern=^https://abematv.akamaized.net/region.*
 
-# >PDF系列解锁 license.pdfexpert.com
-Documents-PdfExpert = type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/pdfexpert.js,script-update-interval=-1
-
 [MITM]
-hostname =  %APPEND% license.pdfexpert.com, splice.oracle.*.com, api.picsart.c*, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, *.kuwo.cn, vip1.kuwo.cn, ap?.bilibili.com, ap?.biliapi.net, app.bilibili.com, api.bilibili.com,api.live.bilibili.com, api.vc.bilibili.com, mb3admin.com, *.emby.wtf:0, *.plusmedia.site:0, *.jmsooo.com:0, api.revenuecat.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, api.polaxiong.com, account.wps.*, claritywallpaper.com, *.xunjie*.com, ap*.intsig.net, spclient.wg.spotify.com, pan.baidu.com, abematv.akamaized.net
+hostname =  %APPEND% splice.oracle.*.com, api.picsart.c*, commerce-i18n-api.faceu.mobi, commerce-api.faceu.mobi, pay.wecut.com, *.kuwo.cn, vip1.kuwo.cn, ap?.bilibili.com, ap?.biliapi.net, app.bilibili.com, api.bilibili.com,api.live.bilibili.com, api.vc.bilibili.com, mb3admin.com, *.emby.wtf:0, *.plusmedia.site:0, *.jmsooo.com:0, api.revenuecat.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, api.polaxiong.com, account.wps.*, claritywallpaper.com, *.xunjie*.com, ap*.intsig.net, spclient.wg.spotify.com, pan.baidu.com, abematv.akamaized.net
