@@ -1,25 +1,32 @@
 #!name=lesong自用脚本 
 #!desc=最后更新时间 2022-05-11 13:20:06
 
-[Script]
-# 彩云获取经纬度，虽然和上面的一样，但是数据结构不一样
-彩云位置 = type=http-request, pattern=https://weather-data.apple.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
 
+[Script]
+# >>>哔哩哔哩系列专用（ap?.bilibili.com, ap?.biliapi.net）
+#Bilibli 番剧自动切换地区 by NobyDa
+Bili Region = type=http-response,pattern=^https?:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/v\d\/search\/defaultwords)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/Bili_Auto_Regions.js
+#可选, 适用于搜索指定地区的番剧
+Bili Search = type=http-request,pattern=^https?:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/Bili_Auto_Regions.js
+#bilbii 大会员画质（api.bilibili.com）
+哔哩画质 = BiliBili_HD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=true,script-path=https://github.com/Sunert/Script/raw/master/Script/Bilibili/BiliHD.js
+#哔哩哔哩去广告 （app.bilibili.com, grpc.biliapi.net）
+bili_json = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/(v2\/(splash\/(list|show)|feed\/index\?)|resource\/show\/tab\/v2),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-json.js,script-update-interval=0
+bili_proto = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-proto.js,script-update-interval=0
+
+
+# >>>彩云天气推送（weather-data.apple.com）
+彩云位置 = type=http-request, pattern=https://weather-data.apple.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
 彩云天气 = type=cron,cronexp=0 6-22/2 * * *,wake-system=1,timeout=30,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
 
-# > #贴吧去广告（afd.baidu.com）
-贴吧json = type=http-response,pattern=^(http:\/\/c\.tieba\.baidu\.com\/(tiebaads\/commonbatch|c\/s\/sync)|https:\/\/afd\.baidu\.com\/afd\/entry),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js,script-update-interval=0
-贴吧proto = type=http-response,pattern=^http:\/\/c\.tieba\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized),requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js,script-update-interval=0
-
-# > 京东App 历史价格 api.m.jd.com,
+# >>>京东App 历史价格 api.m.jd.com,
 京东历史价格 = type=http-response, pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig), requires-body=1, script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/other/jd_tb_price.js
 
-
-# > Taobao App 显示历史价格trade-acs.m.taobao.com
-# > 淘宝历史价格
+# >>>Taobao App 显示历史价格trade-acs.m.taobao.com
 淘宝历史价格request = type=http-request, pattern=^http://.+/amdc/mobileDispatch, requires-body=1, script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/other/jd_tb_price.js
 淘宝历史价格response = type=http-response, pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail, requires-body=1, script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/other/jd_tb_price.js
 
+# >>>一些自动执行任务
 Tasks: Dark Sky = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/Arlo44/Surge/main/Module/Dark%20Sky.js
 Tasks: Dark Sky2 = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/Arlo44/Surge/main/Module/Dark%20Sky2.js
 Tasks: Dark Sky Pro = type=cron,cronexp=10 8 * * *,script-path=https://raw.githubusercontent.com/Arlo44/Surge/main/Module/DarkSkyPro.js
@@ -35,24 +42,23 @@ http-request ^https?:\/\/www\.zhihu\.com header-replace-regex User-Agent .+iPhon
 http-request ^https?:\/\/(?!d\.pcs).*(?<!map)\.baidu\.com header-replace-regex User-Agent .+iPhone.+ "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/16C50 Quark/604.1 T7/10.3 SearchCraft/2.6.3 (Baidu; P1 8.0.0)"
 
 
-# > 微信(mp.weixin.qq.com)
-微信去广告 = type=http-request,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad,script-path=https://raw.githubusercontent.com/scomper/Surge/master/Scripts/WeChat.js,script-update-interval=0
-
 # > Youtube 无中文字幕机翻(www.youtube.com)
 Youtube 无中文字幕机翻 = type=http-request,pattern=https:\/\/www.youtube.com\/api\/timedtext\?.+&lang=(?!(zh|zh\-Hans)&)((?!&tlang=zh\-Hans).)*$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js,argument=\sHTTP/1\.1(\r\n)=&tlang=zh-Hans HTTP/1.1$1,script-update-interval=0
 
 [URL Rewrite]
-# >> IGN China to IGN Global(gn.xn--fiqs8s)
-^https?://(www.)?ign\.xn--fiqs8s/ https://cn.ign.com/ccpref/us 302
 # > Bilibili SEA 解除 SIM 卡地区限制(app.biliintl.com)
 (^https?:\/\/app\.biliintl\.com\/intl\/.+)(&sim_code=\d+)(.+) $1$3 302
+
+# >> IGN China to IGN Global(gn.xn--fiqs8s)
+^https?://(www.)?ign\.xn--fiqs8s/ https://cn.ign.com/ccpref/us 302
+
 # Redirect Google Search Service
 ^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
 # Redirect Google Maps Service
 ^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302
 
 [MITM]
-hostname =  %APPEND% *.baidu.com, www.zhihu.com, gn.xn--fiqs8s, api.m.jd.com, app.biliintl.com, afd.baidu.com, mp.weixin.qq.com, www.youtube.com, *.google.cn, *.google.com.hk, weather-data.apple.com, trade-acs.m.taobao.com
+hostname =  %APPEND% *.baidu.com, www.zhihu.com, gn.xn--fiqs8s, api.m.jd.com, app.biliintl.com, www.youtube.com, *.google.cn, *.google.com.hk, weather-data.apple.com, trade-acs.m.taobao.com
 
 
 
