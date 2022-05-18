@@ -1,5 +1,5 @@
 #!name=后期规则修正
-#!desc=最后更新时间 2022-05-17 17:36:06
+#!desc=最后更新时间 2022-05-18 17:36:06
 
 [Rule]
 # >> 顶级域名分流
@@ -60,6 +60,10 @@ DOMAIN-KEYWORD,byte,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,oceanengine.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,ecombdimg.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,snssdk.com,𝗗𝗜𝗥𝗘𝗖𝗧
+
+# >> kuwo
+DOMAIN-SUFFIX,kuwo.com,𝗗𝗜𝗥𝗘𝗖𝗧
+
 # >> toutiao
 DOMAIN-KEYWORD,bytecdn,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,toutiao,𝗗𝗜𝗥𝗘𝗖𝗧
