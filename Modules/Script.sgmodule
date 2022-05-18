@@ -1,6 +1,29 @@
 #!name=lesong自用脚本 
 #!desc=最后更新时间 2022-05-11 13:20:06
 
+[Rule]
+# > AntiAD
+DOMAIN-SET,https://anti-ad.net/surge2.txt,REJECT
+RULE-SET,https://raw.githubusercontent.com/app2smile/rules/master/rule/zhihu-ad.list,REJECT-DROP
+# > 携程
+URL-REGEX,^https?:\/\/socketio\.ctrip\.com\/api,REJECT
+# > 屏蔽知乎网页版强制登陆弹窗
+URL-REGEX,^https?:\/\/static\.zhihu\.com\/[^\/]+\/(main|column)\.signflow\.[^.]+.js,REJECT
+# > 贴吧
+RULE-SET,https://raw.githubusercontent.com/app2smile/rules/master/rule/tieba-ad.list,REJECT-DROP
+# > 爱奇艺 去暂停广告
+DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
+
+# > 威锋 去广告（api.wfdata.club）
+URL-REGEX,^https:\/\/api\.wfdata\.club\/v2\/yesfeng\/(infoCenterAd|yesList),REJECT
+# > 京东  去启动广告，必须是REJECT-TINYGIF, 否则比价会失效（ api.m.jd.com）
+URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
+# > 交管12123 去广告（gab.112.gov.cn）
+URL-REGEX,^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$,REJECT
+# > 云闪付 去广告 （wallet.95516.com）
+URL-REGEX,^https:\/\/wallet\.95516\.com\/s\/wl\/icon\/long,REJECT
+# > 拼多多 去广告 （api.pinduoduo.com）
+URL-REGEX,^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash,REJECT
 
 [Script]
 # >>>哔哩哔哩系列专用（ap?.bilibili.com, ap?.biliapi.net）
