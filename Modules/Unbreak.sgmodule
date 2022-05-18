@@ -61,9 +61,6 @@ DOMAIN-SUFFIX,oceanengine.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,ecombdimg.com,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-SUFFIX,snssdk.com,𝗗𝗜𝗥𝗘𝗖𝗧
 
-# >> kuwo
-DOMAIN-SUFFIX,kuwo.com,𝗗𝗜𝗥𝗘𝗖𝗧
-
 # >> toutiao
 DOMAIN-KEYWORD,bytecdn,𝗗𝗜𝗥𝗘𝗖𝗧
 DOMAIN-KEYWORD,toutiao,𝗗𝗜𝗥𝗘𝗖𝗧
