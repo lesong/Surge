@@ -43,27 +43,20 @@ URL-REGEX,^https://api.bilibili.com/pgc/season/player/cards,REJECT
 URL-REGEX,^https://app.bilibili.com/x/v2/search/defaultwords,REJECT
 
 [Script]
-# >>>哔哩哔哩系列专用（ap?.bilibili.com, ap?.biliapi.net）
+# >>>哔哩哔哩系列专用（ap?.bilibili.com,ap?.biliapi.net,www.bilibili.com,api.bilibili.com,app.bilibili.com,api.live.bilibili.com）
 #Bilibli 番剧自动切换地区 by NobyDa
 Bili Region = type=http-response,pattern=^https?:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/v\d\/search\/defaultwords)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/Bili_Auto_Regions.js
 #可选, 适用于搜索指定地区的番剧
 Bili Search = type=http-request,pattern=^https?:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/Bili_Auto_Regions.js
-#bilbii 大会员画质（api.bilibili.com）
-哔哩画质 = BiliBili_HD = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=true,script-path=https://github.com/Sunert/Script/raw/master/Script/Bilibili/BiliHD.js
-#哔哩哔哩去广告 （app.bilibili.com, grpc.biliapi.net）
-bili_json = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/(v2\/(splash\/(list|show)|feed\/index\?)|resource\/show\/tab\/v2),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-json.js,script-update-interval=0
-bili_proto = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-proto.js,script-update-interval=0
-BiliBili_繁体CC字幕转简体 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_cc.js
-BiliBili_去除统一观影页面广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.bilibili\.com\/pgc\/page\/cinema\/tab\?,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
-BiliBili_去除统一设置的皮肤 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\?,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
-BiliBili_去除应用开屏广告预加载 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
-BiliBili_推荐去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
-BiliBili_追番去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
-BiliBili_直播去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
-BiliBili_动态去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
-BiliBili_标签页处理 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
-BiliBili_我的页面处理 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/mine,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
-BiliBili-proto去广告 = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/bilibili-proto.js,script-update-interval=0
+哔哩哔哩番剧开启1080P+ = type=http-response,requires-body=1,max-size=0,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/backup/bilifj.js
+收藏排行 = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/v2/space\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20space.js
+首页 tab = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/resource/show/tab\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20tab.js
+bilibili feed = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/v2/feed/index\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20feed.js
+个人中心 = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/v2/account/mine\?access_key,debug=1,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20account.js
+bilibili view = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/v2/view\?access_key,debug=1,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20view%20relate.js
+bilibili reply = type=http-response,requires-body=1,max-size=0,pattern=https://api.bilibili.com/x/v2/reply/main\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20reply.js
+bilibili live = type=http-response,requires-body=1,max-size=0,pattern=https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20live.js
+
 
 # >>>彩云天气推送（weather-data.apple.com）
 彩云位置 = type=http-request, pattern=https://weather-data.apple.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
@@ -152,7 +145,7 @@ Youtube 无中文字幕机翻 = type=http-request,pattern=https:\/\/www.youtube.
 ^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302
 
 [MITM]
-hostname = %APPEND% gn.xn--fiqs8s,*.google.cn,*.google.com.hk,app.biliintl.com,www.youtube.com,*.baidu.com,www.zhihu.com,api.zhihu.com,www.zhihu.com,appcloud2.zhihu.com,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,mp.weixin.qq.com,edith.xiaohongshu.com,api.m.jd.com,wmapi.meituan.com,fmapp.chinafamilymart.com.cn,boxer.baidu.com,api.coolapk.com,trade-acs.m.taobao.com,api.m.jd.com,weather-data.apple.com,app.bilibili.com,grpc.biliapi.net,ap?.bilibili.com,ap?.biliapi.net,api.pinduoduo.com,wallet.95516.com,gab.112.gov.cn,api.wfdata.club,socketio.ctrip.com,static.zhihu.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com
+hostname = %APPEND% gn.xn--fiqs8s,*.google.cn,*.google.com.hk,www.youtube.com,*.baidu.com,www.zhihu.com,api.zhihu.com,www.zhihu.com,appcloud2.zhihu.com,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,mp.weixin.qq.com,edith.xiaohongshu.com,api.m.jd.com,wmapi.meituan.com,fmapp.chinafamilymart.com.cn,boxer.baidu.com,api.coolapk.com,trade-acs.m.taobao.com,api.m.jd.com,weather-data.apple.com,api.pinduoduo.com,wallet.95516.com,gab.112.gov.cn,api.wfdata.club,socketio.ctrip.com,static.zhihu.com,ap?.bilibili.com,ap?.biliapi.net,www.bilibili.com,api.bilibili.com,app.bilibili.com,api.live.bilibili.com
 
 # > 模块订阅(单独添加)
 //京东辅助登陆https://raw.githubusercontent.com/Fokit/Quantumult-X/main/rewrite/jd_login_help2.sgmodule
