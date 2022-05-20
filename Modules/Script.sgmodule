@@ -43,7 +43,7 @@ URL-REGEX,^https://api.bilibili.com/pgc/season/player/cards,REJECT
 URL-REGEX,^https://app.bilibili.com/x/v2/search/defaultwords,REJECT
 
 [Script]
-# >>>哔哩哔哩系列专用（ap?.bilibili.com,ap?.biliapi.net,www.bilibili.com,api.bilibili.com,app.bilibili.com,api.live.bilibili.com）
+# >>>哔哩哔哩系列专用（ap?.bilibili.com, ap?.biliapi.net）
 #Bilibli 番剧自动切换地区 by NobyDa
 Bili Region = type=http-response,pattern=^https?:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/v\d\/search\/defaultwords)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/Bili_Auto_Regions.js
 #可选, 适用于搜索指定地区的番剧
@@ -145,7 +145,7 @@ Youtube 无中文字幕机翻 = type=http-request,pattern=https:\/\/www.youtube.
 ^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302
 
 [MITM]
-hostname = %APPEND% gn.xn--fiqs8s,*.google.cn,*.google.com.hk,www.youtube.com,*.baidu.com,www.zhihu.com,api.zhihu.com,www.zhihu.com,appcloud2.zhihu.com,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,mp.weixin.qq.com,edith.xiaohongshu.com,api.m.jd.com,wmapi.meituan.com,fmapp.chinafamilymart.com.cn,boxer.baidu.com,api.coolapk.com,trade-acs.m.taobao.com,api.m.jd.com,weather-data.apple.com,api.pinduoduo.com,wallet.95516.com,gab.112.gov.cn,api.wfdata.club,socketio.ctrip.com,static.zhihu.com,ap?.bilibili.com,ap?.biliapi.net,www.bilibili.com,api.bilibili.com,app.bilibili.com,api.live.bilibili.com
+hostname = %APPEND% gn.xn--fiqs8s,*.google.cn,*.google.com.hk,app.biliintl.com,www.youtube.com,*.baidu.com,www.zhihu.com,api.zhihu.com,www.zhihu.com,appcloud2.zhihu.com,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,mp.weixin.qq.com,edith.xiaohongshu.com,api.m.jd.com,wmapi.meituan.com,fmapp.chinafamilymart.com.cn,boxer.baidu.com,api.coolapk.com,trade-acs.m.taobao.com,api.m.jd.com,weather-data.apple.com,app.bilibili.com,grpc.biliapi.net,ap?.bilibili.com,ap?.biliapi.net,api.pinduoduo.com,wallet.95516.com,gab.112.gov.cn,api.wfdata.club,socketio.ctrip.com,static.zhihu.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com
 
 # > 模块订阅(单独添加)
 //京东辅助登陆https://raw.githubusercontent.com/Fokit/Quantumult-X/main/rewrite/jd_login_help2.sgmodule
