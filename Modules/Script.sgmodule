@@ -130,10 +130,6 @@ JD首页推荐 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\
 JD个人页面 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=personinfoBusiness,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/jdpp.js
 JD发现 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=discFollowEnterMainPage,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/jdfp.js
 
-# > 抖音 去广告&水印(*.amemv.com)
-douyin_ad = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/douyin.js
-
-
 #美团外卖去开屏广告 by blackmatrix7
 waimai_startup.js = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo?,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
 
@@ -182,7 +178,7 @@ google去URL = type=http-request,requires-body=1,max-size=0,pattern=https:\/\/ww
 EndlessGoogle = type=http-response,pattern=https:\/\/www\.google\.com\/(m|search),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/endlessgoogle.js,script-update-interval=-1
 
 [MITM]
-hostname = %APPEND% gn.xn--fiqs8s,www.google.com,app.biliintl.com,www.youtube.com,*.baidu.com,www.zhihu.com,api.zhihu.com,www.zhihu.com,appcloud2.zhihu.com,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com,mp.weixin.qq.com, weixin110.qq.com,edith.xiaohongshu.com,api.m.jd.com,ms.jr.jd.com,wmapi.meituan.com,fmapp.chinafamilymart.com.cn,boxer.baidu.com,api.coolapk.com,trade-acs.m.taobao.com,api.m.jd.com,weather-data.apple.com,app.bilibili.com,grpc.biliapi.net,ap?.bilibili.com,ap?.biliapi.net,api.pinduoduo.com,wallet.95516.com,gab.112.gov.cn,api.wfdata.club,socketio.ctrip.com,static.zhihu.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,app-api.smzdm.com,homepage-api.smzdm.com,haojia-api.smzdm.com,haojia.m.smzdm.com,baike-api.smzdm.com,s-api.smzdm.com,zhiyou.m.smzdm.com,user-api.smzdm.com,*.amemv.com
+hostname = %APPEND% gn.xn--fiqs8s,www.google.com,app.biliintl.com,www.youtube.com,*.baidu.com,www.zhihu.com,api.zhihu.com,www.zhihu.com,appcloud2.zhihu.com,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com,mp.weixin.qq.com, weixin110.qq.com,edith.xiaohongshu.com,api.m.jd.com,ms.jr.jd.com,wmapi.meituan.com,fmapp.chinafamilymart.com.cn,boxer.baidu.com,api.coolapk.com,trade-acs.m.taobao.com,api.m.jd.com,weather-data.apple.com,app.bilibili.com,grpc.biliapi.net,ap?.bilibili.com,ap?.biliapi.net,api.pinduoduo.com,wallet.95516.com,gab.112.gov.cn,api.wfdata.club,socketio.ctrip.com,static.zhihu.com,api.live.bilibili.com,api.vc.bilibili.com,api.bilibili.com,app-api.smzdm.com,homepage-api.smzdm.com,haojia-api.smzdm.com,haojia.m.smzdm.com,baike-api.smzdm.com,s-api.smzdm.com,zhiyou.m.smzdm.com,user-api.smzdm.com
 
 # > 模块订阅(单独添加)
 //京东辅助登陆https://raw.githubusercontent.com/Fokit/Quantumult-X/main/rewrite/jd_login_help2.sgmodule
