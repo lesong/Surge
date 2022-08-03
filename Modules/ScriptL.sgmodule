@@ -28,13 +28,6 @@ DOMAIN,grpc.biliapi.net,REJECT-NO-DROP
 ^https?:\/\/(www.)?ign\.xn--fiqs8s\/ http://cn.ign.com/ccpref/us 302
 # > YouTube中文字幕
 ^https:\/\/www\.youtube\.com\/api\/timedtext\? https://www.youtube.com/api/timedtext?tlang=zh-Hans& header
-# > 油管去广告
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) $1$2$3 header
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - REJECT
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break - REJECT
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - REJECT
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - REJECT
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - REJECT
 
 [Header Rewrite]
 http-request ^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.* header-del If-None-Match
@@ -96,4 +89,4 @@ Siri Infomation Card = type=http-response, pattern=^https?:\/\/api(.*)\.smoot\.a
 什么值得买_个人页去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/user-api\.smzdm\.com\/vip,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/smzdm_pp.js
 
 [MITM]
-hostname = %APPEND% www.google.*, -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com, app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com, user-api.smzdm.com, app.bilibili.com, grpc.biliapi.net, api.live.bilibili.com, api.vc.bilibili.com, manga.bilibili.com, mbd.baidu.com, s.bdstatic.com, ap?.bilibili.com, ap?.biliapi.net,www.google.cn, *.youtube.com, boxjs.net, boxjs.com,sub.store,api*.smoot.apple.com, api*.smoot.apple.cn, weather-data.apple.com, weather-map.apple.com, mp.weixin.qq.com,
+hostname = %APPEND% app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com, user-api.smzdm.com, app.bilibili.com, grpc.biliapi.net, api.live.bilibili.com, api.vc.bilibili.com, manga.bilibili.com, mbd.baidu.com, s.bdstatic.com, ap?.bilibili.com, ap?.biliapi.net,www.google.cn, *.youtube.com, boxjs.net, boxjs.com,sub.store,api*.smoot.apple.com, api*.smoot.apple.cn, weather-data.apple.com, weather-map.apple.com, mp.weixin.qq.com,
