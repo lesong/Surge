@@ -18,6 +18,39 @@ AND,((PROTOCOL,UDP), (DEST-PORT,443)),REJECT-NO-DROP
 DOMAIN,gdmf.apple.com,REJECT
 # > 哔哩哔哩
 DOMAIN,grpc.biliapi.net,REJECT-NO-DROP
+# > 喜马拉雅 *.xima*.*, *.xmcdn.*
+# 屏蔽播放页Live
+URL-REGEX,^https?:\/\/.*\.xima.*\.com\/mobile-playpage\/view\/,REJECT
+# MyInfo红点提醒
+URL-REGEX,^https?:\/\/.*\.xima.*\.com\/chaos-notice-web\/v1\/message\/preview\/list,REJECT
+# 屏蔽大红包Tips
+URL-REGEX,^https?:\/\/.*\.xima.*\.com\/social-web\/bottomTabs\/dynamicEntrance\/status,REJECT
+# 屏蔽gif弹窗_Ad
+URL-REGEX,^https?:\/\/.*\.xmcdn\.com\/\w{8}\/\w{4}-\w{16}\/.+gif$,REJECT
+# 屏蔽Aged请求
+URL-REGEX,^https?:\/\/.*\.xima.*\.com\/(dog-portal\/checkOld|(child-mobile\/child|aged-mobile\/aged)\/mode\/query),REJECT
+# 部分Tab弹窗
+URL-REGEX,^https?:\/\/.*\.xima.*\.com\/discovery-feed\/isShowUserGiftPendant,REJECT
+# 屏蔽红点提示
+URL-REGEX,^https?:\/\/.*\.xima.*\.com\/mobile-user\/unread,REJECT
+# 屏蔽minor请求
+URL-REGEX,^https?:\/\/.*\.xima.*\.com/mobile-user/minorProtection/pop,REJECT
+# 屏蔽隐私搜集
+URL-REGEX,^https?:\/\/.*\.xima.*\.com\/collector/xl\/v\d,REJECT
+# 屏蔽版本更新
+URL-REGEX,^https?:\/\/.*\.xima.*\.com\/butler-portal\/versionCheck,REJECT
+# 屏蔽开屏广告
+URL-REGEX,^https?:\/\/(adse\.wsa|adse|adbehavior|xdcs-collector)\.xima.*\.com\/.*,REJECT
+# 屏蔽位置请求
+URL-REGEX,^https?:\/\/.*\.xima.*\.com\/mobile\/discovery\/v\d\/location,REJECT
+# 屏蔽热搜词
+URL-REGEX,^https?:\/\/.*\.xima.*\.com\/hotWord,REJECT
+# 屏蔽搜索框定时_Ad
+URL-REGEX,^https?:\/\/.*\.xima.*\.com\/guideWord,REJECT
+# 屏蔽实时_Ad请求
+URL-REGEX,^https?:\/\/.*\.xima.*\.com\/api\/v\d\/adRealTime,REJECT
+# 屏蔽ting_Ad
+URL-REGEX,^https?:\/\/.*\.xima.*\.com\/ting\/(loading|feed|home)?,REJECT
 
 [URL Rewrite]
 # > Redirect Google Search Service
@@ -47,6 +80,9 @@ http-request ^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.* header-d
 我的页面 = type=http-response,pattern=^https://app\.bilibili\.com/x/v2/account/mine\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/bilibili_mine.js,script-update-interval=0
 bilibili-json = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/(v2\/(splash\/(list|show)|feed\/index\?)|resource\/show\/tab\/v2),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/bilibili-json.js,script-update-interval=0
 bilibili-proto = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/bilibili-proto.js,script-update-interval=0
+
+# 首页滚动_Ad、Tab页滚动_Ad、我的页面_Ad
+喜马拉雅 = type=http-response,pattern=^https?:\/\/.*\.xima.*\.com\/(discovery-feed|category|mobile-user)\/v\d\/(mix|category|homePage),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/xmlyad.js,script-update-interval=0
 
 # > Boxjs 
 boxjs = type=http-request,pattern=https?:\/\/boxjs\.(com|net),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
@@ -88,5 +124,8 @@ Siri Infomation Card = type=http-response, pattern=^https?:\/\/api(.*)\.smoot\.a
 什么值得买_值会员权益中心banner去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/SMZDM.js
 什么值得买_个人页去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/user-api\.smzdm\.com\/vip,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/smzdm_pp.js
 
+# > 京东App 历史价格 api.m.jd.com
+京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
+
 [MITM]
-hostname = %APPEND% app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com, user-api.smzdm.com, app.bilibili.com, grpc.biliapi.net, api.live.bilibili.com, api.vc.bilibili.com, manga.bilibili.com, mbd.baidu.com, s.bdstatic.com, ap?.bilibili.com, ap?.biliapi.net,www.google.cn, *.youtube.com, boxjs.net, boxjs.com,sub.store,api*.smoot.apple.com, api*.smoot.apple.cn, weather-data.apple.com, weather-map.apple.com, mp.weixin.qq.com,
+hostname = %APPEND% api.m.jd.com, *.xima*.*, *.xmcdn.*, app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com, user-api.smzdm.com, app.bilibili.com, grpc.biliapi.net, api.live.bilibili.com, api.vc.bilibili.com, manga.bilibili.com, mbd.baidu.com, s.bdstatic.com, ap?.bilibili.com, ap?.biliapi.net,www.google.cn, *.youtube.com, boxjs.net, boxjs.com,sub.store,api*.smoot.apple.com, api*.smoot.apple.cn, weather-data.apple.com, weather-map.apple.com, mp.weixin.qq.com,
