@@ -1,0 +1,97 @@
+#!name=lesong自用脚本
+#!desc= Bilbii换区,评分、YouTube 字幕翻译、Siri搜索建议、美标空气质量、微信公众号广告
+
+[General]
+force-http-engine-hosts = %APPEND% boxjs.net, boxjs.com
+
+[Rule]
+# > 手机百度
+DOMAIN-SUFFIX,boxer.baidu.com,REJECT-TINYGIF
+DOMAIN-SUFFIX,ug.baidu.com,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/mbd\.baidu\.com\/tcbox,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/s\.bdstatic\.com\/common\/openjs\/openBox\.js.*,REJECT-TINYGIF
+# > Safari 防跳转
+DOMAIN,app-site-association.cdn-apple.com,REJECT
+# > 屏蔽HTTP3/QUIC协议
+AND,((PROTOCOL,UDP), (DEST-PORT,443)),REJECT-NO-DROP
+# > Block iOS Update
+DOMAIN,gdmf.apple.com,REJECT
+# > 哔哩哔哩
+DOMAIN,grpc.biliapi.net,REJECT-NO-DROP
+
+[URL Rewrite]
+# > Redirect Google Search Service
+^https?:\/\/(www.)?(g|google)\.(cn|hk) https://www.google.com 302
+# > Redirect Google Maps Service
+^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302
+# > IGN China to IGN Global
+^https?:\/\/(www.)?ign\.xn--fiqs8s\/ http://cn.ign.com/ccpref/us 302
+# > YouTube中文字幕
+^https:\/\/www\.youtube\.com\/api\/timedtext\? https://www.youtube.com/api/timedtext?tlang=zh-Hans& header
+
+[Header Rewrite]
+http-request ^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.* header-del If-None-Match
+
+[Script]
+# > bilbii换区,评分,画质
+换区 = type=http-response,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/offline\/version)\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
+搜索 = type=http-request,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
+1080高码率 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?,requires-body=true,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
+
+# > bilbii去广告
+标签页处理 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/tab,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js,script-update-interval=0
+追番去广告 = type=http-response,pattern=^https?:\/\/api\.bilibili\.com\/pgc\/page\/bangumi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js,script-update-interval=0
+推荐去广告 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/feed\/index,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js,script-update-interval=0
+动态去广告 = type=http-response,pattern=^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/dynamic_(history|new)\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js,script-update-interval=0
+直播去广告 = type=http-response,pattern=^https?:\/\/api\.live\.bilibili\.com\/xlive\/app-room\/v1\/index\/getInfoByRoom,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js,script-update-interval=0
+我的页面 = type=http-response,pattern=^https://app\.bilibili\.com/x/v2/account/mine\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/bilibili_mine.js,script-update-interval=0
+bilibili-json = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/x\/(v2\/(splash\/(list|show)|feed\/index\?)|resource\/show\/tab\/v2),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/bilibili-json.js,script-update-interval=0
+bilibili-proto = type=http-response,pattern=^https:\/\/app\.bilibili\.com\/bilibili\.app\.(view\.v1\.View\/View|dynamic\.v2\.Dynamic\/DynAll)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/bilibili-proto.js,script-update-interval=0
+
+# > Boxjs 
+boxjs = type=http-request,pattern=https?:\/\/boxjs\.(com|net),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
+
+# > Sub-Store
+Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
+
+# > Siri搜索建议
+# Bag (iOS/macOS)
+Siri Suggestions Service = type=http-request, pattern=^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/bag(\?.*)?$, requires-body=0, timeout=5, script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.request.js
+Siri Suggestions Service = type=http-response, pattern=^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/bag(\?.*)?$, requires-body=1, timeout=10, script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.response.js
+# Spotlight & Look Up Search (iOS/macOS)
+Spotlight & Look Up Search = type=http-request, pattern=^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/search(\?.*)?$, requires-body=0, timeout=5, script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.request.js
+Spotlight & Look Up Search = type=http-response, pattern=^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/search(\?.*)?$, requires-body=1, timeout=10, script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.response.js
+# Siri Infomation Card (macOS)
+Siri Infomation Card = type=http-request, pattern=^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/card(\?.*)?$, requires-body=0, timeout=5, script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.request.js
+Siri Infomation Card = type=http-response, pattern=^https?:\/\/api(.*)\.smoot\.apple\.(com|cn)\/card(\?.*)?$, requires-body=1, timeout=10, script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Siri.response.js
+
+# > 美标空气质量
+天气可用性 = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/availability\/.*, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Weather.Availability.js 
+天气 = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.*, requires-body=1, script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Weather.js
+天气地图 = type=http-request, pattern=^https?:\/\/weather-map\.apple\.com\/(v1|v2)\/mapOverlay\/.*(\?.*country=CN.*), requires-body=0, script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Weather.Map.js
+
+# > 微信
+微信公众号 = type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/WeChat.js,script-update-interval=0
+
+# >>>去广告和水印 | 抖音版本 <= 16.2.0
+#hostname = %APPEND% *.snssdk.com, *.amemv.com
+抖音短视频 = type=http-request,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v\d\/,script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/Aweme.js
+抖音短视频 = type=http-response,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v1\/.+#scripting$,requires-body=1,script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/Aweme.js
+
+# >>>彩云天气推送（weather-data.apple.com）
+彩云位置 = type=http-request, pattern=https://weather-data.apple.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
+彩云天气 = type=cron,cronexp=0 6-22/2 * * *,wake-system=1,timeout=30,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
+
+# >>>什么值得买（app-api.smzdm.com,homepage-api.smzdm.com,haojia-api.smzdm.com,haojia.m.smzdm.com,baike-api.smzdm.com,s-api.smzdm.com,zhiyou.m.smzdm.com,user-api.smzdm.com）
+什么值得买_开屏去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/app-api\.smzdm\.com\/util\/loading,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/SMZDM.js
+什么值得买_首页去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/homepage-api\.smzdm\.com\/v3\/home,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/SMZDM.js
+什么值得买_好价去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/haojia-api\.smzdm\.com\/home\/list,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/SMZDM.js
+什么值得买_好价详情页去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/article_releated_modul,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/SMZDM.js
+什么值得买_百科去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/baike-api\.smzdm\.com\/home_v3\/list,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/SMZDM.js
+什么值得买_搜索结果去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/list_v10,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/SMZDM.js
+什么值得买_搜索标签去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/SMZDM.js
+什么值得买_值会员权益中心banner去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/SMZDM.js
+什么值得买_个人页去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/user-api\.smzdm\.com\/vip,script-path=https://raw.githubusercontent.com/ATorNinja/Surge/master/smzdm_pp.js
+
+[MITM]
+hostname = %APPEND% app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com, user-api.smzdm.com, app.bilibili.com, grpc.biliapi.net, api.live.bilibili.com, api.vc.bilibili.com, manga.bilibili.com, *.snssdk.com, *.amemv.com, mbd.baidu.com, s.bdstatic.com, ap?.bilibili.com, ap?.biliapi.net,www.google.cn, *.youtube.com, boxjs.net, boxjs.com,sub.store,api*.smoot.apple.com, api*.smoot.apple.cn, weather-data.apple.com, weather-map.apple.com, mp.weixin.qq.com,
