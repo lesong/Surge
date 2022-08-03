@@ -67,8 +67,9 @@ http-request ^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather\/.* header-d
 
 [Script]
 # > bilbii换区,评分,画质
-换区 = type=http-response,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/offline\/version)\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
-搜索 = type=http-request,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
+Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/offline\/version)\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
+#可选, 适用于搜索指定地区的番剧
+Bili Search = type=http-request,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
 1080高码率 = type=http-response,pattern=^https?:\/\/app\.bilibili\.com\/x\/v2\/account\/myinfo\?,requires-body=true,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_diy.js
 
 # > bilbii去广告
@@ -128,4 +129,4 @@ Siri Infomation Card = type=http-response, pattern=^https?:\/\/api(.*)\.smoot\.a
 京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, *.xima*.*, *.xmcdn.*, app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com, user-api.smzdm.com, app.bilibili.com, grpc.biliapi.net, api.live.bilibili.com, api.vc.bilibili.com, manga.bilibili.com, mbd.baidu.com, s.bdstatic.com, ap?.bilibili.com, ap?.biliapi.net,www.google.cn, *.youtube.com, boxjs.net, boxjs.com,sub.store,api*.smoot.apple.com, api*.smoot.apple.cn, weather-data.apple.com, weather-map.apple.com, mp.weixin.qq.com,
+hostname = %APPEND% api.m.jd.com, *.xima*.*, *.xmcdn.*, app-api.smzdm.com, homepage-api.smzdm.com, haojia-api.smzdm.com, haojia.m.smzdm.com, baike-api.smzdm.com, s-api.smzdm.com, zhiyou.m.smzdm.com, user-api.smzdm.com, ap?.bili*i.com, ap?.bili*i.net, app.bilibili.com, grpc.biliapi.net, api.live.bilibili.com, api.vc.bilibili.com, manga.bilibili.com, mbd.baidu.com, s.bdstatic.com, ap?.bilibili.com, ap?.biliapi.net,www.google.cn, *.youtube.com, boxjs.net, boxjs.com,sub.store,api*.smoot.apple.com, api*.smoot.apple.cn, weather-data.apple.com, weather-map.apple.com, mp.weixin.qq.com,
